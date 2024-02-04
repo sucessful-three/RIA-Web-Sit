@@ -8,11 +8,14 @@
 
 :root {
     --white: #ffffff;
+    font-size: 16px;
 }
 
 header{
     height: 29vh;
     width: 100vw;
+    position: fixed;
+    z-index: 99;
     
      
 }
@@ -23,7 +26,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--white);
    
 }
 /*styling the logo div and search_bar_div_container*/
@@ -85,7 +88,7 @@ padding: 15px;
 }
 #search_input{
     width: 10em;
-    padding: 6px;
+    padding: 10px;
     border: none;
     border-radius: 20px;
     font-size: 1.2em;  
@@ -94,7 +97,7 @@ padding: 15px;
 #search_input:focus{
     outline: none;
     border-bottom: 1px solid rgba(163, 155, 155, 0.511);
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .fa-magnifying-glass{
@@ -180,7 +183,7 @@ gap: 15px;
     position: relative;
     padding: 1rem;
     cursor: pointer;
-    color: white;
+    color: var(--white);
     font-size: 1.3em;
 }
 
@@ -243,7 +246,7 @@ gap: 15px;
     position: relative;
     padding: 1rem;
     cursor: pointer;
-    color: white;
+    color: var(--white);
     font-size: 1.3em;
 }
 
@@ -270,7 +273,7 @@ gap: 15px;
 
 /*Visit Monrovia*/
 .visit_monrovia_link a{
-    color: white;
+    color: var(--white);
     font-size: 1.3em;
 }
 
@@ -280,34 +283,43 @@ gap: 15px;
 .Call_to_action_section{
     height: 100vh;
     width: 100vw;
-    background-image: url(./Images/liberia-flag-icon.png);
+    
+}
+
+#background_image{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
     
 }
 
 
 .Call_to_action_text_container{
-height: 100%;
+height: 80%;
 width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 150px;
 align-items: center;
-background-color: gray;
+z-index: 1;
 text-align: center;
 line-height: 1.5;
+position: absolute;
+top: 100px;
+background-color: rgba(0, 0, 0, 0.219);
 
 }
 
 #hero_text{
         font-size: 3rem;
-        color: white;
+        color: var(--white);
         margin-top: 100px;
 }
 
 #second_hero_text{
     font-size: 1.5rem;
-    color: white;
+    color: var(--white);
     font-family: monospace;
 }
 
@@ -316,11 +328,28 @@ line-height: 1.5;
     height: fit-content;
     padding: 10px 10px 10px 10px;
     background-color: #ff5a3c;
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
 }
+
+.find_flight_raidio_container{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio_container{
+    display: flex;
+    gap: 50px;
+}
+ .radio_container input{
+    height: 18px;
+    width: 18px;
+    
+ }
 
 /*New website section*/
 .new_website_container{
