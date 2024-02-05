@@ -199,6 +199,10 @@ justify-content: center;
  position: relative;
 
 }
+@keyframes slidUp_nav{
+    from {transform: translateY(20px)}
+    to{transform: translateY(0px);}
+}
 
 @keyframes slidUp {
     from{transform: translateX(-500px);}
@@ -208,7 +212,7 @@ justify-content: center;
 .dropdown{
     position: absolute;
     top: 3.1rem;
-    width: 10rem;
+    width: 12rem;
     height: 20vh;
     background: var(--blue) ;
     display: none;
@@ -220,7 +224,7 @@ justify-content: center;
 .main_link_label:hover .dropdown{
   display: block;
   opacity: 1;
-  animation: slidUp .5s ease ;
+  animation: slidUp_nav .5s ease ;
   visibility: visible;
   
 }
