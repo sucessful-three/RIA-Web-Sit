@@ -297,6 +297,7 @@ background-color: rgba(0, 0, 0, 0.219);
     color: var(--white);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.2rem;
 }
 
@@ -320,7 +321,10 @@ background-color: rgba(0, 0, 0, 0.219);
 .find_ur_flight_drop_down a{
     color: var(--white);
 }
-
+.fa-angle-down{
+    transform: rotate(360deg);
+    transition: 1s ease;
+}
 .show{
     display: block;
 }
