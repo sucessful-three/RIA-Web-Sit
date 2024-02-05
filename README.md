@@ -1,1 +1,1 @@
-This project covers a verity of featurs on an airpourt management system
+This project covers a verity of featurs on an airport management system

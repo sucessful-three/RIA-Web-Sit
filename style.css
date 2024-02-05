@@ -7,8 +7,13 @@
 }
 
 :root {
+    --red: #e3242b;
+    --blue: #3944bc;
     --white: #ffffff;
+    --black: #000000;
+    --gray: #c6c6c6;
     font-size: 16px;
+    --poppin: 'Poppins', sans-serif;
 }
 
 header{
@@ -72,13 +77,13 @@ header{
 }
 .fa-phone-volume{
     font-size: 1em;
-    color: red;
+    color: var(--red);
 }
 .input_email_div_container{
 display: flex;
 gap: 5px;
 flex-direction: column;
-padding: 15px;
+padding: .9rem;
     
 }
 .search_box_flag_container{
@@ -128,7 +133,7 @@ gap: 15px;
 }
 .fa-envelope{
     font-size: 1em;
-    color: red;
+    color: var(--red);
 }
 /*styling the blue nav-bar that has the left side been transparent*/
 .navbar_container{
@@ -143,142 +148,100 @@ gap: 15px;
     background: transparent;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Styling the blue navigation bar*/
 .blue_navbar_container{
-    height: 100%;
+    background: var(--blue);
+    width: 80%;
+    height: 13vh;
+   
+    position: relative;
+    bottom: 22px;
+}
+
+.nav-bar {
+width: 75%;
+display: flex;
+height: 13vh;
+align-items: center;
+justify-content: center;
+}
+
+.nav-link{
+   display: flex;
+   width: 75%;
+   justify-content: space-between;
+}
+
+
+.nav-bar .nav-link li a{
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.nav-bar .nav-link li :hover{
+   border-bottom: 3px solid var(--white);
+    padding-bottom: 1.8rem;
+}
+
+.nav-bar .nav-link .dropdown li :hover{
+    border-bottom: 0px solid var(--white);
+    padding-bottom: 0rem;
+}
+
+.white_line_list{
+    background: var(--white);
+    width: .1rem;
+    height: 4vh;
+}
+
+.main_link_label{
+ position: relative;
+
+}
+
+@keyframes slidUp {
+    from{transform: translateY(20px);}
+    to{transform: translateY(0px)}
+}
+
+.dropdown{
+    position: absolute;
+    top: 3.1rem;
+    width: 10rem;
+    height: 20vh;
+    background: var(--blue) ;
+    display: none;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.main_link_label:hover .dropdown{
+  display: block;
+  opacity: 1;
+  animation: slidUp .5s ease ;
+  visibility: visible;
+  
+}
+
+.dropdown li {
     width: 100%;
-    background-color: blue;
-    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    bottom: 28px;
+    gap: 3rem;
+    line-height: 2.2rem;
+     opacity: .7;
+    }
+    .dropdown li:hover{
+         opacity: 1;
+    }
+     
+    .dropdown a{
+        color: var(--white);
+       font-family: var(--poppin);
+    }
     
-}
-/*Hover effect on flight link*/
 
-
-.flight_link{
-    border-right: 3px solid;
-    height: 20px;
-    position: relative;
-    padding: 1rem;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 1.3em;
-}
-
-.flight_drop_down{
-    width: 180px;
-    height: fit-content;
-    padding: 24px;
-    border-top: 4px solid #ff5a3c;
-    background-color: black;
-    line-height: 2.5;
-    position:absolute;
-    top: 50px;
-    right: 50px;
-    visibility: hidden;
-    z-index: 1;
-    opacity: 0;
-}
-
-.flight_link:hover ul.flight_drop_down{
-    opacity: 888;
-    visibility: visible;
-}
-
-/*Hover effect on Terminal link*/
-.terminal_info_link{
-    border-right: 3px solid;
-    height: 20px;
-    position: relative;
-    padding: 1rem;
-    cursor: pointer;
-    color: white;
-    font-size: 1.3em;
-}
-
-.terminal_info_dropdown_container{
-    width: 180px;
-    height: fit-content;
-    padding: 24px;
-    border-top: 4px solid #ff5a3c;
-    background-color: black;
-    line-height: 2.5;
-    position:absolute;
-    top: 50px;
-    right: 50px;
-    visibility: hidden;
-    z-index: 1;
-    opacity: 0;
-}
-
-.terminal_info_link:hover ul.terminal_info_dropdown_container{
-    opacity: 1;
-    visibility: visible;
-}
-
-/*Hover effect on Parking and Transport link*/
-
-.parking_transport_link{
-    border-right: 3px solid;
-    height: 20px;
-    position: relative;
-    padding: 1rem;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 1.3em;
-}
-
-.parking_transport_dropdown_container{
-    width: 180px;
-    height: fit-content;
-    padding: 24px;
-    border-top: 4px solid #ff5a3c;
-    background-color: black;
-    line-height: 2.5;
-    position:absolute;
-    top: 50px;
-    right: 50px;
-    visibility: hidden;
-    z-index: 1;
-    opacity: 0;
-}
-
-.parking_transport_link:hover ul.parking_transport_dropdown_container{
-    opacity: 1;
-    visibility: visible;
-}
-
-
-/*Visit Monrovia*/
-.visit_monrovia_link a{
-    color: var(--white);
-    font-size: 1.3em;
-}
-
-
-/*Call to action page*/
+/*Call to action page or home page*/
 
 .Call_to_action_section{
     height: 100vh;
@@ -293,6 +256,7 @@ gap: 15px;
     
 }
 
+/*The call to action text container style*/
 
 .Call_to_action_text_container{
 height: 80%;
@@ -300,13 +264,13 @@ width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 150px;
+gap: 4rem;
 align-items: center;
 z-index: 1;
 text-align: center;
-line-height: 1.5;
+line-height: 2.8rem;
 position: absolute;
-top: 100px;
+top: 6.25rem;
 background-color: rgba(0, 0, 0, 0.219);
 
 }
@@ -314,7 +278,7 @@ background-color: rgba(0, 0, 0, 0.219);
 #hero_text{
         font-size: 3rem;
         color: var(--white);
-        margin-top: 100px;
+        margin-top: 6rem;
 }
 
 #second_hero_text{
@@ -343,7 +307,7 @@ background-color: rgba(0, 0, 0, 0.219);
 
 .radio_container{
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
  .radio_container input{
     height: 18px;
