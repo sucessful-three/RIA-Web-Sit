@@ -528,7 +528,7 @@ background-color: rgba(0, 0, 0, 0.219);
 
 .subscribe_to_newsletter_container{
     background: rgb(21,86,186);
-background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(asset/subscribe-plane.jpg);
+background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(./Images/subscribe-plane.jpg);
     width: 100vw;
     height: 50vh;
     background-position: center;
