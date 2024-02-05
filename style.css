@@ -15,6 +15,30 @@
     font-size: 16px;
     --poppin: 'Poppins', sans-serif;
 }
+
+/**************************************
+        Media Query
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+***************************************/
+
+
+button:nth-child(1) { 
+    cursor: url("soilder.jpg"),pointer; 
+    } 
+    button:nth-child(2) { 
+    cursor: url("cheese.png"),pointer; 
+    } 
+    button:nth-child(3) { 
+    cursor: url("rocket.png"),pointer; 
+    } 
+
+
+
+
 .hide{
     display: none;
     
@@ -155,7 +179,7 @@ gap: 15px;
     background: var(--blue);
     width: 80%;
     height: 13vh;
-   
+    clip-path: polygon(3% 0, 100% 0, 100% 48%, 100% 100%, 0 100%);
     position: relative;
     bottom: 22px;
 }
@@ -449,129 +473,16 @@ background-color: rgba(0, 0, 0, 0.219);
     border-right: 1px solid rgba(215, 204, 204, 0.953);
  }
 
-
+/*END OF New website section*****************************************************************************************************************/
 
  /*Latest News in Monorovia Section*/
- .latest_news_inmonrovia_grid_container{
-    height: 90vh;
+ .lates_news_in_monrovia_master_container{
+    height: 100vh;
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
-    gap: 15px;
-    background-color: var(--gray);
- }
-
- .flight_today_child_container{
-    height: 38rem;
     background-color: var(--red);
-    grid-row: span 2;
-    display: grid;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px;
- }
-.flight_today_child_container > h2{
-    grid-column: span 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-size: 2em;
-    color: var(--white);
-}
-.flight_info{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: var(--white);
-    font-size: 1.5em;
-    flex-direction: column;
-}
-
- .flight_info i{
-    font-size: 2.2em; 
  }
 
- /*latest_news_child_container*/
- 
- .latest_news_child_container{
-    grid-row: span 2;
-    grid-column: span 2;
-   
-    
-    
- }
-
-.latest_new_h3{
-    font-size: 2.1rem;
-    color: var(--red);
-    margin-left: 20px;
- 
-} 
-
-.latest_news_herotext_circular_angle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 90px;
-
-    
-}
-
-.angle_circle_container{
-    display: flex;
-    padding: 4rem;
-    gap: 10px;
-    
-}
-.angle_circle{
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 100%;
-    color:rgb(15, 101, 159);
-}
-
-.angle_circle:hover{
-      color: var(--white);
-      background-color: rgb(15, 101, 159);
-}
-
-.latest_news_image{
-    margin-left: 20px;
-    margin-top: 30px;
-    display: flex;
-    gap: 60px;
-    
-}
-
-.latest_news_image img{
-    width: 45%;
-    height: 270px;
-}
-
-.latest_news_image_content_h4{
-    display: flex;
-    gap: 500px;
-    margin-left: 20px;
-    line-height: 2.2;
-    font-size: 1.5rem;
-}
-.latest_news_image_content_p{
-    display: flex;
-    gap: 15px;
-    margin-left: 20px;
-    line-height: 1.3;
-    font-size: 1.3rem;
-    color: var(--red);
-}
-
-.latest_news_child_container > h5{
-    font-size: 1.2rem;
-    line-height: 130px;
-    margin-left: 20px;
-    color: var(--blue);
-}
+  
 /*Our Airlines style*/
 .Our_Airlines{
     height:70vh;
