@@ -311,13 +311,15 @@ background-color: rgba(0, 0, 0, 0.219);
   padding: 1.1rem;
   width: 16rem;
   position: absolute;
-  top: 28.35rem;
+  top: 25.59rem;
   font-weight: 800;
   font-size: 1.3rem;
     
 }
 
-.find_ur_flight_drop_down a{}
+.find_ur_flight_drop_down a{
+    color: var(--white);
+}
 
 .show{
     display: block;
