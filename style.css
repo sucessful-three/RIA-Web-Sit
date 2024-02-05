@@ -38,7 +38,7 @@ header{
 .logo_div{
     height: 100%;
     width: 30%;
-   background-color: red;
+   background-color: var(--red);
    clip-path: polygon(0 0, 100% 368, 100% 99);
  display: flex;
     justify-content: center;
@@ -179,7 +179,7 @@ justify-content: center;
 }
 
 
-.nav-bar .nav-link li :hover{
+.line :hover{
    border-bottom: 3px solid var(--white);
     padding-bottom: 1.8rem;
 }
@@ -249,7 +249,7 @@ justify-content: center;
     
 }
 
-.background_image{
+#background_image{
     height: 100%;
     width: 100%;
     z-index: 0;
@@ -307,7 +307,721 @@ background-color: rgba(0, 0, 0, 0.219);
 
 .radio_container{
     display: flex;
+    gap: 20px;
+}
+ .radio_container input{
+    height: 18px;
+    width: 18px;
+    
+ }
+
+/*New website section*/
+.new_website_container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.new_web_site_text{
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.new_web_site_text > h2{
+    color: rgb(212, 3, 3);
+}
+
+/*New web site grid style*/
+.new_website_grid_container{
+    height: 70%;
+    width: 80%;
+    box-shadow: 2px 2px 16px 0px rgba(184, 158, 184, 1);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
+    
+}
+ .grid{
+    
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: monospace;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 1s ease;
+    color: rgba(0, 0, 0, 0.336);
+ }
+
+ .grid:hover{
+    background-color: red;
+    color: white;
+ }
+
+ .grid i{
+    font-size: 4rem;
+ }
+
+ .g2, .g5{
+    border-left: 1px solid rgba(215, 204, 204, 0.953);
+    border-right: 1px solid rgba(215, 204, 204, 0.953);
+ }
+
+
+
+ /*Latest News in Monorovia Section*/
+ .latest_news_inmonrovia_grid_container{
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    gap: 15px;
+    background-color: rgb(247, 244, 244);
+ }
+
+ .flight_today_child_container{
+    height: 38rem;
+    background-color: red;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+ }
+.flight_today_child_container > h2{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2em;
+    color: var(--white);
+}
+.flight_info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--white);
+    font-size: 1.5em;
+    flex-direction: column;
+}
+
+ .flight_info i{
+    font-size: 2.2em; 
+ }
+
+ /*latest_news_child_container*/
+ 
+ .latest_news_child_container{
+    grid-row: span 2;
+    grid-column: span 2;
+   
+    
+    
+ }
+
+.latest_new_h3{
+    font-size: 2.1rem;
+    color: #ff5a3c;
+    margin-left: 20px;
+ 
+} 
+
+.latest_news_herotext_circular_angle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+
+    
+}
+
+.angle_circle_container{
+    display: flex;
+    padding: 4rem;
+    gap: 10px;
+    
+}
+.angle_circle{
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 100%;
+    color:rgb(15, 101, 159);
+}
+
+.angle_circle:hover{
+      color: var(--white);
+      background-color: rgb(15, 101, 159);
+}
+
+.latest_news_image{
+    margin-left: 20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+    
+}
+
+.latest_news_image img{
+    width: 45%;
+    height: 270px;
+}
+
+.latest_news_image_content_h4{
+    display: flex;
+    gap: 500px;
+    margin-left: 20px;
+    line-height: 2.2;
+    font-size: 1.5rem;
+}
+.latest_news_image_content_p{
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    color: #ff5a3c;
+}
+
+.latest_news_child_container > h5{
+    font-size: 1.2rem;
+    line-height: 130px;
+    margin-left: 20px;
+    color: rgb(63, 63, 239);
+}
+/*Our Airlines style*/
+.Our_Airlines{
+    height:70vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.4em;
+
+}
+.Our_Airlines > h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(63, 63, 239);
+}
+
+.Our_Airlines img{
+   width:300px;
+   height:100px; 
+}
+#cote{
+    height:50px;
+}
+
+.Our_Airlines_logo_1{
+    width:70%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+.Our_Airlines_logo_2{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/*The ssubscribe to the newsletter section*/
+
+.subscribe_to_newsletter_container{
+    background: rgb(21,86,186);
+background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(asset/subscribe-plane.jpg);
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+
+.subscribe_to_newsletter_div{
+ line-height: 1.8;
+ text-align: center;
+}
+
+.subscribe_label{
+    font-weight: 500;
+    word-spacing: 0.4rem;
+}
+
+.subscribe_form > input{
+width: 250px;
+height: fit-content;
+padding: 10px;
+border-top-left-radius: .2rem;
+border-bottom-left-radius: .2rem;
+border: none;
+outline: none;
+}
+
+.subscribe_form > button{
+ padding: 10px;
+ border: none;
+ background: blue;
+ color: var(--white);
+ font-weight: 600;
+ border-top-right-radius: .2rem;
+ border-bottom-right-radius: .2rem;
+ position: relative;
+ right: 5px;
+
+}
+
+/*The footer section  */
+
+footer{
+    color: var(--white);
+    height: 60vh;
+    width: 100vw;
+    background-color: blue;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 2.5fr 1fr;
+    padding-top: 20px;
+}
+footer a{
+    color: var(--white);
+}
+/*The footer logo container  */
+#footer_logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*The footer Feature Destination container  */
+.feature_destination_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.destinations_links_contianer{
+    line-height: 2;
+
+    text-align: center;
+}
+
+/*The footer airport container*/
+.the_airport_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.the_airport_link_container{
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+/*The footer quick link container*/
+.the_quick_link_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.the_quick_link{
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 4;
+    border-top: 2px solid white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.connect_withus_container{
+  line-height: 2;
+}
+
+
+.connect_icons{
+    word-spacing: 20px;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --white: #ffffff;
+    font-size: 16px;
+}
+
+header{
+    height: 29vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99;
+    
+     
+}
+
+/*displaying the logo div and the search bar div container*/
+.logo_searchbar_container{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+   
+}
+/*styling the logo div and search_bar_div_container*/
+.logo_div{
+    height: 100%;
+    width: 30%;
+   background-color: red;
+   clip-path: polygon(0 0, 100% 368, 100% 99);
+ display: flex;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
+    
+}
+
+.logo_div img{
+    height: 6em;
+    width: 15em;
+   
+}
+/*styling the search_bar container*/
+.search_bar_div_container{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.call_us_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 30px;
+}
+
+.call_icon_container{
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.fa-phone-volume{
+    font-size: 1em;
+    color: red;
+}
+.input_email_div_container{
+display: flex;
+gap: 5px;
+flex-direction: column;
+padding: 15px;
+    
+}
+.search_box_flag_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#search_input{
+    width: 10em;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;  
+}
+
+#search_input:focus{
+    outline: none;
+    border-bottom: 1px solid rgba(163, 155, 155, 0.511);
+    border-radius: 10px;
+}
+
+.fa-magnifying-glass{
+    position: relative;
+    right: 40px;
+    font-size: 1.2rem;
+}
+
+.flag_container{
+display: flex;
+gap: 15px;
+}
+.flag_container img{
+    height: 30px;
+    width: 50px;
+}
+.email_container{
+    display: flex;
+   align-items: center;
+    gap: 15px;
+
+}
+.envelop_container{
+    border: 2px solid red;
+    border-radius: 50%;
+    padding: 15px;
+    
+}
+.fa-envelope{
+    font-size: 1em;
+    color: red;
+}
+/*styling the blue nav-bar that has the left side been transparent*/
+.navbar_container{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.transparent_div{
+    width: 20%;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styling the blue navigation bar*/
+.blue_navbar_container{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 28px;
+    
+}
+/*Hover effect on flight link*/
+
+
+.flight_link{
+    border-right: 3px solid;
+    height: 20px;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.3em;
+}
+
+.flight_drop_down{
+    width: 180px;
+    height: fit-content;
+    padding: 24px;
+    border-top: 4px solid #ff5a3c;
+    background-color: black;
+    line-height: 2.5;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+
+.flight_link:hover ul.flight_drop_down{
+    opacity: 888;
+    visibility: visible;
+}
+
+/*Hover effect on Terminal link*/
+.terminal_info_link{
+    border-right: 3px solid;
+    height: 20px;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3em;
+}
+
+.terminal_info_dropdown_container{
+    width: 180px;
+    height: fit-content;
+    padding: 24px;
+    border-top: 4px solid #ff5a3c;
+    background-color: black;
+    line-height: 2.5;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+
+.terminal_info_link:hover ul.terminal_info_dropdown_container{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Hover effect on Parking and Transport link*/
+
+.parking_transport_link{
+    border-right: 3px solid;
+    height: 20px;
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.3em;
+}
+
+.parking_transport_dropdown_container{
+    width: 180px;
+    height: fit-content;
+    padding: 24px;
+    border-top: 4px solid #ff5a3c;
+    background-color: black;
+    line-height: 2.5;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+
+.parking_transport_link:hover ul.parking_transport_dropdown_container{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: var(--white);
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.background_image{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    
+}
+
+
+.Call_to_action_text_container{
+height: 80%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+z-index: 1;
+text-align: center;
+line-height: 1.5;
+position: absolute;
+top: 100px;
+background-color: rgba(0, 0, 0, 0.219);
+
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: var(--white);
+        margin-top: 100px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.find_flight_raidio_container{
+    display: flex;
     gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio_container{
+    display: flex;
+    gap: 2.8rem;
 }
  .dot{
     height: 15px;
