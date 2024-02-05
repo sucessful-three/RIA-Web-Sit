@@ -42,5 +42,5 @@ function showImg(){
     circle[i].className = circle[i].className.replace(" active", "");
   }
  circle[slideIndex-1].className += " active";
-  setTimeout(showImg, 3000);
+  setTimeout(showImg, 5000);
 }
