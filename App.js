@@ -1,3 +1,16 @@
+
+
+
+//Creating a callback function to display the find your flight options and also rotate the angle down
+var angleDown=$(".fa-angle-down"); 
+var chooseFlightDropDown=$(".find_ur_flight_drop_down");
+
+angleDown.on("click", function(){
+    chooseFlightDropDown.toggleClass("show");
+});
+
+
+
 //Creating Image slider to change the hero Image after every three seconds
 var slideIndex=0; // This variable is declear to keep track of the current slide that is displayed
 showImg();

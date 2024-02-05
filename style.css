@@ -287,6 +287,8 @@ background-color: rgba(0, 0, 0, 0.219);
     font-family: monospace;
 }
 
+/*Find your flight container*/
+
 .find_flight_container{
     width: 300px;
     height: fit-content;
@@ -296,6 +298,35 @@ background-color: rgba(0, 0, 0, 0.219);
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
+}
+
+/*Find your flight container Drop Down*/
+
+.find_ur_flight_drop_down{
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.57);
+  line-height: 2rem;
+  text-align: left;
+  display: none;
+  padding: 1.1rem;
+  width: 16rem;
+  position: absolute;
+  top: 25.59rem;
+  font-weight: 800;
+  font-size: 1.3rem;
+    
+}
+
+.find_ur_flight_drop_down a{
+    color: var(--white);
+}
+
+.show{
+    display: block;
+}
+.ratate{
+ transform: rotate(180deg);  
+    
 }
 
 .find_flight_raidio_container{
