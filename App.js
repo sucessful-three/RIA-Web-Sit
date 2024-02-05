@@ -44,3 +44,15 @@ function showImg(){
  circle[slideIndex-1].className += " active";
   setTimeout(showImg, 5000);
 }
+
+
+// trying Scroll behavior
+
+window.onscroll= function(){scrollFunction()}; // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
+ 
+function scrollFunction(){
+  if (document.documentElement.scrollTop > 50 ){
+    $("header").addClass("hide")
+  }
+  else{$("header").removeClass("hide")}
+}
