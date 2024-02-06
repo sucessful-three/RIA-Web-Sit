@@ -410,7 +410,7 @@ background-color: rgba(0, 0, 0, 0.219);
 .new_website_container{
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,7 +453,7 @@ background-color: rgba(0, 0, 0, 0.219);
 
  .grid:hover{
     background-color: var(--red);
-    color: white;
+    color: var(--white);
  }
 
  .grid i{
@@ -489,7 +489,7 @@ background-color: rgba(0, 0, 0, 0.219);
     font-size: 2.5rem;
     text-align: center;
     margin-top: 40px;
-    color: rgb(63, 63, 239);
+    color: var(--black);
 }
 
 .Our_Airlines img{
@@ -516,10 +516,10 @@ background-color: rgba(0, 0, 0, 0.219);
 
 
 
-/*The ssubscribe to the newsletter section*/
+/*The subscribe to the newsletter section*/
 
 .subscribe_to_newsletter_container{
-    background: rgb(21,86,186);
+    background: var(--blue);
 background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(./Images/subscribe-plane.jpg);
     width: 100vw;
     height: 50vh;
@@ -647,6 +647,15 @@ footer a{
   line-height: 2;
 }
 
+.footer_icon{
+    font-size: 1.5rem;
+}
+
+.footer_icon:hover{
+    color: var(--red);
+    transition: all .5s ease;
+    cursor: pointer;
+}
 
 .connect_icons{
     word-spacing: 20px;
