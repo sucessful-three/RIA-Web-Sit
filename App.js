@@ -52,7 +52,7 @@ window.onscroll= function(){scrollFunction()}; // when a scroll gets detected on
  
 function scrollFunction(){
   if (document.documentElement.scrollTop > 50 ){
-    $("header").addClass("hide")
+    $("header").addClass("hide");
   }
-  else{$("header").removeClass("hide")}
+  else{$("header").removeClass("hide");}
 }
