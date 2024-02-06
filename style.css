@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+
 :root {
     --red: #D21312;
     --blue: #070A52;
@@ -16,21 +17,11 @@
     --poppin: 'Poppins', sans-serif;
 }
 
-/**************************************
-        Media Query START
-For Mobile devices: 320px-480px
-For Tablets or iPad: 480px - 768px
-For Laptop or small-size screen: 768px -1024px
-For Desktop or large-size screen: 1024px -1200px
-For Extra-large size device: 1200px and more
-***************************************/
-/*
+html{
+    font: 16px;
 
+}
 
-
-
-/* END OF MEDIA QUERY********************************************************************************************************88
-*/
 .hide{
     display: none;
     
@@ -40,25 +31,25 @@ header{
     width: 100vw;
     position: fixed;
     z-index: 99;
-    animation: slidUp 1s;
+    
 }
-
-/*displaying the logo div and the search bar div container*/
-.logo_searchbar_container{
-    height: 150px;
+  
+.header_1st_section{
+    height: 9.375rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     background-color: var(--white);
    
 }
+/*displaying the logo div and the search bar div container*/
+
 /*styling the logo div and search_bar_div_container*/
 .logo_div{
     height: 100%;
     width: 30%;
    background-color: var(--red);
    clip-path: polygon(0 0, 100% 368, 100% 99);
- display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
 
@@ -72,87 +63,104 @@ header{
    
 }
 /*styling the search_bar container*/
-.search_bar_div_container{
+.white_header_container{
     height: 100%;
     width: 70%;
-    display: grid;
-    grid-template-columns:1fr 2fr;
-    grid-template-rows: auto;
+ 
 }
 
-.call_us_container{
+.white_div_containerA{
+    width: 86%;
+    height: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    padding: 15px;
-    gap: 30px;
-}
-
-.call_icon_container{
-    padding: 15px;
-    border: 2px solid var(--red);
-    border-radius: 50%;
-}
-.fa-phone-volume{
-    font-size: 1em;
-    color: var(--red);
-}
-.input_email_div_container{
-display: flex;
-gap: 5px;
-flex-direction: column;
-padding: .9rem;
     
 }
-.search_box_flag_container{
+
+.white_div_container_a1{
     display: flex;
-    justify-content: space-evenly;
+    height: 50%;
+    gap: 8rem;
+    width: fit-content;
+    padding-left: 30%;
     align-items: center;
-}
-#search_input{
-    width: 10em;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    font-size: 1.2em;  
+   
 }
 
-#search_input:focus{
+.flag_container{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.Liberia_flag_icon{
+    width: 3.125rem;
+    height: 1.875rem;
+}
+
+.search_bar_form{
+    display: flex;
+    align-items: center;
+
+}
+
+.search_bar_form input{
+    width: 12rem;
+    height: 2rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+
+}
+.search_bar_form input:focus {
     outline: none;
     border-bottom: 1px solid rgba(163, 155, 155, 0.511);
     border-radius: 10px;
+    padding-right: 3rem;
 }
+
+ .fa-magnifying-glass:hover{
+    color: var(--red);
+ }
 
 .fa-magnifying-glass{
     position: relative;
     right: 40px;
     font-size: 1.2rem;
+    color: gray;
+    transition: 0.5s ease;
 }
 
-.flag_container{
-display: flex;
-gap: 15px;
-}
-.flag_container img{
-    height: 30px;
-    width: 50px;
-}
-.email_container{
+
+.white_div_containerB{
     display: flex;
-   align-items: center;
-    gap: 15px;
+    gap: 4rem;
+    align-items: center;
+    height: fit-content;
+}
 
+.call_icon_text_container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    line-height: 1.2;
 }
-.envelop_container{
-    border: 2px solid var(--red);
+
+.icon_div{
+    padding: 10px;
+    border: 2px dotted var(--red);
     border-radius: 50%;
-    padding: 15px;
-    
-}
-.fa-envelope{
-    font-size: 1em;
     color: var(--red);
 }
+
+
+.email_icon_text{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 /*styling the blue nav-bar that has the left side been transparent*/
 .navbar_container{
     height: 100px;
@@ -278,7 +286,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
     z-index: 0;
-    animation: slidUp 2s ease, fade 1s ease;
+    animation: slidUp_nav 2s ease  5s, fade 1s ease ;
 }
 
 
@@ -500,7 +508,7 @@ background-color: rgba(0, 0, 0, 0.219);
     height:50px;
 }
 
-.Our_Airlines_logo_1{
+.Our_Airlines_logo_1, .Our_Airlines_logo_2{
     width:70%;
     display:flex;
     justify-content: space-evenly;
@@ -509,8 +517,6 @@ background-color: rgba(0, 0, 0, 0.219);
  
 .Our_Airlines_logo_2{
     width:100%;
-    display:flex;
-    justify-content: space-evenly;
 }
 
 
@@ -657,3 +663,112 @@ footer a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+/**************************************
+        Media Query START
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+***************************************/
+/*
+
+ /* Media Query for Mobile Devices */
+ @media screen and (max-width: 480px) {
+    :root {
+        font-size: 12px;
+       
+    }
+    header{
+        max-height: 10rem;
+        width: 100%; 
+        transition: 1s ease;
+    }
+
+    .header_1st_section{
+        height: fit-content;
+    
+    }
+    .logo_div{
+        height: 100%;
+        width: 45%;
+       background-color: var(--red);
+       clip-path: polygon(0 0, 100% 368, 100% 99);
+       display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
+        
+    }
+    
+
+.white_div_containerA, .white_div_containerB, .navbar_container{
+    display: none;
+}
+    /*Landing Page Media Query*/
+    .Call_to_action_text_container{
+        height: 100%;
+        top: 10px;
+       
+        
+        }
+
+        .find_flight_raidio_container{
+         
+            gap: 0rem;
+        }
+
+        .radio_container{
+            transition: 1s ease;
+            position: relative;
+            top: 12rem;
+        }
+
+        .find_ur_flight_drop_down{
+          position: absolute;
+          transition: 1s ease;
+          width: 77%;
+          text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        line-height: 1.7;
+          animation: slidUp_nav 1s ease ;
+            
+        }
+}        
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
+
+
+/* END OF MEDIAQUERY********************************************************************************************************88
+*/
