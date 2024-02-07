@@ -179,7 +179,7 @@ header{
     background: var(--blue);
     width: 80%;
     height: 13vh;
-    clip-path: polygon(3% 0, 100% 0, 100% 48%, 100% 100%, 0 100%);
+    /*clip-path: polygon(3% 0, 100% 0, 100% 48%, 100% 100%, 0 100%);*/
     position: relative;
     bottom: 22px;
 }
@@ -576,14 +576,13 @@ background-color: rgba(0, 0, 0, 0.219);
 .Our_Airlines > h3{
     font-size: 2.5rem;
     text-align: center;
-    margin-top: 3rem;
-  font-family: var(--poppin);
-    color: var(--blue);
+    margin-top: 40px;
+    color: var(--black);
 }
 
 .Our_Airlines img{
-   width:10rem;
-   height:5rem; 
+   width:15rem;
+   height:10rem; 
 }
 #cote{
     height:35px;
@@ -657,96 +656,6 @@ outline: none;
 
 /*The footer section  */
 
-footer{
-    color: var(--white);
-    height: 60vh;
-    width: 100vw;
-    background-color: var(--blue);
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 2.5fr 1fr;
-    padding-top: 20px;
-}
-footer a{
-    color: var(--white);
-}
-/*The footer logo container  */
-#footer_logo_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*The footer Feature Destination container  */
-.feature_destination_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-.destinations_links_contianer{
-    line-height: 2;
-
-    text-align: center;
-}
-
-/*The footer airport container*/
-.the_airport_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-.the_airport_link_container{
-    line-height: 1.8;
-
-    text-align: center;
-}
-
-/*The footer quick link container*/
-.the_quick_link_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-.the_quick_link{
-    line-height: 1.5;
-
-    text-align: center;
-}
-
-/*The footer Connect with us section*/
-.connect_with_us_copyright_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: span 4;
-    border-top: 2px solid white;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-.connect_withus_container{
-  line-height: 2;
-}
-
-.footer_icon{
-    font-size: 1.5rem;
-}
-
-.footer_icon:hover{
-    color: var(--red);
-    transition: all .5s ease;
-    cursor: pointer;
-}
-
-.connect_icons{
-    word-spacing: 20px;
-}
 
 /*End of footer*/
 
@@ -1405,6 +1314,7 @@ For Extra-large size device: 1200px and more
         font-size: 12px;
        
     }
+  
     header{
         max-height: 10rem;
         width: 100%; 
@@ -1423,7 +1333,6 @@ For Extra-large size device: 1200px and more
        display: flex;
         justify-content: center;
         align-items: center;
-    
         clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
         
     }
@@ -1433,9 +1342,64 @@ For Extra-large size device: 1200px and more
         width: 13rem;
        
     }
-.white_div_containerA, .white_div_containerB, .navbar_container{
+
+    .header_1st_section{
+        align-items: center;
+    }
+ .white_div_containerB, .navbar_container{
     display: none;
 }
+
+.white_div_containerA{ 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   gap: 2px;
+}
+
+.white_div_container_a1{
+    gap: 0px;
+    padding-left: 0px;
+    width: 90%;
+    gap: 4rem;
+}
+
+.flag_container{
+    gap: 1.2rem;
+    align-items: center;
+}
+.flag_container p{
+    font-size: 1.4rem;
+    font-family: var(--poppin);
+    color: var(--blue)
+}
+.search_bar_form{
+    display: none;
+}
+
+
+/*Hand burger menu */
+.hand_burger_menu, .hand_burger_menu i{
+    font-size: 1.9rem;
+    color: var(--blue);
+}
+
+.handBurger_menu_dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #070952cb;
+    color: var(--white);
+    position: absolute;
+    top: 8rem;
+    right: 0.1rem;
+    width: 100%;
+    height: 35vh;
+}
+/*HAND BURGER MENU ENDS******************************************************/
+
     /*Landing Page Media Query*/
     .Call_to_action_text_container{
         height: 110%;
@@ -1466,6 +1430,7 @@ For Extra-large size device: 1200px and more
           animation: slidUp_nav 1s ease ;
             
         }
+    }
 
         /*END OF LANDING PAGE Media QUERY*/
 
@@ -1497,11 +1462,67 @@ For Extra-large size device: 1200px and more
     line-height: 4;
     
 }
+/*Footer query*/
+footer{
+    height: fit-content;
+    width: 100vw;
+  
+    background-color: var(--blue);
+    overflow-y: hidden;
 
-}        
+}
+
+footer, footer a{
+    color: var(--white);
+}
+
+footer a{
+    font-weight: lighter;
+    font-family: var(--poppin);
+    font-size: 0.8rem;
+}
+
+.footer_logo_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    border: 1px dotted white;
+    justify-content: center;
+
+}
+ #footer_logo{
+    max-height: 13rem;
+    max-width: 20rem; 
 
 
-/* Media Query for low resolution  Tablets, Ipads */
+}
+/*FOOTER GRID CONTAINER START*/
+.footer_grid_container{
+    height: 75%;
+    width: 100%;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns:0.8fr 1fr ;
+    grid-template-rows:0.5fr 1fr  ;
+    gap: 25px;
+    padding: 24px;
+    
+}
+
+.connect_with_us_copyright_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect_withus_container{
+    line-height: 2;
+    
+}
+
+      
+
+/* Media Query for low resolution  Tablets, Ipads ************************************/
 @media (min-width: 481px) and (max-width: 767px) {
     
 }
