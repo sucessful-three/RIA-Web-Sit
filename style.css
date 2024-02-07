@@ -473,16 +473,94 @@ background-color: rgba(0, 0, 0, 0.219);
     border-right: 1px solid rgba(215, 204, 204, 0.953);
  }
 
-/*END OF New website section*****************************************************************************************************************/
+/*END OF New website Section styling ends here*********/
 
- /*Latest News in Monorovia Section*/
+ /*Latest News in Monorovia Section styling starts here*/
  .lates_news_in_monrovia_master_container{
     height: 100vh;
     width: 100vw;
-    background-color: var(--red);
+    background-color: var(--gray);
+    display: flex;
+    
  }
 
-  
+/*Today flight styling starts here*/
+
+ .fight_today_container{
+    width: 34%;
+    height: 86vh;
+    color: var(--white);
+    background: var(--red);
+    text-align: center;
+ }
+ 
+ .flights_today_label{
+   height: 20.5vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+ }
+
+ .planes_landed, .planes_left, .planes_in_air{
+    height: 20vh;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .flight_icon i{
+    font-size: 4rem;
+ }
+
+ .flight_description{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ }
+
+ .flight_description h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+ }
+
+ .flight_today_h3{
+     font-family: var(--poppin);
+     font-size: 2rem;
+     font-weight: 800;
+ }
+/*Today flight styling ends here*/
+
+/*The latset news in monrovia styling starts here*/
+
+.latest_news_in_monrovia_container{
+    width: 66%;
+    height: 78vh;
+    color: var(--red);
+    background: var(--gray);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.latest_news_label_angle{
+    display: flex;
+}
+
+
+
+.latest_news_angle{
+    display: flex;
+}
+
+
+
+/*The latset news in monrovia styling starts here*/
+
+  /*Latest News in Monorovia Section styling ends here*/
+
 /*Our Airlines style*/
 .Our_Airlines{
     height:70vh;
@@ -491,9 +569,7 @@ background-color: rgba(0, 0, 0, 0.219);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
-border: 1px solid black;
-overflow-x: hidden;
+    overflow-x: hidden;
 
 
 }
@@ -509,7 +585,7 @@ overflow-x: hidden;
    height:10rem; 
 }
 #cote{
-    height:50px;
+    height:35px;
 }
 
 .Our_Airlines_logo_1, .Our_Airlines_logo_2{
