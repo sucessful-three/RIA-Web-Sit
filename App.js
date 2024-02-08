@@ -19,17 +19,6 @@ $(".ter_info_btn").on("click", function(){
 
 
 }
-//HAND BURGER MENU
-showMenu();
-function showMenu(){
-  $(".fa-bars").on("click", function(){    
-    $(this).toggleClass("fa-x");
-      $(".handBurger_menu_dropdown").toggleClass("show_burger");
-  
-
-  });
-}
-
 
 
 //Creating a callback function to display the find your flight options and also rotate the angle down
