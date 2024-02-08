@@ -168,6 +168,23 @@ header{
     display: flex;
     
 }
+/*HAND BURGER MENU ***************************************************/
+.hand_burger_menu{
+    display: none;
+}
+
+.handBurger_menu_dropdown{
+    animation: slidup_burger 1s ease;
+    
+}
+
+@keyframes slidUp_burger{
+    from {transform: translateY(200px)}
+    to{transform: translateY(0px);}
+}
+
+
+
 
 .transparent_div{
     width: 20%;
@@ -279,33 +296,44 @@ justify-content: center;
 .Call_to_action_section{
     height: 100vh;
     width: 100vw;
+    padding: 0px;
+
+   
     
 }
-
-.background_image{
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    animation: slidUp_nav 2s ease  5s, fade 1s ease ;
-}
-
-
 .Call_to_action_text_container{
-height: 80%;
+height: 100%;
 width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 4rem;
 align-items: center;
-z-index: 1;
-text-align: center;
-line-height: 1.5;
-position: absolute;
-top: 100px;
-background-color: rgba(0, 0, 0, 0.219);
+gap: 15rem;
+background-color: #0000008f;
+
 
 }
+.landing_text{
+    position: relative;
+    top: 9em;
+    line-height: 1.6;
+    text-align: center;
+}
+.img_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    image-resolution:var(--black);
+}
+.background_image{
+height: 100%;
+width: 100%;
+
+}
+
+
+
 
 #hero_text{
         font-size: 3rem;
@@ -655,17 +683,127 @@ outline: none;
 }
 
 /*The footer section  */
+       /*New web site grid style*/
+       .new_website_grid_container{
+        height: 85%;
+        width: 90%;
+        box-shadow: none;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
+        
+    }
+    /*Our Air Port*/
+    .Our_Airlines{
+        height: fit-content;
+        margin-top: 0rem;
+        padding: 24px;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+    }
+    .Our_Airlines_logo_1, .Our_Airlines_logo_2{
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+        line-height: 4;
+        
+    }
+    /*Footer query*/
+    footer{
+        padding-top: 35px;
+        height: 70vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        display: flex;
 
+      
+        background-color: var(--blue);
+        overflow-y: hidden;
+    
+    }
+    
+    footer, footer a{
+        color: var(--white);
+    }
+    
+    footer a{
+        font-weight: lighter;
+        font-family: var(--poppin);
+        font-size: 1rem;
+    }
+    
+    .footer_logo_container{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        
+    }
+     #footer_logo{
+        max-height: 13rem;
+        max-width: 20rem;
+        float: left; 
+    
+    
+    }
+    /*FOOTER GRID CONTAINER START*/
+    .footer_grid_container{
+        height: 60%;
+        width: 65%;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       gap: 10px;
+        
+    }
+
+    .destinations_links_contianer{
+        line-height: 2;
+    }
+
+    .the_airport_link_container{
+        line-height: 2;
+    }
+
+    .the_quick_link{
+        line-height: 2;
+    }
+    
+    .connect_with_us_copyright_container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .connect_withus_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    position: relative;
+    top: 5rem;
+    right: 20rem;
+    }
+
+    .copy_right_container{
+       height: fit-content;
+       width: 30rem;
+       position: relative;
+       left: 400px;
+       top: 5rem;
+    }
 
 /*End of footer*/
 
 
 
+/**Script CLASS*****************************************************/
 
 
 
-
-
+/*END********************************************************/
 
 
 
@@ -682,8 +820,44 @@ For Extra-large size device: 1200px and more
 ***************************************/
 /*
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+      
+
+/* Media Query for low resolution  Tablets, Ipads ************************************/
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
+
  /* Media Query for Mobile Devices */
- @media screen and (max-width: 480px) {
+ @media(max-width: 480px) {
     :root {
         font-size: 12px;
        
@@ -758,6 +932,11 @@ For Extra-large size device: 1200px and more
     color: var(--blue);
 }
 
+.hand_burger_menu{
+    display: flex;
+
+}
+
 .handBurger_menu_dropdown{
     display: flex;
     flex-direction: column;
@@ -771,13 +950,45 @@ For Extra-large size device: 1200px and more
     right: 0.1rem;
     width: 100%;
     height: 35vh;
+    display: none;
+
 }
+
+.flight_drop_down2 , .terminal_info2  {
+ display: none;
+}
+
+
+.flight_drop_down2 a, .show_ter_info a{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-family: var(--poppin);
+    color:var(--red);
+}
+/*CLASS FOR JAVA SCRIPT*/
+.show_flag_cont{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+.show_ter_info{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+
+.show_hand_burger{
+    display: flex;
+
+ }   
+/*END OF CLASS FOR JAVA SCRIPT*/
+
 /*HAND BURGER MENU ENDS******************************************************/
 
     /*Landing Page Media Query*/
     .Call_to_action_text_container{
-        height: 110%;
-        top: 10px;
+      
        
         
         }
@@ -804,116 +1015,24 @@ For Extra-large size device: 1200px and more
           animation: slidUp_nav 1s ease ;
             
         }
+
+        .subscribe_to_newsletter_div{
+            flex-wrap: wrap;
+            padding: 24px;
+            font-size: medium;
+        }
     }
 
         /*END OF LANDING PAGE Media QUERY*/
 
 
-        /*New web site grid style*/
-.new_website_grid_container{
-    height: 85%;
-    width: 90%;
-    box-shadow: none;
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto;
-    
-}
-/*Our Air Port*/
-.Our_Airlines{
-    height: fit-content;
-    margin-top: 0rem;
-    padding: 24px;
-    justify-content: space-evenly;
-    gap: 2.5rem;
-}
-.Our_Airlines_logo_1, .Our_Airlines_logo_2{
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2.5rem;
-    line-height: 4;
-    
-}
-/*Footer query*/
-footer{
-    height: fit-content;
-    width: 100vw;
-  
-    background-color: var(--blue);
-    overflow-y: hidden;
+/*********MEDIA QUERY FOR MAX-WIDTH 320PX************************************************************************************************************************************/
 
-}
-
-footer, footer a{
-    color: var(--white);
-}
-
-footer a{
-    font-weight: lighter;
-    font-family: var(--poppin);
-    font-size: 0.8rem;
-}
-
-.footer_logo_container{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    border: 1px dotted white;
-    justify-content: center;
-
-}
- #footer_logo{
-    max-height: 13rem;
-    max-width: 20rem; 
-
-
-}
-/*FOOTER GRID CONTAINER START*/
-.footer_grid_container{
-    height: 75%;
-    width: 100%;
-    border: 1px solid white;
-    display: grid;
-    grid-template-columns:0.8fr 1fr ;
-    grid-template-rows:0.5fr 1fr  ;
-    gap: 25px;
-    padding: 24px;
-    
-}
-
-.connect_with_us_copyright_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.connect_withus_container{
-    line-height: 2;
-    
-}
-
-      
-
-/* Media Query for low resolution  Tablets, Ipads ************************************/
-@media (min-width: 481px) and (max-width: 767px) {
-    
-}
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-}
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    
-}
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-
+@media(max-width: 320px){
+    :root {
+        font-size: 10px;
+       
+    }
 }
 
 
