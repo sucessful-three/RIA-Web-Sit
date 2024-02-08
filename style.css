@@ -58,8 +58,8 @@ header{
 }
 
 .logo_div img{
-    height: 10rem;
-    width: 15rem;
+    height: 10em;
+    width: 15em;
    
 }
 /*styling the search_bar container*/
@@ -161,6 +161,10 @@ header{
     align-items: center;
 }
 
+.handBurger_menu_dropdown{
+    animation: slidUP_nav 1.5s ease;
+    display:none;
+ }
 /*styling the blue nav-bar that has the left side been transparent*/
 .navbar_container{
     height: 100px;
@@ -242,16 +246,21 @@ justify-content: center;
  position: relative;
 
 }
+
+/*********************************************************/
+/*KEYFRAMES ANIMATION*/
 @keyframes slidUp_nav{
     from {transform: translateY(20px)}
     to{transform: translateY(0px);}
 }
 
-@keyframes slidUp {
+@keyframes slidRight {
     from{transform: translateX(-500px);}
     to{transform: translateX(0px)}
 }
 
+
+/*KEYFRAMES ANIMATION ENDS*********************************************/
 .dropdown{
     position: absolute;
     top: 3.1rem;
@@ -420,13 +429,16 @@ width: 100%;
     color: var(--white);
 }
 .fa-angle-down{
-    transform: rotate(360deg);
     transition: 1s ease;
 }
 .show{
     display: block;
     transition: 1s ease;
     transform: translateY()
+}
+
+.rotate_angle{
+transform: rotate(180deg);
 }
 
 
@@ -570,17 +582,109 @@ width: 100%;
     background: var(--gray);
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .latest_news_label_angle{
     display: flex;
+    justify-content: space-between;
+    width: 86%;
+    align-items: center;
+    height: 8vh;
+    margin-left: 3rem;
+ 
 }
 
+.latest_news_label_h3{
+    font-size: 2rem;
 
+    font-weight: 900;
+}
 
 .latest_news_angle{
     display: flex;
+    gap: 2rem;
+}
+
+.left_angle_div, .right_angle_div{
+    margin-top: .6rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--blue);
+    border: 2px solid #070A52;
+}
+
+.left_angle_div i{
+    position: relative;
+    top: .4rem;
+    left: .6rem;
+    font-size: 2rem;
+}
+
+.right_angle_div i{
+    position: relative;
+    top: .4rem;
+    left: .7rem;
+    font-size: 2rem;
+}
+
+.right_angle_div:hover{
+    background: var(--blue);
+    color: var(--red);
+    border: 2px solid #ffffff;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.left_angle_div:hover{
+    background: var(--blue);
+    color: var(--red);
+    border: 2px solid #ffffff;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+/*The two cards styling starts here*/
+
+.card_2_img, .card_1_img{
+    width: 22.75rem;
+    height: 16.5rem;
+}
+
+.cards_container{
+    display: flex;
+    width: 92%;
+    margin-left: 3rem;
+}
+
+.card_1, .card_2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.h3_date{
+    color: #7b7b7bc0;
+    font-weight: 900;
+}
+
+.h3_news_heading{
+    width: 75%;
+    font-weight: 900;
+}
+
+.read_more_stories{
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
 }
 
 
@@ -1036,5 +1140,162 @@ For Extra-large size device: 1200px and more
 }
 
 
-/* END OF MEDIAQUERY********************************************************************************************************88
+/* END OF MEDIAQUERY********<i class="fa-solid fa-x"></i>************************************************************************************************88
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************
+        Media Query START
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+***************************************/
+/*
+
+ /* Media Query for Mobile Devices */
+ @media screen and (max-width: 480px) {
+    :root {
+        font-size: 12px;
+       
+    }
+    header{
+        max-height: 10rem;
+        width: 100%; 
+        transition: 1s ease;
+    }
+
+    .header_1st_section{
+        height: fit-content;
+    
+    }
+    .logo_div{
+        height: 100%;
+        width: 45%;
+       background-color: var(--red);
+       clip-path: polygon(0 0, 100% 368, 100% 99);
+       display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
+        
+    }
+    
+    .logo_div img{
+        height: 8rem;
+        width: 13rem;
+       
+    }
+.white_div_containerA, .white_div_containerB, .navbar_container{
+    display: none;
+}
+    /*Landing Page Media Query*/
+    .Call_to_action_text_container{
+        height: 110%;
+        top: 10px;
+       
+        
+        }
+
+        .find_flight_raidio_container{
+         
+            gap: 0rem;
+        }
+
+        .radio_container{
+            transition: 1s ease;
+            position: relative;
+            top: 12rem;
+        }
+
+        .find_ur_flight_drop_down{
+          position: absolute;
+          transition: 1s ease;
+          width: 77%;
+          text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        line-height: 1.7;
+          animation: slidUp_nav 1s ease ;
+            
+        }
+
+        /*END OF LANDING PAGE Media QUERY*/
+
+
+        /*New web site grid style*/
+.new_website_grid_container{
+    height: 85%;
+    width: 90%;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto;
+    
+}
+/*Our Air Port*/
+.Our_Airlines{
+    height: fit-content;
+    margin-top: 0rem;
+    padding: 24px;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+}
+.Our_Airlines_logo_1, .Our_Airlines_logo_2{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2.5rem;
+    line-height: 4;
+    
+}
+
+}        
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
+
+
+/* END OF MEDIAQUERY********************************************************************************************************88
+
+
+
+
+
+
+
