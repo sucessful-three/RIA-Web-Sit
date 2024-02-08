@@ -1,4 +1,15 @@
 
+//HAND BURGER MENU
+showMenu();
+function showMenu(){
+  $(".fa-bars").on("click", function(){    
+    $(this).toggleClass("fa-x");
+      $(".handBurger_menu_dropdown").toggleClass("show_burger");
+  
+
+  });
+}
+
 
 
 //Creating a callback function to display the find your flight options and also rotate the angle down
@@ -9,7 +20,7 @@ var greede=0;
 
 angleDown.on("click", function(){
     chooseFlightDropDown.toggleClass("show");
-    $(this).css("transform", "rotate("+ degree +"deg)");
+    $(this).toggleClass("rotate_angle");
      
 
 
