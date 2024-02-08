@@ -542,17 +542,108 @@ background-color: rgba(0, 0, 0, 0.219);
     background: var(--gray);
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .latest_news_label_angle{
     display: flex;
+    justify-content: space-between;
+    width: 86%;
+    align-items: center;
+    height: 8vh;
+    margin-left: 3rem;
+ 
 }
 
+.latest_news_label_h3{
+    font-size: 2rem;
 
+    font-weight: 900;
+}
 
 .latest_news_angle{
     display: flex;
+    gap: 2rem;
+}
+
+.left_angle_div, .right_angle_div{
+    margin-top: .6rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: var(--blue);
+    border: 2px solid #070A52;
+}
+
+.left_angle_div i{
+    position: relative;
+    top: .4rem;
+    left: .6rem;
+    font-size: 2rem;
+}
+
+.right_angle_div i{
+    position: relative;
+    top: .4rem;
+    left: .7rem;
+    font-size: 2rem;
+}
+
+.right_angle_div:hover{
+    background: var(--blue);
+    color: var(--red);
+    border: 2px solid #ffffff;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.left_angle_div:hover{
+    background: var(--blue);
+    color: var(--red);
+    border: 2px solid #ffffff;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+/*The two cards styling starts here*/
+
+.card_2_img, .card_1_img{
+    width: 22.75rem;
+    height: 14.5rem;
+}
+
+.cards_container{
+    display: flex;
+    width: 92%;
+    margin-left: 3rem;
+}
+
+.card_1, .card_2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.h3_date{
+    color: #7b7b7bc0;
+    font-weight: 900;
+}
+
+.h3_news_heading{
+    width: 75%;
+    font-weight: 900;
+}
+
+.read_more_stories{
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 3rem;
 }
 
 
