@@ -1,15 +1,24 @@
+//Creating a function that toggle the handburger menu 
+showNavDropDown();
 
-//HAND BURGER MENU
-showMenu();
-function showMenu(){
-  $(".fa-bars").on("click", function(){    
+function showNavDropDown(){
+    
+$(".fa-bars").on("click", function(){
+  //Displaying the handburger drop down
     $(this).toggleClass("fa-x");
-      $(".handBurger_menu_dropdown").toggleClass("show_burger");
-  
+    $(".handBurger_menu_dropdown").toggleClass("show_hand_burger");
+});
+//Displaying the FLIGHT AND TERMINAL INFORMATION DROP DOWN
+$(".flight_btn").on("click", function(){
+  $(".flight_drop_down2").toggleClass("show_flag_cont");
+});
 
-  });
+$(".ter_info_btn").on("click", function(){
+  $(".terminal_info2").toggleClass("show_ter_info");
+});
+
+
 }
-
 
 
 //Creating a callback function to display the find your flight options and also rotate the angle down
