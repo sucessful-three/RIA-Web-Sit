@@ -23,15 +23,6 @@ html{
 }
 
 
-
-
-/*END********************************************************/
-
-
-
-
-
-
 /**************************************
         Media Query START
 For Mobile devices: 320px-480px
@@ -40,12 +31,6 @@ For Laptop or small-size screen: 768px -1024px
 For Desktop or large-size screen: 1024px -1200px
 For Extra-large size device: 1200px and more
 ***************************************/
-/*
-
-
-
-
-
 
 
 
@@ -55,8 +40,6 @@ For Extra-large size device: 1200px and more
 
 
  
-/* Media Query for Large  1281px screens */
-@media (max-width: 2000px) {
 
 .hide{
     display: none;
@@ -224,8 +207,6 @@ header{
 }
 
 
-
-
 .transparent_div{
     width: 20%;
     background: transparent;
@@ -349,8 +330,6 @@ justify-content: center;
     height: 100vh;
     width: 100vw;
     padding: 0px;
-
-   
     
 }
 .Call_to_action_text_container{
@@ -383,8 +362,6 @@ height: 100%;
 width: 100%;
 
 }
-
-
 
 
 #hero_text{
@@ -446,10 +423,6 @@ width: 100%;
 
 
 
-
-
-
-
 /*Find your flight container Drop Down*/
 
 .find_ur_flight_drop_down{
@@ -490,11 +463,6 @@ transform: rotate(180deg);
     
 }
 /*End of Landing Page*/
-
-
-
-
-
 
 
 /*New website section*/
@@ -830,114 +798,6 @@ outline: none;
 
 }
 
-/*The footer section  */
-        
-    
-    /*Our Air Port*/
-    .Our_Airlines{
-        height: fit-content;
-        margin-top: 0rem;
-        padding: 24px;
-        justify-content: space-evenly;
-        gap: 2.5rem;
-    }
-    .Our_Airlines_logo_1, .Our_Airlines_logo_2{
-        width:100%;
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 2.5rem;
-        line-height: 4;
-        
-    }
-    /*Footer query*/
-    footer{
-        padding-top: 35px;
-        height: 70vh;
-        width: 100vw;
-        justify-content: space-evenly;
-        display: flex;
-
-      
-        background-color: var(--blue);
-        overflow-y: hidden;
-    
-    }
-    
-    footer, footer a{
-        color: var(--white);
-    }
-    
-    footer a{
-        font-weight: lighter;
-        font-family: var(--poppin);
-        font-size: 1rem;
-    }
-    
-    .footer_logo_container{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        
-    }
-     #footer_logo{
-        max-height: 13rem;
-        max-width: 20rem;
-        float: left; 
-    
-    
-    }
-    /*FOOTER GRID CONTAINER START*/
-    .footer_grid_container{
-        height: 60%;
-        width: 65%;
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-template-rows: 1fr 1fr;
-       gap: 10px;
-        
-    }
-
-    .destinations_links_contianer{
-        line-height: 2;
-    }
-
-    .the_airport_link_container{
-        line-height: 2;
-    }
-
-    .the_quick_link{
-        line-height: 2;
-    }
-    
-    .connect_with_us_copyright_container{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .connect_withus_container{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    position: relative;
-    top: 5rem;
-    right: 20rem;
-    }
-
-    .copy_right_container{
-       height: fit-content;
-       width: 30rem;
-       position: relative;
-       left: 400px;
-       top: 5rem;
-    }
-
-/*End of footer*/
-
-
 
 /*The Fight Status page styling starts here*/
 
@@ -1185,12 +1045,97 @@ outline: none;
 .table tr {
     scroll-snap-align: start;
 }
-}
 
 /*The show casing table of the scrollable table styling ends here*/
 
 /*The Fight Status page styling ends here*/
 
+/*The footer section  */
+
+footer{
+    color: var(--white);
+    height: 60vh;
+    width: 100vw;
+    background-color: blue;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 2.5fr 1fr;
+    padding-top: 20px;
+}
+footer a{
+    color: var(--white);
+}
+/*The footer logo container  */
+#footer_logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*The footer Feature Destination container  */
+.feature_destination_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.destinations_links_contianer{
+    line-height: 2;
+
+    text-align: center;
+}
+
+/*The footer airport container*/
+.the_airport_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.the_airport_link_container{
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+/*The footer quick link container*/
+.the_quick_link_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.the_quick_link{
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 4;
+    border-top: 2px solid white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.connect_withus_container{
+  line-height: 2;
+}
+
+
+.connect_icons{
+    word-spacing: 20px;
+}
+
+
+/*End of footer*/
 
 
 /**Script CLASS*****************************************************/
