@@ -311,7 +311,7 @@ justify-content: center;
     padding-top: 1rem;
 }
 
-.dropdown:hover li a {
+.dropdown:hover li {
     border-bottom: none;
     padding-bottom: 0;
 }
