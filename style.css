@@ -1002,9 +1002,9 @@ outline: none;
     color: var(--blue);
 }
 
-
-
-
+.flight-status{
+    color: var(--blue);
+}
 
 /*The portion of the search flight on the flight status page styling starts here*/
 .flight_search_section_container{
