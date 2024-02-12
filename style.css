@@ -1056,7 +1056,7 @@ footer{
     color: var(--white);
     height: 60vh;
     width: 100vw;
-    background-color: blue;
+    background: var(--blue);
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
