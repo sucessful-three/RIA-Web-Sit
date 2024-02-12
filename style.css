@@ -38,13 +38,6 @@ For Extra-large size device: 1200px and more
 
 
 
-
- 
-
-.hide{
-    display: none;
-    
-}
 header{
     height: 29vh;
     width: 100vw;
@@ -848,18 +841,19 @@ outline: none;
     margin-left: 2rem;
 }
 
-.home_flight_status_inner > h2 a{
+.home_flight_status_inner > h2 .home{
     color: var(--white);
+}
+
+.home_flight_status_inner > h2 .home:hover{
+    color: var(--blue);
+    transition: all 1s ease-in-out;
 }
 
 .home_flight_span{
     color: var(--white);
     font-size: 1.2rem;
     font-weight: bolder;
-}
-
-.home_flight_status_inner > h2  a:hover{
-    color: var(--blue);
 }
 
 .flight-status{
@@ -1051,6 +1045,7 @@ outline: none;
 /*The Fight Status page styling ends here*/
 
 /*The footer section  */
+
 
 footer{
     color: var(--white);
@@ -1434,6 +1429,13 @@ footer a{
     gap:3px;
     
 }
+
+
+.hide{
+    display: none;
+    
+}
+
 /*SCRIPT CLASS ENDS******************************************************/
 
 
