@@ -698,9 +698,10 @@ transform: rotate(180deg);
 
 .cards_container{
     display: flex;
-    width: 92%;
+    width: 100%;
     margin-left: 3rem;
-    display: none;
+    margin-top: 3rem;
+
 }
 
 .card_1, .card_2{
@@ -830,16 +831,8 @@ outline: none;
 }
 
 /*The footer section  */
-       /*New web site grid style*/
-       .new_website_grid_container{
-        height: 85%;
-        width: 90%;
-        box-shadow: none;
-        display: grid;
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto;
         
-    }
+    
     /*Our Air Port*/
     .Our_Airlines{
         height: fit-content;
@@ -1192,7 +1185,7 @@ outline: none;
 .table tr {
     scroll-snap-align: start;
 }
-
+}
 
 /*The show casing table of the scrollable table styling ends here*/
 
@@ -1201,7 +1194,7 @@ outline: none;
 
 
 /**Script CLASS*****************************************************/
-}
+
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/
 @media (min-width: 1025px) and (max-width: 1280px) {
