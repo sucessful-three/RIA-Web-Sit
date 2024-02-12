@@ -1064,7 +1064,7 @@ footer{
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 2.5fr 1fr;
-    padding-top: 20px;
+    padding: 20px;
     transition: 0.5s ease;
     overflow-x: hidden;
     
@@ -1254,12 +1254,10 @@ footer{
 }
 
 #footer_logo_container{
-    width: fit-content;
-    height: fit-content;
-   
-    align-self: center;
+    width: 10rem;
+    height: 8rem;
+    display: none;
 }
-
 .feature_destination_container{
     width: 250px;
     display: flex;
@@ -1287,7 +1285,8 @@ footer{
   
 }
 .the_airport_link_container{
-    line-height: 2;
+    line-height: 1.9;
+    width: max-content;
   
 }
 
@@ -1306,6 +1305,19 @@ footer{
 }
 
 
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 4;
+    border-top: 2px solid white;
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+    padding: 0;
+}
+
 .Our_Airlines_logo_1, .Our_Airlines_logo_2{
     width:70%;
     display:flex;
@@ -1319,7 +1331,7 @@ footer{
 
 /* Media Query for low resolution  Tablets, Ipads ************************************/
 @media (min-width: 481px) and (max-width: 767px) {
-    
+
 }
 
 
