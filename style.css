@@ -981,6 +981,38 @@ outline: none;
 
 /*ENDING of the flight status page hero Section styling*/
 
+.home_flight_status{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_flight_status_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.home_flight_status_inner > h2 a{
+    color: var(--white);
+}
+
+.home_flight_span{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.home_flight_status_inner > h2  a:hover{
+    color: var(--blue);
+}
+
+
+
+
+
 /*The portion of the search flight on the flight status page styling starts here*/
 .flight_search_section_container{
     width: 100vw;
