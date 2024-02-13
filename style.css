@@ -1141,6 +1141,10 @@ footer a{
     word-spacing: 20px;
 }
 
+.small_logo{
+    display: none;
+}
+
 
 /*End of footer*/
 
@@ -1154,7 +1158,7 @@ footer a{
 }
       
 /* Media Query for Tablets Ipads portrait mode *******************************************************************************************/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 580px) and (max-width: 1024px) {
 
     .header_1st_section{
         height: fit-content;
@@ -1227,6 +1231,9 @@ footer a{
     display: none;
 }
 
+
+
+
 .flight_drop_down2 , .terminal_info2  {
  display: none;
 }
@@ -1237,6 +1244,51 @@ footer a{
     font-size: 1.2rem;
     font-family: var(--poppin);
     color:var(--red);
+}
+
+
+/*THE LATEST NEWS STYLE FOR TABLET*****************/
+
+.planes_landed, .planes_left, .planes_in_air{
+    justify-content: space-evenly;
+ }
+
+ .flight_icon i{
+    font-size: 5rem;
+ }
+
+
+.lates_news_in_monrovia_master_container{
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flight_today_container{
+    width: 100%;
+    height: max-content;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.latest_news_label_angle{
+    width: 80vw;
+    gap: 2rem;
+    
+}
+
+.cards_container{
+justify-content: center;
+gap: 3rem;
+margin-left: 0px;
+margin-top: 0px;
+}
+
+.card_2_img, .card_1_img{
+    width: 20rem;
+    height: 15rem;
 }
 
 footer{
@@ -1304,6 +1356,9 @@ footer{
 
 }
 
+.small_logo{
+    display: flex;
+}
 
 
 /*The footer Connect with us section*/
@@ -1330,9 +1385,422 @@ footer{
 
 
 /* Media Query for low resolution  Tablets, Ipads ************************************/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 579px) {
+        :root{
+            font-size: 14px;
+        }
+            header{
+                max-height: 10rem;
+                width: 100%; 
+                transition: 1s ease;
+            }
+        
+            .header_1st_section{
+                height: fit-content;
+            
+            }
+            .logo_div{
+                height: 100%;
+                width: 45%;
+               background-color: var(--red);
+               display: flex;
+                justify-content: center;
+                align-items: center;
+                clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
+                
+            }
+            
+            .logo_div img{
+                height: 8rem;
+                width: 13rem;
+               
+            }
+        
+            .header_1st_section{
+                align-items: center;
+            }
+         .white_div_containerB, .navbar_container{
+            display: none;
+        }
+        
+        .white_div_containerA{ 
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+           gap: 2px;
+        }
+        
+        .white_div_container_a1{
+            gap: 0px;
+            padding-left: 0px;
+            width: 90%;
+            gap: 4rem;
+        }
+        
+        .flag_container{
+            gap: 1.2rem;
+            align-items: center;
+        }
+        .flag_container p{
+            font-size: 1.4rem;
+            font-family: var(--poppin);
+            color: var(--blue)
+        }
+        .search_bar_form{
+            display: none;
+        }
+        
+        
+        /*Hand burger menu */
+        .hand_burger_menu, .hand_burger_menu i{
+            font-size: 1.9rem;
+            color: var(--blue);
+        }
+        
+        .hand_burger_menu{
+            display: flex;
+        
+        }
+        
+        .handBurger_menu_dropdown{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 1.8rem;
+            background-color: #070952cb;
+            color: var(--white);
+            position: absolute;
+            top: 8rem;
+            right: 0.1rem;
+            width: 100%;
+            height: 35vh;
+            display: none;
+        
+        }
+        
+        .flight_drop_down2 , .terminal_info2  {
+         display: none;
+        }
+        
+        
+        .flight_drop_down2 a, .show_ter_info a{
+            color: var(--white);
+            font-size: 1.2rem;
+            font-family: var(--poppin);
+            color:var(--red);
+        }
+        
+        
+        
+        
+        .show_hand_burger{
+            display: flex;
+        
+         }   
+        /*END OF CLASS FOR JAVA SCRIPT*/
+        
+        /*HAND BURGER MENU ENDS******************************************************/
+        
+            /*Landing Page Media Query*/
+            .Call_to_action_text_container{
+              gap: 7rem;
+               
+                
+                }
+                .landing_text{
+                    position: relative;
+                    top: 1em;
+                    line-height: 1.4;
+                    text-align: center;
+                }
+                #hero_text{
+                        font-size: 2.5rem;
+                }
+        
+               
+        
+                .radio_container{
+                    transition: 1s ease;
+                    position: relative;
+                    top: 6rem;
+                }
+        
+                .find_ur_flight_drop_down{
+                  position: absolute;
+                  transition: 1s ease;
+                  width: 77%;
+                  text-align: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                line-height: 1.7;
+                  animation: slidUp_nav 1s ease ;
+                    
+                }
+        
+                /*New website Responsive *********************************/
+                .new_website_container{
+                    height: 100vh;
+                    width: 100vw;
+                    background-color: var(--white);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    text-align: center;
+                }
+                
+                .new_website_grid_container{
+            height: 70%;
+            width: 95%;
+            box-shadow: 2px 2px 16px 0px rgba(184, 158, 184, 1);
+            display: grid;
+            grid-template-columns:1fr 1fr  ;
+            grid-template-rows:1fr 1fr ;
+            
+        }
+        .grid{
+            
+            font-size: 1.5em;
+            font-weight: 800;
+            font-family: monospace;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            transition: 1s ease;
+            color: rgba(0, 0, 0, 0.336);
+         }
+        
+         .g5, .g6{
+            padding: 8px;
+         }
+        .grid i{
+            font-size: 4rem;
+         }
+        
+        
+        /*END OF New website Section styling ends here*********/
+        
+         /*Latest News in Monorovia Section styling starts here*/
+        
+         .lates_news_in_monrovia_master_container{
+            height:fit-content;
+            flex-direction: column; 
+           
+            
+         }
+        
+         
+        
+         /*Today flight styling starts here*/
+        
+         .flight_today_container{
+            width: 100%;
+            height: fit-content;
+            color: var(--white);
+            background: var(--red);
+            text-align: center;
+         }
+         
+         /*I will come back later to complete this style*/
+        
+         
+        /*The latset news in monrovia styling starts here*/
+        
+        .latest_news_in_monrovia_container{
+            width: 100%;
+            height: 100%;
+            color: var(--red);
+            background: var(--gray);
+            padding-bottom: 10px;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .latest_news_label_angle{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            height: 30%;
+            padding-top: 10px;
+            
+        }
+        
+        
+        .latest_news_angle{
+            margin-right: 5rem;
+        }
+        
+        
+        
+        .cards_container{
+            width: 100vw;
+            justify-content: center;
+            margin-left: 2rem;
+            margin-top: 0px;
+            }
+            
+            .card_2_img, .card_1_img{
+                width: 10rem;
+                height: 6rem;
+            }
+        /*Our Airlines style*/
+        .Our_Airlines{
+            height:fit-content;
+            width: 100vw;
+            display:flex;
+            flex-direction: column;
+        gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding-bottom: 2rem;
+        }
+        
+        .Our_Airlines_logo_1, .Our_Airlines_logo_2{
+            width:70%;
+            height: fit-content;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         
+        .Our_Airlines img{
+           width:80%;
+           height:8rem; 
+        }
+        
+        
+        
+        /*The subscribe to the newsletter section*/
+        
+        .subscribe_to_newsletter_container{
+            background: var(--blue);
+        background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(./Images/subscribe-plane.jpg);
+          
+            height: 60vh;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            overflow-y: hidden;
+            font-size: 0.1rem;
+            
+        }
+        
+        
+        .subscribe_to_newsletter_div{
+         line-height: 1.2;
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+        }
+        .subscribe_label{
+            font-weight: 900;
+            word-spacing: 0.2rem;
+            font-size: 1.294rem;
+            flex-wrap: nowrap;
+        }
+            .subscribe_form{
+            width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .subscribe_form > input{
+        width: 200px;
+        height: fit-content;
+        padding: 10px;
+        border-top-left-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+        border: none;
+        outline: none;
+        }
+        
+        
+        
+        
+        
+                .subscribe_to_newsletter_div{
+                    flex-wrap: wrap;
+                    padding: 24px;
+                    font-size: medium;
+                }
+        
+        /*Footer Section*/
+            #footer_logo_container{
+                width: 10rem;
+                height: 8rem;
+                display: none;
+            }
+        
+            footer{
+            height: fit-content;
+              grid-template-columns: 1.3fr 1fr 1fr ;
+              grid-template-rows: auto 1fr;
+               justify-content: center;
+               overflow: hidden;
+               padding: 20px;
+               
+            }
+        
+            .the_airport_link_container{
+            line-height: 1.95;
+           
+        }
+        
+        /*The footer Connect with us section*/
+        .connect_with_us_copyright_container{
+        width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-column: span 4;
+            border-top: 2px solid white;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .connect_withus_container{
+          line-height: 2;
+          font-size: 1rem;
+        
+        }
+        
+        
+        .connect_icons{
+            word-spacing: 10px;
+            text-align: center;
+            width: fit-content;
+            
+        }
+        
+        .small_logo img{
+            width: 10rem;
+            height: 10rem;
+            position: absolute;
+            right: 0.1em;
+        }
+        .footer_connect{
+        font-size: 0.8rem;
+        }
 
+        
+.small_logo{
+    display: flex;
 }
+            
+     }
+    
 
 
 
@@ -1340,7 +1808,7 @@ footer{
 
 
  /* Media Query for Mobile Devices */
- @media (min-width: 319px) and (max-width: 480px) {
+ @media(max-width: 480px) {
     :root {
         font-size: 12px;
        
@@ -1553,7 +2021,7 @@ footer{
 
  /*Today flight styling starts here*/
 
- .fight_today_container{
+ .flight_today_container{
     width: 100%;
     height: fit-content;
     color: var(--white);
@@ -1571,9 +2039,11 @@ footer{
     height: 100%;
     color: var(--red);
     background: var(--gray);
-    
+    padding-bottom: 10px;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -1586,9 +2056,27 @@ footer{
     width: 100%;
     height: 30%;
     padding-top: 10px;
-
- 
+    
 }
+
+
+.latest_news_angle{
+    margin-right: 5rem;
+}
+
+
+
+.cards_container{
+    width: 100vw;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 0px;
+    }
+    
+    .card_2_img, .card_1_img{
+        width: 10rem;
+        height: 6rem;
+    }
 /*Our Airlines style*/
 .Our_Airlines{
     height:fit-content;
@@ -1732,6 +2220,9 @@ font-size: 0.8rem;
 }
     
 
+.small_logo{
+    display: flex;
+}
 
     }   
     
