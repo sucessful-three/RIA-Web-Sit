@@ -807,7 +807,7 @@ outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
+    background: url(./Images/brussels.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1062,14 +1062,14 @@ outline: none;
 
 /*Call to action page*/
 
-.Call_to_action_section{
+.Call_to_action_section2{
     height: 100vh;
     width: 100vw;
     
 }
 
 
-.Call_to_action_text_container{
+.Call_to_action_text_container2{
 height: 100%;
 width: 100%;
 display: flex;
@@ -1131,7 +1131,7 @@ line-height: 1.5;
     align-items: center;
 }
 .home_inner_div a{
-color: #070a52;
+color: #fff;
 }
 
 
@@ -1215,6 +1215,26 @@ flex-direction: column;
 }
 
 /*The Visit Monronvia ends here*/
+
+
+/* The Maps Styles */
+
+.body_sec{
+margin: 90px;
+
+}
+.body_sec p{
+    font-size: 1.2rem;
+}
+
+.body_sec h2{
+    color: #D21312;
+    font-size: 2.1rem;
+}
+
+
+
+/*The Maps Styles endeding */
 
 /*The footer section  */
 
