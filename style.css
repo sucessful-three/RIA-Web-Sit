@@ -843,7 +843,7 @@ outline: none;
     height: 8vh;
     align-items: center;
     gap: 1rem;
-    margin-left: 2rem;
+    margin-left: 6rem;
 }
 
 .home_flight_status_inner > h2 .home{
@@ -1048,6 +1048,122 @@ outline: none;
 /*The show casing table of the scrollable table styling ends here*/
 
 /*The Fight Status page styling ends here*/
+
+/*The Airline Information page styling starts here*/
+
+/*BEGAINING of the Airline Information page hero Section styling*/
+.Airline_Information_hero_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./Images/bgforfstatuspage.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Airline_Information_hero_div{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+#Airline_Information_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+}
+
+/*ENDING of the Airline_Information page hero Section styling*/
+
+.home_Airline_Information{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_Airline_Information_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_Airline_Information_inner > h2 a{
+    color: var(--white);
+}
+
+.home_Airline_Information_span{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.home_Airline_Information_inner > h2  a:hover{
+    color: var(--blue);
+}
+
+.home_Airline_Information_inner > h2 .Airline_Information{
+    color: var(--blue);
+}
+
+
+/*The static tabel on the Airline_Information page styling starts here*/
+
+.airline_information_serve_table{
+    width: 100wh;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.973) 99%), url(./Images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airline_information_serve{
+    width: 36%;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    justify-content: center;
+    background: transparent;
+    margin-left: 6rem;
+}
+
+.airline_information_label{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-family: var(--poppin);
+}
+
+.airline_information_text{
+    color: var(--grayfortext);
+    font-size: 1.2rem;
+    font-family: var(--poppin);  
+    line-height: 1.6rem;
+}
+
+
+.airline_information_table_container{
+    width: 60%;
+    height: 50vh;
+    border: 2px dotted red; 
+    
+}
+
+
+/*The static table on the Airline Information page styling ends here*/
+
+/*The Airline Information page styling ends here*/
 
 /*The footer section  */
 
@@ -1289,6 +1405,105 @@ margin-top: 0px;
     height: 15rem;
 }
 
+/*The portion of the search flight on the flight status page styling starts here*/
+
+#flight_status_hero_text{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.flight_search_section_container{
+    height: 78vh;
+    gap: 1rem;
+}
+
+.flight_search_div1{
+    width: 60%;
+    height: 10rem;
+    margin-left: 2.2rem;
+}
+
+.label_and_text_div{
+   
+    margin-top: 1.5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.flight_search_label{
+    color: var(--red);
+    font-family: var(--poppin);
+    font-weight: 900;
+    font-size: 1.8rem;
+    white-space: .4rem;
+}
+
+.flight_search_text{
+    color: #7b7b7bc0;
+    font-family: var(--poppin);
+    white-space: .4rem;
+    font-size: 1.4rem;
+}
+/*The portion of the search flight on the flight status page styling ends here*/
+
+.flight_search_div2{
+    width: 90%;
+    height: 66vh;
+    margin-left: 5%;
+    gap: 1.4rem;
+
+}
+
+.live_flight_n_search_bar{
+    width: 94%;
+    height: 12vh;
+}
+
+.flight_status_search_bar_form input{
+    height: 2.6rem;
+    border-radius: 2rem;
+    font-size: 1.28rem;
+
+}
+
+.flight_search_icon{
+    font-size: 1.1rem;
+}
+
+.arrivals_and_departure{
+    width: 94%;
+}
+
+
+/*The show casing table of the scrollable table styling starts here*/
+
+.show_casing_table{
+    width: 100%;
+    height: 65%;
+}
+
+.table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    font-size: 1rem;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.table th,
+.table td {
+    padding: 6px 8px;
+    text-align: center;
+}
+
+/*The show casing table of the scrollable table styling ends here*/
+
+/*The Fight Status page styling ends here*/
+
+
 footer{
     height: fit-content;
     padding-top: 10px;
@@ -1504,7 +1719,6 @@ footer{
             .Call_to_action_text_container{
               gap: 7rem;
                
-                
                 }
                 .landing_text{
                     position: relative;
@@ -1682,13 +1896,8 @@ footer{
         /*The subscribe to the newsletter section*/
         
         .subscribe_to_newsletter_container{
-            background: var(--blue);
-        background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(./Images/subscribe-plane.jpg);
-          
             height: 60vh;
             gap: 2rem;
-            justify-content: center;
-            align-items: center;
             overflow-y: hidden;
             font-size: 0.1rem;
             
@@ -1725,16 +1934,12 @@ footer{
         outline: none;
         }
         
-        
-        
-        
-        
                 .subscribe_to_newsletter_div{
                     flex-wrap: wrap;
                     padding: 24px;
                     font-size: medium;
                 }
-        
+
         /*Footer Section*/
             #footer_logo_container{
                 width: 10rem;
@@ -2160,6 +2365,106 @@ outline: none;
             font-size: medium;
         }
 
+        /*The portion of the search flight on the flight status page styling starts here*/
+
+        #flight_status_hero_text{
+            font-size: 3.5rem;
+            font-weight: 900;
+        }
+        
+        .flight_search_section_container{
+            height: 84vh;
+            gap: 1rem;
+        }
+        
+        .flight_search_div1{
+            width: 90%;
+            height: 10rem;
+            margin-left: 2.1rem;
+        }
+        
+        .label_and_text_div{
+           
+            margin-top: 1.5rem;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+        }
+        
+        .flight_search_label{
+            color: var(--red);
+            font-family: var(--poppin);
+            font-weight: 900;
+            font-size: 1.8rem;
+            white-space: .4rem;
+        }
+        
+        .flight_search_text{
+            color: #7b7b7bc0;
+            font-family: var(--poppin);
+            white-space: .4rem;
+            font-size: 1.4rem;
+        }
+        /*The portion of the search flight on the flight status page styling ends here*/
+        
+        .flight_search_div2{
+            width: 90%;
+            height: 66vh;
+            margin-left: 5%;
+            gap: 1.4rem;
+        
+        }
+        
+        .live_flight_n_search_bar{
+            width: 94%;
+            height: 12vh;
+        }
+        
+        .flight_status_search_bar_form input{
+            height: 2.4rem;
+            border-radius: 2rem;
+            font-size: 1.28rem;
+        
+        }
+        
+        .flight_search_icon{
+            font-size: 1.1rem;
+        }
+        
+        .arrivals_and_departure{
+            width: 94%;
+            
+        }
+        
+        
+        /*The show casing table of the scrollable table styling starts here*/
+        
+        .show_casing_table{
+            width: 100%;
+            height: 65%;
+        }
+        
+        .table {
+            font-family: sans-serif;
+            border-collapse: collapse;
+            font-size: .9rem;
+            width: 100%;
+            height: 60%;
+            
+        }
+        
+        .table th,
+        .table td {
+            padding: 5px 7px;
+            text-align: center;
+        }
+        
+        /*The show casing table of the scrollable table styling ends here*/
+        
+        /*The Fight Status page styling ends here*/
+        
+
 /*Footer Section*/
     #footer_logo_container{
         width: 10rem;
@@ -2242,6 +2547,88 @@ font-size: 0.8rem;
         width: 100%; 
         transition: 1s ease;
     }
+/*This style is from the Flight status page that starts here*/
+    
+    #flight_status_hero_text{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .flight_search_section_container{
+        height: 86vh;
+        gap: 1rem;
+    }
+
+    .flight_search_div1{
+        width: 108%;
+        height: 13rem;
+        margin-left: 1.4rem;
+    }
+
+    .label_and_text_div{
+           
+        margin-top: 1.5rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+        
+    .flight_search_div2{
+        width: 90%;
+        height: 66vh;
+        margin-left: 5%;
+        gap: 1.4rem;
+    
+    }
+    
+    .live_flight_n_search_bar{
+        width: 94%;
+        height: 12vh;
+    }
+    
+    .flight_status_search_bar_form input{
+        height: 2.4rem;
+        border-radius: 2rem;
+        font-size: 1.28rem;
+    
+    }
+    
+    .flight_search_icon{
+        font-size: 1.1rem;
+    }
+    
+    .arrivals_and_departure{
+        width: 94%;
+        
+    }
+    
+    
+    /*The show casing table of the scrollable table styling starts here*/
+    
+    .show_casing_table{
+        width: 100%;
+        height: 65%;
+    }
+    
+    .table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        font-size: .8rem;
+        width: 100%;
+        height: 60%;
+        
+    }
+    
+    .table th,
+    .table td {
+        padding: 4px 4px;
+        text-align: center;
+    }
+    
+
+/*This style is from the Flight status page that ends here*/
 
      .logo_div img{
         height: 6rem;
