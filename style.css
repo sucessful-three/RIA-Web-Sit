@@ -1050,6 +1050,172 @@ outline: none;
 
 /*The Fight Status page styling ends here*/
 
+/*The visit Monrovia starts here*/
+
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.Call_to_action_text_container{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+background-image: url(./Images/brussels.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+line-height: 1.5;
+
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 60%;
+    height: 8vh;
+    margin: 90px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.home_inner_div a{
+color: #070a52;
+}
+
+
+
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 110px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.2rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 60%;
+    
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
+
 /*The footer section  */
 
 
