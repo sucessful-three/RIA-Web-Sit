@@ -1050,7 +1050,6 @@ outline: none;
 
 /*The Fight Status page styling ends here*/
 
-<<<<<<< HEAD
 /*The visit Monrovia starts here*/
 
 
@@ -1207,121 +1206,10 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-=======
-/*The Airline Information page styling starts here*/
-
-/*BEGAINING of the Airline Information page hero Section styling*/
-.Airline_Information_hero_section{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.Airline_Information_hero_div{
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 18vh;
-}
-
-#Airline_Information_hero_text{
-    font-size: 4rem;
-    color: var(--white);
-    letter-spacing: .2rem;
-    word-spacing: .3rem;
-    font-family: var(--poppin);
-    font-weight: 700;
-}
-
-/*ENDING of the Airline_Information page hero Section styling*/
-
-.home_Airline_Information{
-    height: 8vh;
-    width: 100vw;
-    background: var(--red);
-}
-
-.home_Airline_Information_inner{
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    gap: 1rem;
-    margin-left: 6rem;
-}
-
-.home_Airline_Information_inner > h2 a{
-    color: var(--white);
-}
-
-.home_Airline_Information_span{
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
-.home_Airline_Information_inner > h2  a:hover{
-    color: var(--blue);
-}
-
-.home_Airline_Information_inner > h2 .Airline_Information{
-    color: var(--blue);
-}
-
-
-/*The static tabel on the Airline_Information page styling starts here*/
-
-.airline_information_serve_table{
-    width: 100wh;
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.973) 99%), url(./Images/bg2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.airline_information_serve{
-    width: 36%;
-    height: 26vh;
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
-    justify-content: center;
-    background: transparent;
-    margin-left: 6rem;
-}
-
-.airline_information_label{
-    color: var(--red);
-    font-size: 1.7rem;
-    font-family: var(--poppin);
-}
-
-.airline_information_text{
-    color: var(--grayfortext);
-    font-size: 1.2rem;
-    font-family: var(--poppin);  
-    line-height: 1.6rem;
-}
-
-
-.airline_information_table_container{
-    width: 60%;
-    height: 50vh;
-    border: 2px dotted red; 
->>>>>>> 6398719a2bc4ce825cd3fab385fe08297e95a83a
     
 }
 
 
-<<<<<<< HEAD
 .btm a{
     color: #fff;
 }
@@ -1347,11 +1235,6 @@ margin: 90px;
 
 
 /*The Maps Styles endeding */
-=======
-/*The static table on the Airline Information page styling ends here*/
-
-/*The Airline Information page styling ends here*/
->>>>>>> 6398719a2bc4ce825cd3fab385fe08297e95a83a
 
 /*The footer section  */
 
