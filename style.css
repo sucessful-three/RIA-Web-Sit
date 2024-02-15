@@ -807,7 +807,7 @@ outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
+    background: url(./Images/brussels.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1050,121 +1050,191 @@ outline: none;
 
 /*The Fight Status page styling ends here*/
 
-/*The Airline Information page styling starts here*/
+/*The visit Monrovia starts here*/
 
-/*BEGAINING of the Airline Information page hero Section styling*/
-.Airline_Information_hero_section{
-    width: 100vw;
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section2{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.Airline_Information_hero_div{
-    height: 80vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 18vh;
-}
-
-#Airline_Information_hero_text{
-    font-size: 4rem;
-    color: var(--white);
-    letter-spacing: .2rem;
-    word-spacing: .3rem;
-    font-family: var(--poppin);
-    font-weight: 700;
-}
-
-/*ENDING of the Airline_Information page hero Section styling*/
-
-.home_Airline_Information{
-    height: 8vh;
-    width: 100vw;
-    background: var(--red);
-}
-
-.home_Airline_Information_inner{
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    gap: 1rem;
-    margin-left: 6rem;
-}
-
-.home_Airline_Information_inner > h2 a{
-    color: var(--white);
-}
-
-.home_Airline_Information_span{
-    color: var(--white);
-    font-size: 1.2rem;
-    font-weight: bolder;
-}
-
-.home_Airline_Information_inner > h2  a:hover{
-    color: var(--blue);
-}
-
-.home_Airline_Information_inner > h2 .Airline_Information{
-    color: var(--blue);
-}
-
-
-/*The static tabel on the Airline_Information page styling starts here*/
-
-.airline_information_serve_table{
-    width: 100wh;
-    height: 100vh;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.973) 99%), url(./Images/bg2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.airline_information_serve{
-    width: 36%;
-    height: 26vh;
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
-    justify-content: center;
-    background: transparent;
-    margin-left: 6rem;
-}
-
-.airline_information_label{
-    color: var(--red);
-    font-size: 1.7rem;
-    font-family: var(--poppin);
-}
-
-.airline_information_text{
-    color: var(--grayfortext);
-    font-size: 1.2rem;
-    font-family: var(--poppin);  
-    line-height: 1.6rem;
-}
-
-
-.airline_information_table_container{
-    width: 60%;
-    height: 50vh;
-    border: 2px dotted red; 
     
 }
 
 
-/*The static table on the Airline Information page styling ends here*/
+.Call_to_action_text_container2{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+background-image: url(./Images/brussels.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+line-height: 1.5;
 
-/*The Airline Information page styling ends here*/
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 60%;
+    height: 8vh;
+    margin: 90px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.home_inner_div a{
+color: #fff;
+}
+
+
+
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 110px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.2rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 60%;
+    
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
+
+
+/* The Maps Styles */
+
+.body_sec{
+margin: 90px;
+
+}
+.body_sec p{
+    font-size: 1.2rem;
+}
+
+.body_sec h2{
+    color: #D21312;
+    font-size: 2.1rem;
+}
+
+
+
+/*The Maps Styles endeding */
 
 /*The footer section  */
 
