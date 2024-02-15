@@ -807,7 +807,7 @@ outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
+    background: url(./Images/brussels.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -844,7 +844,7 @@ outline: none;
     height: 8vh;
     align-items: center;
     gap: 1rem;
-    margin-left: 2rem;
+    margin-left: 6rem;
 }
 
 .home_flight_status_inner > h2 .home{
@@ -1065,6 +1065,7 @@ outline: none;
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .FAQ__hero_article{
     height: 80vh;
     width: 100vw;
@@ -1101,17 +1102,146 @@ outline: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+=======
+/*The visit Monrovia starts here*/
+
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section2{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.Call_to_action_text_container2{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+background-image: url(./Images/brussels.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+line-height: 1.5;
+
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 60%;
+    height: 8vh;
+    margin: 90px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.home_inner_div a{
+color: #fff;
+>>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 }
 
 
 
+<<<<<<< HEAD
 .faq_text_and_search_container{
     display: flex;
     justify-content: space-between;
+=======
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 110px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 80%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.2rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+>>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
     width: 60%;
     
 }
 
+<<<<<<< HEAD
 .faq_text_and_search_container h2{
     font-family: var(--poppin);
     color: var(--red);
@@ -1161,6 +1291,63 @@ outline: none;
     justify-content: space-evenly;
     align-items: center;
 }
+=======
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
+
+
+/* The Maps Styles */
+
+.body_sec{
+margin: 90px;
+
+}
+.body_sec p{
+    font-size: 1.2rem;
+}
+
+.body_sec h2{
+    color: #D21312;
+    font-size: 2.1rem;
+}
+
+
+
+/*The Maps Styles endeding */
+
+>>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 /*The footer section  */
 
 
@@ -1429,6 +1616,126 @@ margin-top: 0px;
     width: 20rem;
     height: 15rem;
 }
+
+/*The portion of the search flight on the flight status page styling starts here*/
+
+#flight_status_hero_text{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.flight_search_section_container{
+    height: 78vh;
+    gap: 1rem;
+}
+
+.flight_search_div1{
+    width: 60%;
+    height: 10rem;
+    margin-left: 2.2rem;
+}
+
+.label_and_text_div{
+   
+    margin-top: 1.5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.flight_search_label{
+    color: var(--red);
+    font-family: var(--poppin);
+    font-weight: 900;
+    font-size: 1.8rem;
+    white-space: .4rem;
+}
+
+.flight_search_text{
+    color: #7b7b7bc0;
+    font-family: var(--poppin);
+    white-space: .4rem;
+    font-size: 1.4rem;
+}
+/*The portion of the search flight on the flight status page styling ends here*/
+
+.flight_search_div2{
+    width: 90%;
+    height: 66vh;
+    margin-left: 5%;
+    gap: 1.4rem;
+
+}
+
+.live_flight_n_search_bar{
+    width: 94%;
+    height: 12vh;
+}
+
+.flight_status_search_bar_form input{
+    height: 2.6rem;
+    border-radius: 2rem;
+    font-size: 1.28rem;
+
+}
+
+.flight_search_icon{
+    font-size: 1.1rem;
+}
+
+.arrivals_and_departure{
+    width: 94%;
+}
+
+
+/*The show casing table of the scrollable table styling starts here*/
+
+.show_casing_table{
+    width: 100%;
+    height: 65%;
+}
+
+.table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    font-size: 1rem;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.table th,
+.table td {
+    padding: 6px 8px;
+    text-align: center;
+}
+
+/*The show casing table of the scrollable table styling ends here*/
+
+/*The Fight Status page styling ends here*/
+
+
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    }
+    .body_sec p{
+        font-size: 1.7rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
 
 footer{
 
@@ -1700,7 +2007,6 @@ footer{
             .Call_to_action_text_container{
               gap: 7rem;
                
-                
                 }
                 .landing_text{
                     position: relative;
@@ -1878,13 +2184,8 @@ footer{
         /*The subscribe to the newsletter section*/
         
         .subscribe_to_newsletter_container{
-            background: var(--blue);
-        background: linear-gradient(180deg, rgba(21,86,186,1) 0%, rgba(9, 12, 10, 0.284) 36%, rgba(255,29,0,0.8492647058823529) 100%), url(./Images/subscribe-plane.jpg);
-          
             height: 60vh;
             gap: 2rem;
-            justify-content: center;
-            align-items: center;
             overflow-y: hidden;
             font-size: 0.1rem;
             
@@ -1921,16 +2222,12 @@ footer{
         outline: none;
         }
         
-        
-        
-        
-        
                 .subscribe_to_newsletter_div{
                     flex-wrap: wrap;
                     padding: 24px;
                     font-size: medium;
                 }
-        
+
         /*Footer Section*/
             #footer_logo_container{
                 width: 10rem;
@@ -2420,6 +2717,128 @@ outline: none;
             font-size: medium;
         }
 
+        /*The portion of the search flight on the flight status page styling starts here*/
+
+        #flight_status_hero_text{
+            font-size: 3.5rem;
+            font-weight: 900;
+        }
+        
+        .flight_search_section_container{
+            height: 84vh;
+            gap: 1rem;
+        }
+        
+        .flight_search_div1{
+            width: 90%;
+            height: 10rem;
+            margin-left: 2.1rem;
+        }
+        
+        .label_and_text_div{
+           
+            margin-top: 1.5rem;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+        }
+        
+        .flight_search_label{
+            color: var(--red);
+            font-family: var(--poppin);
+            font-weight: 900;
+            font-size: 1.8rem;
+            white-space: .4rem;
+        }
+        
+        .flight_search_text{
+            color: #7b7b7bc0;
+            font-family: var(--poppin);
+            white-space: .4rem;
+            font-size: 1.4rem;
+        }
+        /*The portion of the search flight on the flight status page styling ends here*/
+        
+        .flight_search_div2{
+            width: 90%;
+            height: 66vh;
+            margin-left: 5%;
+            gap: 1.4rem;
+        
+        }
+        
+        .live_flight_n_search_bar{
+            width: 94%;
+            height: 12vh;
+        }
+        
+        .flight_status_search_bar_form input{
+            height: 2.4rem;
+            border-radius: 2rem;
+            font-size: 1.28rem;
+        
+        }
+        
+        .flight_search_icon{
+            font-size: 1.1rem;
+        }
+        
+        .arrivals_and_departure{
+            width: 94%;
+            
+        }
+        
+        
+        /*The show casing table of the scrollable table styling starts here*/
+        
+        .show_casing_table{
+            width: 100%;
+            height: 65%;
+        }
+        
+        .table {
+            font-family: sans-serif;
+            border-collapse: collapse;
+            font-size: .9rem;
+            width: 100%;
+            height: 60%;
+            
+        }
+        
+        .table th,
+        .table td {
+            padding: 5px 7px;
+            text-align: center;
+        }
+        
+        /*The show casing table of the scrollable table styling ends here*/
+        
+        /*The Fight Status page styling ends here*/
+        
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 20px;
+    
+    }
+    .body_sec p{
+        font-size: 1.5rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.0rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
+
 /*Footer Section*/
     #footer_logo_container{
         width: 10rem;
@@ -2562,6 +2981,88 @@ text-align: center;
         width: 100%; 
         transition: 1s ease;
     }
+/*This style is from the Flight status page that starts here*/
+    
+    #flight_status_hero_text{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .flight_search_section_container{
+        height: 86vh;
+        gap: 1rem;
+    }
+
+    .flight_search_div1{
+        width: 108%;
+        height: 13rem;
+        margin-left: 1.4rem;
+    }
+
+    .label_and_text_div{
+           
+        margin-top: 1.5rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+        
+    .flight_search_div2{
+        width: 90%;
+        height: 66vh;
+        margin-left: 5%;
+        gap: 1.4rem;
+    
+    }
+    
+    .live_flight_n_search_bar{
+        width: 94%;
+        height: 12vh;
+    }
+    
+    .flight_status_search_bar_form input{
+        height: 2.4rem;
+        border-radius: 2rem;
+        font-size: 1.28rem;
+    
+    }
+    
+    .flight_search_icon{
+        font-size: 1.1rem;
+    }
+    
+    .arrivals_and_departure{
+        width: 94%;
+        
+    }
+    
+    
+    /*The show casing table of the scrollable table styling starts here*/
+    
+    .show_casing_table{
+        width: 100%;
+        height: 65%;
+    }
+    
+    .table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        font-size: .8rem;
+        width: 100%;
+        height: 60%;
+        
+    }
+    
+    .table th,
+    .table td {
+        padding: 4px 4px;
+        text-align: center;
+    }
+    
+
+/*This style is from the Flight status page that ends here*/
 
      .logo_div img{
         height: 6rem;
@@ -2597,6 +3098,10 @@ text-align: center;
        font-size: 1rem; 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 .apm{
     font-size: 1rem;
 }

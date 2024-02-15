@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
-    
+
     <header>
         <!--Thea first nav-bar that container the logo and white search bar-->
           <section class="header_1st_section">
@@ -31,6 +32,27 @@
                     <div class="flag_container">
                       <P>Liberia</P>
                       <img src="./Images/liberia-flag-icon.png" class="Liberia_flag_icon" alt="Liberia Flag Icon">
+                    </div>
+  
+                    <div class="hand_burger_menu"><i class="fa-solid  fa-bars"></i>
+                      <ul class="handBurger_menu_dropdown">
+                        <li><p class="flight_btn">Fight</p>
+                          <ol class="flight_drop_down2">
+                            <li><a href="flight-status.html">Flight Status</a></li>
+                            <li><a href="airline-information.html">Flight Information</a></li>
+                          </ol>
+                        </li>
+                        <li><p class="ter_info_btn">Terminal Information</p>
+                          <ol class="terminal_info2">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                          </ol>
+                        </li>
+                        <li>Parking and Transport</li>
+                        <li>Visit Monrovia</li>
+                      </ul>
+                      
                     </div>
                   </div>
   
@@ -58,6 +80,8 @@
   
               </div>
                <!--The end of the white header div container------------------------------------------------------>
+  
+  
           </section>
   
           <div class="navbar_container">
@@ -74,8 +98,8 @@
                     <li class="main_link_label line"><a href="#">Flights</a>
                      <!--This is the dropdown within the flight main link-->
                        <ul class="dropdown subMenu01">
-                         <li><a href="./flight-status.html">Flight Status</a></li>
-                         <li><a href="#">Flight Information</a></li>
+                         <li><a href="flight-status.html">Flight Status</a></li>
+                         <li><a href="airline-information.html">Flight Information</a></li>
                        </ul>
                      </li>
   
@@ -88,88 +112,82 @@
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Newsroom</a></li>
                      </ul>
-                     </li>
+                  </li>
   
                   <li class="white_line_list"></li>
   
-                  <li class="line"><a href="#">Parking & Transport</a></li>
+                  <li class="line"><a href="Maps.html">Parking & Transport</a></li>
   
                   <li class="white_line_list"></li>
   
-                  <li class="line"><a href="#">Visit Monrovia</a></li>
-             </ul>
-             </nav>
+                  <li class="line"><a href="visitMonrovia.html">Visit Monrovia</a></li>
+           </ul>
+       </nav>
             </div>
-            </div>
-            </div>
-           </header>
   
-      <!--BEGAINING of the flight status page hero Section--->    
-<Section class="flight_status_hero_section">
+            </div>
+  
+  
+          </div>
+      </header>
+  <section class="Call_to_action_section2">
+  <!-- Call to action Section--->
   <!--Call to action text-->
-      <article class="flight_status_hero_article">
-        <div class="flight_status_hero_div">
-          <h1 id="flight_status_hero_text">Maps</h1>
+      <article class="Call_to_action_text_container2">
+        <div class="landing_text">
+          <h1 id="hero_text">Visit Monrovia</h1>
         </div>
-      </article>
-   
-  </section>   
-  
-  <!--END of the flight status page hero Section----------------------------------------------------------------->    
-  
-  <!--Home flight Status starts here------------------->
-  <div class="home_flight_status">
-      <div class="home_flight_status_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_flight_span">&#12297;</span> <h2><a href="flight status.html" class="flight-status">Parking & Transport</a></h2></div>
-    </div>
-    
-  <!--Home flight Status ends here------------------->
-
-<!---Body section------------------------------>
-<section class="body_sec">
-  <div class="Parking_sec">
-  <h2>Parking</h2>
-  <p>A parking is available for travelers. It is located just outside the terminal.
-    Parking fee is LD$ 50 / 30 minutes. The droff off fee in front of the terminal
-    is L$ 50. Please acquire ticket upon entry
-  </p><br>
-  <p>Due to increase in the accessing to the airport by commercial trucks for business, the
-    airport management has institute fees for cmmercial trucks (4-10 Lyres) USS25.00 for single access, truck
-    (above 10 tyres) US$50.00 for single access equipmentUS$50.00 for single access.
-  </p>
-</div>
-<div class="Taxis_sec">
-<h2>Taxis</h2>
-<p>Taxis are available as all flight arrivals in Monrovia International Airport. They
-  are recognizable by their yellow color. They do not have on your destination. Any ride must be negotiated with
-  the driver before or lering the  vehicle. However count between US$10 and US$20 for a drive between the airport
-  and downtown Monrovia.
-</p>
-</div>
-<div class="Shuttles_Buses_sec">
-  <h2>Shuttles & Buses</h2>
-  <p>Taxis are available as all flight arrivals in Monrovia International Airport. They
-    are recognizable by their yellow color. They do not have on your destination. Any ride must be negotiated with
-    the driver before or lering the  vehicle. However count between US$10 and US$20 for a drive between the airport
-    and downtown Monrovia.
-  </p>
+        </article>
+        </section>
+  <!--Home Parking------------------->
+<div class="home_parking">
+    <div class="home_inner_div"><h2><a href="index.html" class="home">Home</a></h2> <span>&#12297;</span> <h2><a href="Maps.html" class="maps">Parking Transport</a></h2></div>
   </div>
-  <div class="Car_Rental_companies_sec">
-    <h2>Car Rental Companies</h2>
-    <p>Taxis are available as all flight arrivals in Monrovia International Airport. They
-      are recognizable by their yellow color. They do not have on your destination. Any ride must be negotiated with
-      the driver before or lering the  vehicle. However count between US$10 and US$20 for a drive between the airport
-      and downtown Monrovia.
-    </p>
+
+  <!----------Hotels Near--------------->
+  <div class="hotels-near">
+    <div class="hotels_near_in_RIA">
+        <h2>Hotels Near in Roberts International Airport</h2>
+        <p>Roberts International Aiport is located near the town of Harbel,
+            the single runway airport about 35 miles of monronvia.
+        </p>
     </div>
-    <div class="VIP_sec">
-      <h2>VIP service</h2>
-      <p>Taxis are available as all flight arrivals in Monrovia International Airport. They
-        are recognizable by their yellow color. They do not have on your destination. Any ride must be negotiated with
-        the driver before or lering the  vehicle. However count between US$10 and US$20 for a drive between the airport
-        and downtown Monrovia.
-      </p>
-      </div>
-</section>
+  </div>
+  <!----------BOXES START HERE------------------>
+  <div class="grey_line">
+  <div class="box">
+    <img src="./Images/farm.jpg" alt="">
+    <div class="box_image">
+        <h3>The farmington Hotel</h3>
+        <p>Roberts International Airport 1000 Harbel, Liberia 215-492-9000</p>
+    </div>
+  </div>
+</div>
+  <div class="grey_line">
+  <div class="box">
+    <img src="./Images/riverview-motel.jpg" alt="">
+    <div class="box_image">
+        <h3>Riverview Motel</h3>
+        <p>Roberts International Airport 1000 Harbel, Liberia 215-492-9000</p>
+    </div>
+</div>
+</div>
+<div class="grey_line">
+  <div class="box">
+    <img src="./Images/libassa.jpg" alt="">
+    <div class="box_image">
+        <h3>Libassa Ecologe</h3>
+        <p>Roberts International Airport 1000 Harbel, Liberia 215-492-9000</p>
+    </div>
+  </div>
+</div>
+<!-----BOXES END HERE--------------------------->
+<!--------------BUTTON----------->
+<div class="btm">
+    <button><a href="#">SEE MORE</a></button>
+</div>
+<!------BTM END--------->
+
   <footer class="footer">
     <!--The footer Logo Container -->
     <div id="footer_logo_container"><a href="#"><img src="./Images/Airport-logo.png" alt="Logo"></a></div>
@@ -226,7 +244,7 @@
     </article>
   
   
-  </footer>
+  </footer> 
   
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="App.js"></script>
