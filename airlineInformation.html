@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert International Airport Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <header>
+    <!--Thea first nav-bar that container the logo and white search bar-->
+      <section class="header_1st_section">
+
+          <div class="logo_div"><abbr title="RIA Logo"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo"></a></abbr></div>
+
+          <!--The end of the logo container---------------------------------------------------------------------->
+
+          <!--The start of the white header div container---->
+         
+          <div class="white_header_container">
+
+            <div class="white_div_containerA">
+                
+              <div class="white_div_container_a1">
+                <form action="" class="search_bar_form">
+                  <input type="text" name="Search" placeholder="Search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <div class="flag_container">
+                  <P>Liberia</P>
+                  <img src="./Images/liberia-flag-icon.png" class="Liberia_flag_icon" alt="Liberia Flag Icon">
+                </div>
+
+                <div class="hand_burger_menu"><i class="fa-solid  fa-bars"></i>
+                  <ul class="handBurger_menu_dropdown">
+                    <ol>Fight</ol>
+                    <ol>Terminal Information</ol>
+                    <li>Parking and Transport</li>
+                    <ol>Visit Monrovia</ol>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="white_div_containerB">
+
+              <div class="call_icon_text_container">
+                 <div class="icon_div">
+                  <i class="fa-solid fa-phone-volume"></i>
+                 </div>
+                 <div class="text_div">
+                  <h4 class="p_text_contact_icon">Call Us</h4>
+                  <p class="p_text_contact_icon">(+234)7678879998</p>
+                 </div>
+              </div>
+
+              <div class="email_icon_text">
+                <div class="icon_div"><i class="fa-regular fa-envelope"></i></div>
+                <div class="text_div">
+                  <span>robertinternational@gmail.com</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+           <!--The end of the white header div container------------------------------------------------------>
+
+
+      </section>
+
+      <div class="navbar_container">
+
+        <div class="transparent_div"></div>
+           <!--The blue nav-bar that has the left side been transparent-->
+
+        <div class="blue_navbar_container">
+     
+          <!--This is the navigation bar that is with in the blue container-->
+
+          <nav class="nav-bar ">
+             <ul class="nav-link">
+                 <li class="main_link_label line"><a href="#">Flights</a>
+                 <!--This is the dropdown within the flight main link-->
+                   <ul class="dropdown subMenu01">
+                     <li><a href="flightStatus.html">Flight Status</a></li>
+                     <li><a href="airlineInformation.html">Flight Information</a></li>
+                   </ul>
+                 </li>
+
+              <li class="white_line_list"></li>
+
+              <li class="main_link_label line"><a href="#">Terminal Information</a>
+                <!--This is the dropdown within the Terminal Information main link-->
+                 <ul class="dropdown subMenu02">
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                 </ul>
+              </li>
+
+              <li class="white_line_list"></li>
+
+              <li class="line"><a href="Maps.html">Parking & Transport</a></li>
+
+              <li class="white_line_list"></li>
+
+              <li class="line"><a href="visitMonrovia.html">Visit Monrovia</a></li>
+       </ul>
+   </nav>
+        </div>
+
+        </div>
+
+
+      </div>
+  </header>
+
+<!--BEGAINING of the flight status page hero Section--->    
+<Section class="Airline_Information_hero_section">
+    <!--Call to action text-->
+        <article class="Airline_Information_hero_article">
+          <div class="Airline_Information_hero_div">
+            <h1 id="Airline_Information_hero_text">Airline & Destination</h1>
+          </div>
+        </article>
+     
+ </section>   
+    
+    <!--END of the flight status page hero Section----------------------------------------------------------------->    
+    
+    <!--Home flight Status starts here------------------->
+ <div class="home_Airline_Information">
+        <div class="home_Airline_Information_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_Airline_Information_span">&#12297;</span> <h2><a href="ariline information.html" class="Airline_Information">Airline Information</a></h2></div>
+ </div>
+      
+   <!--Home flight Status ends here------------------->
+
+<!--The airline serve in Monrovia and table starts here-->
+ <section class="airline_information_serve_table">
+    <div class="airline_information_serve">
+        <h3 class="airline_information_label">Airlines Serving Robert International Airport</h3>
+        <p class="airline_information_text">Serveral daily flights comes Monrovia with other capitals of the sub-region and international flight allow passenger traffic between Europe, Middle East and other contients, directly with a connection.</p>
+    </div>
+    <div class="airline_information_table_container_outer">
+        
+    </div>
+    <div class="airline_information_table_container">
+        <p class="table_description"><i></i>Airlines flying from/to Monrovia Robert airport (updated weekly)</p>
+        <table class="airline_information_table">
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Code(IATA)</th>
+                    <th>Code(ICOA)</th>
+                    <th>Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img src="./Images/klm-removebg-preview.png" alt="KML logo" width="100px"></th>
+                    <th>KL</th>
+                    <th>KL</th>
+                    <th><a href="#">-</a></th>
+                </tr>
+                <tr>
+                    <th><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya Airways Logo" width="100px"></th>
+                    <th>KQ</th>
+                    <th>KQA</th>
+                    <th><a href="#">https://www.kenya-airway.com/ph/en/</a></th>
+                </tr>
+                <tr>
+                    <th><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels Airlines logo" width="100px"></th>
+                    <th>SN</th>
+                    <th> </th>
+                    <th><a href="#">https://www.brusselsairlines.com/en/be/</a></th>
+                </tr>
+                <tr>
+                    <th><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" width="100px"></th>
+                    <th>AT</th>
+                    <th>RaM</th>
+                    <th><a href="#">-</a></th>
+                </tr>
+                <tr>
+                    <th><img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="Air Cote dIvoire logo" width="100px"></th>
+                    <th>HF</th>
+                    <th>VRE</th>
+                    <th><a href="#">https://www.aircotedivoire.com/</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+ </section>
+<!--The airline serve in Monrovia and table ends here-->
+
+
+
+<!--The destination serve from airport starts here-->
+<section class="destination_serve">
+<div class="destination_serve_div">
+    <h3 class="destination_serve_label">Destinations serve from our airport</h3>
+    <ul>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Abidjan</p></li>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Kotoka Airport</p></li>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Amsterdam Schiphal</p></li>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Lungi International Airport</p></li>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Brussels Airport</p></li>
+        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Mohamed V Airport</p></li>
+    </ul>
+</div>
+</section>
+<!--The destination serve from airport ends here-->
+
+<footer class="footer">
+  <!--The footer Logo Container -->
+  <div id="footer_logo_container"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo"></a>
+  </div>
+    <!--The  Feature Destination container  -->
+  <div class="feature_destination_container">
+    <h2>Feature Destination</h2>
+      <!--destination links article  -->
+    <article class="destinations_links_contianer">
+      <h3><a href="#">Brussels</a></h3>
+      <h3><a href="#">Kenya</a></h3>
+      <h3><a href="#">Amaterdam Schiphol</a></h3>
+      <h3><a href="#">Abidjan</a></h3>
+      <h3><a href="#">Kotoka</a></h3>
+      <h3><a href="#">Lungi, Sierra Leone</a></h3>
+      <h3><a href="#">Mohammad Nouaceur, morocco</a></h3>
+    </article>
+  </div>
+   <!--The Airport container-->
+  <div class="the_airport_container">
+      <h2>The Airport</h2>
+      <article class="the_airport_link_container">
+      <h3><a href="#">About Us</a></h3>
+      <h3><a href="#">News</a></h3>
+      <h3><a href="#">Services</a></h3>
+      <h3><a href="#">Destination</a></h3>
+      <h3><a href="#">Things To Know</a></h3>
+      <h3><a href="#">Parking</a></h3>
+      <h3><a href="#">Contact</a></h3>
+      <h3><a href="#">Passenger Statistic</a></h3>
+      </article>
+  </div>
+
+  <div class="the_quick_link_container">
+   <h2>Quick Links</h2>
+   <article class="the_quick_link">
+    <h3><a href="#">Privacy & Cookies</a></h3>
+    <h3><a href="#">Website Terms of Use</a></h3>
+    </article>
+  </div>
+   <!--The Connect with us and copy right container in the footer-->
+  <article class="connect_with_us_copyright_container">
+      <div class="connect_withus_container">
+          <h4>CONNECT WITH US</h4>
+          <div class="connect_icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+      </div>
+
+      <!--The copy right conntainer-->
+      <div class="copy_right_container"><p>&#169; 2024 Robert International Airport</p></div>
+  </article>
+
+
+</footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="App.js"></script>
+   
+</body>
+</html>

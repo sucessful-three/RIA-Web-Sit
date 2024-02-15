@@ -25,7 +25,7 @@
                   
                 <div class="white_div_container_a1">
                   <form action="" class="search_bar_form">
-                    <input type="search" name="Search" placeholder="Search">
+                    <input type="text" name="Search" placeholder="Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </form>
                   <div class="flag_container">
@@ -53,7 +53,6 @@
                     </ul>
                     
                   </div>
-                </div>
 
               </div>
 
@@ -94,7 +93,7 @@
 
             <nav class="nav-bar ">
                <ul class="nav-link">
-                  <li class="main_link_label line"><a href="#">Flights</a>
+                   <li class="main_link_label line"><a href="#">Flights</a>
                    <!--This is the dropdown within the flight main link-->
                      <ul class="dropdown subMenu01">
                        <li><a href="flightStatus.html">Flight Status</a></li>
@@ -128,79 +127,179 @@
 
 
         </div>
-    </header> 
+    </header>
 
 <!--BEGAINING of the flight status page hero Section--->    
-<Section class="FAQ_hero_master_container">
+<Section class="flight_status_hero_section">
 <!--Call to action text-->
-    <article class="FAQ__hero_article">
-      <div class="FAQ_text_container">
-        <h1 id="FAQ_hero_text">Frequently Ask Question</h1>
+    <article class="flight_status_hero_article">
+      <div class="flight_status_hero_div">
+        <h1 id="flight_status_hero_text">FLIGHT STATUS</h1>
       </div>
     </article>
  
 </section>   
 
-<!--END of the FAQ page hero Section----------------------------------------------------------------->    
+<!--END of the flight status page hero Section----------------------------------------------------------------->    
 
-<!--Home FAQ starts here------------------->
+<!--Home flight Status starts here------------------->
 <div class="home_flight_status">
-    <div class="home_flight_status_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_flight_span">&#12297;</span> <h2><a href="faqs.html" class="flight-status">FAQS</a></h2></div>
+    <div class="home_flight_status_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_flight_span">&#12297;</span> <h2><a href="flight status.html" class="flight-status">Flight Status</a></h2></div>
   </div>
   
-<!--Home FAQ ends here------------------->
+<!--Home flight Status ends here------------------->
 
-
-
-<!--------------------FREQUENTLY ASK QUESTION WHITE CONTAINER--------------========--------->
-
-<main class="FAQ_main_container">
-  <!--This is the FAQ HERO TEXT AND SEARCH BOX -->
-  <section class="faq_section1">
-<div class="faq_text_and_search_container">
-        <h2>Frequently Ask Question (FAQs)</h2>
-        <form action=""><input type="search" placeholder="Search" class="faq_input" >     <i class="fa-solid fa-magnifying-glass"></i></form>
+<section class="flight_search_section_container">
+    <div class="flight_search_div1">
+        <div class="label_and_text_div">
+            <h2 class="flight_search_label">Flight Search</h2>
+            <p class="flight_search_text">Stay Informed of your flight status with real-time updates.</p>
+        </div>
     </div>
-  <!--This is the FAQ  Selection box--> 
-    <div class="Top_faq_container">
-        <h3>Top FAQS For</h3>
-        <form action="" class="top_faq">
-            <span>Select</span>
-            <img src="arrowdropdown.png" alt="angle-down">
-        </form>
+    <!--The live info and search bar portion of the flight search section-->
+    <div class="flight_search_div2">
+        <div class="live_flight_n_search_bar">
+            <div class="live_flight_paragraph">
+                <p>Live Flight Information</p>
+             </div>
+            <div class="the_search_bar">
+                <form action="" class="flight_status_search_bar_form">
+                    <input type="text" name="Search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass flight_search_icon"></i>
+                  </form>
+            </div>
+        </div>
+<!--The arrival and departure portion of the flight search section-->
+        <div class="arrivals_and_departure">
+            <div class="inner_arrivals_and_departure">
+                <div class="arrivals"><h3 class="arrivals_h3">ARRIVALS</h3></div>
+                <div class="departure"><h3 class="departure_h3">DEPARTURE</h3></div>
+            </div>
+        </div>
+<!--The scrollable table portion of the flight search section-->
+        <div class="show_casing_table scrollable_table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Airlines</th>
+                        <th>Flight</th>
+                        <th>Origin</th>
+                        <th>Estimated<br>Arrival Time</th>
+                        <th>Update</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya-Airways-Logo" class="table_airline_logo"></td>
+                        <td>KQ502</td>
+                        <td>Accra(GH)</td>
+                        <td>1:00 AM</td>
+                        <td>Delayed 30 (mins)</td>
+                        <td>Delay</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels_Airlines_logo" class="table_airline_logo"></td>
+                        <td>5N241</td>
+                        <td>Freetown(SL)</td>
+                        <td>7:42 AM</td>
+                        <td>-</td>
+                        <td>Arrived</td> 
+                    </tr>
+
+                    <tr>
+                        <td><img src="./Images/klm-removebg-preview.png" alt="KLM Logo" class="table_airline_logo"></td>
+                        <td>KL511</td>
+                        <td>Freetown(SL)</td>
+                        <td>3:00 AM</td>
+                        <td>Delayed 2 (hrs)</td>
+                        <td>Delayed</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" class="table_airline_logo"></td>
+                        <td>AT567</td>
+                        <td>Casabianca  (MA)</td>
+                        <td>8:50 AM</td>
+                        <td>-</td>
+                        <td>In Air</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya-Airways-Logo" class="table_airline_logo"></td>
+                        <td>KQ505</td>
+                        <td>Freetown (SL)</td>
+                        <td>4:30 AM</td>
+                        <td>-</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                      <td><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels_Airlines_logo" class="table_airline_logo"></td>
+                      <td>KQ502</td>
+                      <td>Accra(GH)</td>
+                      <td>1:00 AM</td>
+                      <td>Delayed 2 (hrs)</td>
+                      <td>Delay</td>
+                  </tr>
+
+                  <tr>
+                      <td><img src="./Images/klm-removebg-preview.png" alt="KML Logo" class="table_airline_logo"></td>
+                      <td>5N241</td>
+                      <td>Freetown(SL)</td>
+                      <td>7:42 AM</td>
+                      <td>-</td>
+                      <td>In Air</td>
+                  </tr>
+                  
+                  <tr>
+                      <td><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" class="table_airline_logo"></td>
+                      <td>KL511</td>
+                      <td>Freetown(SL)</td>
+                      <td>1:00 AM</td>
+                      <td>-</td>
+                      <td>Landed</td>
+                  </tr>
+
+                  <tr>
+                      <td><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya-Airways-Logo" class="table_airline_logo"></td>
+                      <td>AT567</td>
+                      <td>Casabiaca  (MA)</td>
+                      <td>7:42 AM</td>
+                      <td>-</td>
+                      <td>Arrived</td>
+                  </tr>
+
+                  <tr>
+                      <td><img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="Air Cote dIvoire logo" class="table_airline_logo"></td>
+                      <td>KQ505</td>
+                      <td>Freetown (SL)</td>
+                      <td>4:30 AM</td>
+                      <td>-</td>
+                      <td>Scheduled</td>
+                  </tr>
+                  
+                </tbody>
+            </table> 
+        </div>
     </div>
-  </section>  
-    
-<section class="faq_section2">
-   <!--The question drop down -->
-  <div class="question_dropdown_container">
-    <div class="question"><i class="fa-solid fa-plus"></i> <p>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</p></div>
-    <div class="question"><i class="fa-solid fa-plus"></i> <p>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</p></div>
-    <div class="question"><i class="fa-solid fa-plus"></i> <p>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</p></div>
-    <div class="question"><i class="fa-solid fa-plus"></i> <p>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</p></div>
-    <div class="question"><i class="fa-solid fa-plus"></i> <p>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</p></div>
-  </div>
 </section>
  
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<section class="Our_Airlines">
+  <h3>Our Airlines</h3>
+  <div class="Our_Airlines_logo_1">
+    <img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="" id="cote">
+    <img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="">
+    
+  </div>
+  <div class="Our_Airlines_logo_2">
+ <img src="./Images/klm-removebg-preview.png" alt="">
+ <img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="">
+ <img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="">
+</div>
+</section>
 
 <footer class="footer">
     <!--The footer Logo Container -->
