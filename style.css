@@ -1065,7 +1065,6 @@ outline: none;
     background-size: cover;
 }
 
-<<<<<<< HEAD
 .FAQ__hero_article{
     height: 80vh;
     width: 100vw;
@@ -1102,7 +1101,7 @@ outline: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-=======
+}
 /*The visit Monrovia starts here*/
 
 
@@ -1185,16 +1184,14 @@ line-height: 1.5;
 }
 .home_inner_div a{
 color: #fff;
->>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 }
 
 
 
-<<<<<<< HEAD
 .faq_text_and_search_container{
     display: flex;
     justify-content: space-between;
-=======
+}
 /*Hotels Near*/
 .hotels_near_in_RIA{
     margin: 110px;
@@ -1236,12 +1233,10 @@ flex-direction: column;
 
 .box img {
     display: flex;
->>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
     width: 60%;
     
 }
 
-<<<<<<< HEAD
 .faq_text_and_search_container h2{
     font-family: var(--poppin);
     color: var(--red);
@@ -1291,7 +1286,6 @@ flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-=======
 .box{
    margin: 100px;
     width: 80%;
@@ -1347,7 +1341,6 @@ margin: 90px;
 
 /*The Maps Styles endeding */
 
->>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 /*The footer section  */
 
 
@@ -3098,10 +3091,7 @@ text-align: center;
        font-size: 1rem; 
     }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 27c8038124c2f883f9e143b974069f2c3a1124bd
 .apm{
     font-size: 1rem;
 }
