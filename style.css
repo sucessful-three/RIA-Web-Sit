@@ -1575,6 +1575,27 @@ margin-top: 0px;
 /*The Fight Status page styling ends here*/
 
 
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    }
+    .body_sec p{
+        font-size: 1.7rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 footer{
 
     height: fit-content;
@@ -2542,6 +2563,28 @@ outline: none;
         
         /*The Fight Status page styling ends here*/
         
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 20px;
+    
+    }
+    .body_sec p{
+        font-size: 1.5rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.0rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 
 /*Footer Section*/
     #footer_logo_container{
