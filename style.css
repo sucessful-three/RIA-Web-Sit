@@ -528,17 +528,18 @@ transform: rotate(180deg);
     width: 100vw;
     background-color: var(--gray);
     display: flex;
+    padding: 15px;
     overflow-x: hidden;
     
  }
 
 /*Today flight styling starts here*/
 
- .fight_today_container{
+ .flight_today_container{
     width: 34%;
     height: 86vh;
     color: var(--white);
-    background: var(--red);
+   background-color: var(--red);
     text-align: center;
  }
  
@@ -548,6 +549,7 @@ transform: rotate(180deg);
    align-items: center;
    justify-content: center;
    width: 100%;
+   
  }
 
  .planes_landed, .planes_left, .planes_in_air{
@@ -583,10 +585,10 @@ transform: rotate(180deg);
 
 /*The latset news in monrovia styling starts here*/
 
-.latest_news_in_monrovia_container{
+.latest_news_in_monrovia_master_container{
     width: 66%;
     height: 78vh;
-    color: var(--red);
+    background-color: var(--red);
     background: var(--gray);
     display: flex;
     align-items: center;
@@ -1046,10 +1048,62 @@ outline: none;
     scroll-snap-align: start;
 }
 
+
+
+
+
 /*The show casing table of the scrollable table styling ends here*/
 
 /*The Fight Status page styling ends here*/
+.FAQ_hero_master_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./Images/bgforfstatuspage.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.FAQ__hero_article{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+}
+
+.FAQ_text_container{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+}
+
+
+.FAQ_main_container{
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease;
+
+    
+}
+
+.faq_section1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 /*The visit Monrovia starts here*/
 
 
@@ -1136,6 +1190,10 @@ color: #fff;
 
 
 
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+}
 /*Hotels Near*/
 .hotels_near_in_RIA{
     margin: 110px;
@@ -1181,6 +1239,55 @@ flex-direction: column;
     
 }
 
+.faq_text_and_search_container h2{
+    font-family: var(--poppin);
+    color: var(--red);
+}
+.faq_input{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+    outline: 1px solid rgb(204, 204, 204);
+}
+
+/**=======Top FAQS============*/
+.Top_faq_container{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_faq{
+    
+    width: 18rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+
+/*FAQ GRID CONTAINER STYLING STARTS HERE*/
+.question_dropdown_container{
+    height: max-content;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.question{
+    height: 3rem;
+    width: 45%;
+    border: 1px solid rgb(184, 174, 174);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .box{
    margin: 100px;
     width: 80%;
@@ -1337,8 +1444,37 @@ footer a{
 
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 1280px){
+    /*The FAQ page styling starts here*/
+    .FAQ_main_container{
+        padding: 0px 30px;
+        height: 90vh;
+    }
+
+    .faq_text_and_search_container{
+        display: flex;
+        justify-content: left;
+        gap: 1.5em;
+        width: 100%;
+    }
+
+    /**=======Top FAQS============*/
+.Top_faq_container{
+    width: 35%;
+    justify-content: space-between;
+
+}
+.question_dropdown_container{
+    width: 70%;
+    gap: 1.5rem;
     
+}
+.question{
+    height: 3rem;
+    width: 100%;
+    font-size: 1.2em;
+   
+}
 }
       
 /* Media Query for Tablets Ipads portrait mode *******************************************************************************************/
@@ -1575,6 +1711,27 @@ margin-top: 0px;
 /*The Fight Status page styling ends here*/
 
 
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    }
+    .body_sec p{
+        font-size: 1.7rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 footer{
 
     height: fit-content;
@@ -1665,6 +1822,60 @@ footer{
     align-items: center;
 }
  
+
+/*The FAQ page styling starts here*/
+
+.FAQ__hero_article{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.FAQ_text_container{
+    font-size: 2.7rem;
+    color: var(--white);
+    font-family: var(--poppin);
+    font-weight: 700;
+    padding: 24px;
+}
+.FAQ_main_container{
+    padding: 0px 30px;
+    height: 90vh;
+    
+}
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.faq_input{
+    width: 17rem;
+    height: 2rem;
+
+}
+
+/**=======Top FAQS============*/
+.Top_faq_container{
+    width: 60%;
+
+}
+/*FAQ GRID CONTAINER STYLING STARTS HERE*/
+.question_dropdown_container{
+    width: 95%;
+    gap: 1.5rem;
+    
+}
+
+.question{
+    height: 3rem;
+    width: 100%;
+   
+}
 
 }
 
@@ -2038,6 +2249,64 @@ footer{
             line-height: 1.95;
            
         }
+
+        /*FAQ Page*/
+        
+/*The FAQ page styling starts here*/
+.FAQ_main_container{
+    padding: 0px 15px;
+    height: 60vh;
+    
+}
+.FAQ__hero_article{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    
+}
+
+.FAQ_text_container{
+    font-size: 2.7rem;
+    color: var(--white);
+    font-family: var(--poppin);
+    font-weight: 700;
+    padding: 24px;
+}
+
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.faq_input{
+    width: 17rem;
+    height: 2rem;
+
+}
+
+/**=======Top FAQS============*/
+.Top_faq_container{
+    width: 60%;
+
+}
+/*FAQ GRID CONTAINER STYLING STARTS HERE*/
+.question_dropdown_container{
+    width: 95%;
+    gap: 1.5rem;
+    
+}
+
+.question{
+    height: 3rem;
+    width: 100%;
+   
+}
+
         
         /*The footer Connect with us section*/
         .connect_with_us_copyright_container{
@@ -2091,7 +2360,7 @@ footer{
  /* Media Query for Mobile Devices */
  @media(max-width: 480px) {
     :root {
-        font-size: 12px;
+        font-size: 12.5px;
        
     }
   
@@ -2315,16 +2584,17 @@ footer{
  
 /*The latset news in monrovia styling starts here*/
 
-.latest_news_in_monrovia_container{
+.latest_news_in_monrovia_master_container{
     width: 100%;
     height: 100%;
-    color: var(--red);
+    background-color: var(--red);
     background: var(--gray);
     padding-bottom: 10px;
     flex-direction: column;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+
     
 }
 
@@ -2542,6 +2812,28 @@ outline: none;
         
         /*The Fight Status page styling ends here*/
         
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 20px;
+    
+    }
+    .body_sec p{
+        font-size: 1.5rem;
+    }
+    
+    .body_sec h2{
+        font-size: 2.0rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 
 /*Footer Section*/
     #footer_logo_container{
@@ -2604,8 +2896,68 @@ font-size: 0.8rem;
 .small_logo{
     display: flex;
 }
+/*The FAQS  section starts here*************************/
+.FAQ_main_container{
+    padding: 20px;
+    height: max-content;
+    gap: 1.3em;
+    
+}
+.FAQ_text_container{
+    width: max-content;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 5px;
+text-align: center;
+}
+
+.faq_text_and_search_container{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1em;
+    
+
+}
+.faq_input{
+    width: 20rem;
+    height: 2rem;
+
+}
+
+.Top_faq_container{
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.top_faq{
+    width: 15em;
+}
+
+/*FAQ GRID CONTAINER STYLING STARTS HERE*/
+.question_dropdown_container{
+    width: 100%;
+    gap: 1.5rem;
+    
+}
+
+.question{
+    height: 3rem;
+    width: 100%;
+   font-size: 0.7em;
+   gap: 0.5em;
+   padding: 5px;
+}
+
 
     }   
+
+
+
+
+
     
     
     /*END OF LANDING PAGE Media QUERY*/
