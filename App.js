@@ -1,4 +1,4 @@
-//Creating a function that toggle the handburger menu 
+ //Creating a function that toggle the handburger menu 
 showNavDropDown();
 
 function showNavDropDown(){
@@ -68,11 +68,14 @@ function showImg(){
 
 // trying Scroll behavior
 
-window.onscroll= function(){scrollFunction()}; // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
- 
-function scrollFunction(){
-  if (document.documentElement.scrollTop > 50 ){
-    $("header").addClass("hide");
+window.onscroll= function scrollFunction(){
+  let eh;
+  var myHeader=$("#header");
+    if (document.documentElement.scrollTop > 700 ){
+      $(myHeader).slideUp(400);
   }
-  else{$("header").removeClass("hide");}
-}
+  else{$(myHeader).slideDown(800);}
+} // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
+ 
+
+ 
