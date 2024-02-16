@@ -808,8 +808,9 @@ outline: none;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: url(./Images/brussels.jpg);
+    align-items: center; 
+    background-image: url(./Images/brussels.jpg);
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -822,6 +823,7 @@ outline: none;
     align-items: center;
     justify-content: center;
     margin-top: 18vh;
+    background-color: rgba(0, 0, 0, 0.297);
 }
 
 #flight_status_hero_text{
