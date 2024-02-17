@@ -1444,6 +1444,8 @@ footer a{
 /*End of footer*/
 
 
+/*THE NEWSROOM PAGE STARTS HERE***********************************************************************/
+
 .newsroom_master_container{
     height: fit-content;
     width: 100%;
@@ -1569,7 +1571,7 @@ footer a{
     width: 10rem;
 }
 
-
+/*THE NEWSROOM PAGE ENDS HERE***********************************************************************/
 
 /**Script CLASS*****************************************************/
 
