@@ -2184,6 +2184,63 @@ footer{
    
 }
 
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 2.2rem;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 2rem;
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 3rem;
+}
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
 }
 
 
@@ -2655,7 +2712,64 @@ footer{
 .small_logo{
     display: flex;
 }
-            
+           
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 2.2rem;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 2rem;
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 3rem;
+}
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
      }
     
 
@@ -3395,6 +3509,97 @@ text-align: center;
 }
 
 
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container{
+    padding: 10px;
+}
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    
+   }
+
+   .newsroom_sect1_article1_text_container{
+    line-height: 1.1;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.releases_card{
+    width: 100%;
+}
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 0.01rem;
+   
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 0.5rem;
+}
+
+
+
+.news_room_stories{
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news_room_stories img{
+    height:  50%;
+    width: 100%;
+}
+
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
+
+
     }   
 
 
@@ -3676,6 +3881,99 @@ justify-content: center;
 .apm{
     font-size: 1rem;
 }
+
+
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container{
+    padding: 10px;
+}
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    
+   }
+
+   .newsroom_sect1_article1_text_container{
+    line-height: 1.1;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.releases_card{
+    width: 100%;
+}
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 0.01rem;
+   
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 0.5rem;
+}
+
+
+
+.news_room_stories{
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news_room_stories img{
+    height:  50%;
+    width: 100%;
+}
+
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
+
 
 }
 
