@@ -1105,6 +1105,7 @@ outline: none;
     flex-direction: column;
     gap: 2rem;
 }
+
 /*The visit Monrovia starts here*/
 
 
@@ -1240,6 +1241,42 @@ flex-direction: column;
     
 }
 
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
+
+
 .faq_text_and_search_container h2{
     font-family: var(--poppin);
     color: var(--red);
@@ -1289,40 +1326,6 @@ flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.box{
-   margin: 100px;
-    width: 80%;
-    display: flex;
-    
-}
-
-/*BUTTON*/
-
-.btm button{
-    background-color: #D21312;
-    border-color: #D21312;
-    color: #fff;
-    width: 10%;
-    height: 5vh;
-    margin-bottom: 50px;
-    margin-top: 25px;
-    padding: 5px 5px;
-    font-size: 1.3rem;
-}
-
-.btm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-.btm a{
-    color: #fff;
-}
-
-/*The Visit Monronvia ends here*/
 
 
 /* The Maps Styles */
@@ -1857,7 +1860,181 @@ margin-top: 0px;
     }
     
     
-    /*The Maps Styles endeding */
+    /*The Maps Styles endeding ************************************/
+
+
+
+/*The Visitmonronvia Responsiveness*************************/
+/*The visit Monrovia starts here*****************************/
+
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section2{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.Call_to_action_text_container2{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+background-image: url(./Images/brussels.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+line-height: 1.5;
+
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 100vh;
+    height: 8vh;
+    margin: 90px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.home_inner_div a{
+color: #fff;
+}
+
+
+
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 90px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 2.1rem;
+width: 95%;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.6rem;
+    width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 85%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.7rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 60%;
+    
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 20%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
 
 
 footer{
@@ -2962,6 +3139,142 @@ outline: none;
     /*The Maps Styles endeding */
 
 
+/*The visit Monrovia starts here*******************************************/
+
+
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 70%;
+    height: 8vh;
+    margin: 60px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 60px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+width: 150%;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 75%;
+    height: 45vh;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    
+}
+
+.box{
+   margin: 30px;
+    width: 80%;
+    display: block;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+/*The Visit Monronvia  Responsiveness ends here************************************8/
+
+
 
 /*Footer Section*/
     #footer_logo_container{
@@ -3211,6 +3524,141 @@ text-align: center;
 
 
 
+
+
+/*The visit Monrovia starts here*******************************************/
+
+
+
+#hero_text{
+    font-size: 3rem;
+    color: white;
+    margin-top: 160px;
+}
+
+#second_hero_text{
+font-size: 1.5rem;
+color: white;
+font-family: monospace;
+}
+
+.find_flight_container{
+width: 300px;
+height: fit-content;
+padding: 10px 10px 10px 10px;
+background-color: #ff5a3c;
+color: white;
+display: flex;
+justify-content: space-between;
+font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+background-color: #D21312;
+color: #ffffff;
+height: 8vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+}
+
+.home_inner_div{
+width: 80%;
+height: 8vh;
+margin: 40px;
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+
+.faq_text_and_search_container{
+display: flex;
+justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+margin: 35px;
+margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+width: 110%;
+}
+
+
+.hotels_near_in_RIA > p{
+font-size: 1.5rem;
+width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+border: 2px solid grey;
+box-shadow: 5px 5px 2px 0px gray;
+width: 75%;
+height: 60vh;
+margin-left: 40px;
+margin-top: 20px;
+}
+
+.box_image > h3{
+font-size: 1.6rem;
+flex-direction: column;
+margin: 30px;
+color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+margin: 20px;
+width: 80%;
+}
+
+.box img {
+display: flex;
+width: 100%;
+height: 18vh;
+
+}
+
+.box{
+margin: 25px;
+width: 80%;
+display: block;
+
+}
+
+/*BUTTON*/
+
+.btm button{
+background-color: #D21312;
+border-color: #D21312;
+color: #fff;
+width: 35%;
+height: 5vh;
+margin-bottom: 50px;
+margin-top: 25px;
+padding: 5px 5px;
+font-size: 1.3rem;
+}
+
+.btm{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+/*The Visit Monronvia  Responsiveness ends here************************************8/
 
 
     /*FOOTER CONTAINER***********************************************************************/
