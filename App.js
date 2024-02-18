@@ -1,3 +1,19 @@
+ 
+$(".Liberia_flag_icon").on("click", function(){
+  $(this).fadeOut();
+});
+
+// trying Scroll behavior
+
+window.onscroll= function scrollFunction(){
+  var myHeader=$("header");
+    if (document.documentElement.scrollTop > 700 ){
+      $(myHeader).slideUp(400);
+  }
+  else{$(myHeader).slideDown(800);}
+} // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
+ 
+ 
  //Creating a function that toggle the handburger menu 
 showNavDropDown();
 
@@ -66,16 +82,5 @@ function showImg(){
 }
 
 
-// trying Scroll behavior
 
-window.onscroll= function scrollFunction(){
-  let eh;
-  var myHeader=$("#header");
-    if (document.documentElement.scrollTop > 700 ){
-      $(myHeader).slideUp(400);
-  }
-  else{$(myHeader).slideDown(800);}
-} // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
- 
 
- 
