@@ -57,6 +57,7 @@ header{
 /*displaying the logo div and the search bar div container*/
 
 /*styling the logo div and search_bar_div_container*/
+ 
 .logo_div{
     height: 100%;
     width: 30%;
@@ -66,10 +67,8 @@ header{
     justify-content: center;
     align-items: center;
 
-    clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);
-    
+    clip-path: polygon(0 0, 0 100%, 0 800%, 100% 0);  
 }
-
 .logo_div img{
     height: 10em;
     width: 15em;
@@ -808,8 +807,9 @@ outline: none;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: url(./Images/brussels.jpg);
+    align-items: center; 
+    background-image: url(./Images/brussels.jpg);
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -822,6 +822,7 @@ outline: none;
     align-items: center;
     justify-content: center;
     margin-top: 18vh;
+    background-color: rgba(0, 0, 0, 0.297);
 }
 
 #flight_status_hero_text{
@@ -1055,6 +1056,224 @@ outline: none;
 /*The show casing table of the scrollable table styling ends here*/
 
 /*The Fight Status page styling ends here*/
+
+/*The Airline Information page styling starts here*/
+
+/*BEGAINING of the Airline Information page hero Section styling*/
+.Airline_Information_hero_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+    background: url(./Images/brussels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Airline_Information_hero_div{
+    height: 86.2vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.4rem;
+    background: #00000089;
+}
+
+#Airline_Information_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+}
+
+/*ENDING of the Airline_Information page hero Section styling*/
+
+.home_Airline_Information{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_Airline_Information_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_Airline_Information_inner > h2 a{
+    color: var(--white);
+}
+
+.home_Airline_Information_span{
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.home_Airline_Information_inner > h2  a:hover{
+    color: var(--blue);
+}
+
+.home_Airline_Information_inner > h2 .Airline_Information{
+    color: var(--blue);
+}
+
+
+/*The static tabel on the Airline_Information page styling starts here*/
+
+.airline_information_serve_table{
+    width: 100vw;
+    height: 84vh;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.911) 99%), url(./Images/bgfrotable.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airline_information_serve{
+    width: 36%;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    justify-content: center;
+    background: transparent;
+    margin-left: 20rem;
+}
+
+.airline_information_label{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-family: var(--poppin);
+}
+
+.airline_information_text{
+    color: var(--grayfortext);
+    font-size: 1.1rem;
+    font-family: var(--poppin);  
+    line-height: 1.6rem;
+}
+
+.airline_information_table_container_outer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.airline_information_table_container{
+    width: 60%;
+    height: 50vh;
+    background: var(--white); 
+    box-shadow: 2px 2px 16px 0px rgba(184, 158, 184, 1);
+    border-radius: .6rem;
+    
+}
+
+.table_description_div{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    gap: 1.5rem;
+}
+
+.table_description{
+    word-spacing: .2rem;
+}
+
+.airline_information_table {
+    width: 80%;
+    margin-left: 6rem;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.airline_information_table  th{
+    border-bottom: 2px solid #7b7b7bc0;
+    border-top: 2px solid #7b7b7bc0;
+    padding-bottom: 1rem;
+    padding: 4px 6px;
+    font-size: 1.2rem;
+    
+}
+
+.airline_information_table th,
+.airline_information_table td {
+  padding: 4px 6px;
+  text-align: center;
+  font-weight: normal;
+  
+}
+
+.airline_information_table tbody tr:nth-last-of-type(odd){
+    background: #cdcdcd;
+}
+
+.table-airline-logo-static{
+    width: 110px; 
+}
+
+.one-large{
+    width: 80px;
+}
+
+/*The static table on the Airline Information page styling ends here*/
+
+.destination_serve{
+    width: 100vw;
+    height: 60vh;
+}
+
+.destination_serve{
+    margin-left: 10rem;
+    width: 60%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.destination_serve_label{
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.destination_serve > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+ 
+.location_icon_text{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    justify-self: center;
+}
+
+.location-icon{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.location_text{
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/*The Airline Information page styling ends here*/
+
+
 .FAQ_hero_master_container{
     width: 100vw;
     height: 100vh;
@@ -1104,6 +1323,7 @@ outline: none;
     flex-direction: column;
     gap: 2rem;
 }
+
 /*The visit Monrovia starts here*/
 
 
@@ -1239,6 +1459,42 @@ flex-direction: column;
     
 }
 
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
+
+
 .faq_text_and_search_container h2{
     font-family: var(--poppin);
     color: var(--red);
@@ -1288,41 +1544,6 @@ flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
-.box{
-   margin: 100px;
-    width: 80%;
-    display: flex;
-    
-}
-
-/*BUTTON*/
-
-.btm button{
-    background-color: var(--red);
-    border-color: var(--red);
-    color: var(--white);
-    width: 10%;
-    height: 5vh;
-    margin-bottom: 50px;
-    margin-top: 25px;
-    padding: 5px 5px;
-    font-size: 1.3rem;
-    outline: none;
-}
-
-.btm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-.btm a{
-    color: var(--white);
-}
-
-/*The Visit Monronvia ends here*/
 
 
 /* The Maps Styles */
@@ -1440,6 +1661,135 @@ footer a{
 
 /*End of footer*/
 
+
+/*THE NEWSROOM PAGE STARTS HERE***********************************************************************/
+
+.newsroom_master_container{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem;
+    padding: 30px;
+}
+
+.newsroom_master_container img{
+   height: 30rem;
+   width: 50rem;
+}
+.newsroom_section1{
+    height: max-content;
+    width: 95%;
+    background-color: var(--white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.newsroom_sect1_parent_article_container{
+ display: flex;
+ width: 100%;
+ gap: 2rem;
+}
+
+.newsroom_sect1_article1_text_container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    
+}
+
+
+/*section 2*/
+
+.newsroom_section2{
+    height: max-content;
+    width: 95%;
+    background-color: white;
+    padding: 24px;
+}
+
+.article_container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+
+    
+}
+
+.card_container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#releases_img{
+    width: 100%;
+    height: 15rem;
+}
+
+
+
+.releases_card{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.card-text, .card-title{
+    line-height: 1.7;
+}
+
+.releases_btn{
+    padding: 0.5em 1.2em;
+    width: max-content;
+    background-color: var(--red);
+    color: var(--white)
+}
+
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 2rem;
+    
+
+}
+
+/* Coloring the News room page*/
+.newsroom_text, .newsroom_sect1_article1_text_container h3, .read_more, .more_releases_hero_text, .card-title, .more_stories{
+    color: var(--red);
+}
+
+.news_room_stories{
+    display: flex;
+    gap: 2rem;
+    padding: 24px;
+}
+.news_room_stories img{
+    height:  8rem;
+    width: 10rem;
+}
+
+/*THE NEWSROOM PAGE ENDS HERE***********************************************************************/
 
 /**Script CLASS*****************************************************/
 
@@ -1730,7 +2080,181 @@ margin-top: 0px;
     }
     
     
-    /*The Maps Styles endeding */
+    /*The Maps Styles endeding ************************************/
+
+
+
+/*The Visitmonronvia Responsiveness*************************/
+/*The visit Monrovia starts here*****************************/
+
+
+/*Visit Monrovia*/
+.visit_monrovia_link a{
+    color: white;
+    font-size: 1.3em;
+}
+
+
+/*Call to action page*/
+
+.Call_to_action_section2{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+.Call_to_action_text_container2{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 150px;
+align-items: center;
+background-image: url(./Images/brussels.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+line-height: 1.5;
+
+}
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 100vh;
+    height: 8vh;
+    margin: 90px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.home_inner_div a{
+color: #fff;
+}
+
+
+
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 90px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 2.1rem;
+width: 95%;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.6rem;
+    width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 85%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.7rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 60%;
+    
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 20%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The Visit Monronvia ends here*/
 
 
 footer{
@@ -1877,6 +2401,63 @@ footer{
     width: 100%;
    
 }
+
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 2.2rem;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 2rem;
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 3rem;
+}
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
 
 }
 
@@ -2349,7 +2930,64 @@ footer{
 .small_logo{
     display: flex;
 }
-            
+           
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 2.2rem;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 2rem;
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 3rem;
+}
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
      }
     
 
@@ -2835,6 +3473,142 @@ outline: none;
     /*The Maps Styles endeding */
 
 
+/*The visit Monrovia starts here*******************************************/
+
+
+
+#hero_text{
+        font-size: 3rem;
+        color: white;
+        margin-top: 160px;
+}
+
+#second_hero_text{
+    font-size: 1.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.find_flight_container{
+    width: 300px;
+    height: fit-content;
+    padding: 10px 10px 10px 10px;
+    background-color: #ff5a3c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+    background-color: #D21312;
+    color: #ffffff;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.home_inner_div{
+    width: 70%;
+    height: 8vh;
+    margin: 60px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.faq_text_and_search_container{
+    display: flex;
+    justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+    margin: 60px;
+    margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+width: 150%;
+}
+
+
+.hotels_near_in_RIA > p{
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+    border: 2px solid grey;
+    box-shadow: 5px 5px 2px 0px gray;
+    width: 75%;
+    height: 45vh;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box_image > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box img {
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    
+}
+
+.box{
+   margin: 30px;
+    width: 80%;
+    display: block;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+/*The Visit Monronvia  Responsiveness ends here************************************8/
+
+
 
 /*Footer Section*/
     #footer_logo_container{
@@ -2951,6 +3725,97 @@ text-align: center;
    gap: 0.5em;
    padding: 5px;
 }
+
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container{
+    padding: 10px;
+}
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    
+   }
+
+   .newsroom_sect1_article1_text_container{
+    line-height: 1.1;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.releases_card{
+    width: 100%;
+}
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 0.01rem;
+   
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 0.5rem;
+}
+
+
+
+.news_room_stories{
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news_room_stories img{
+    height:  50%;
+    width: 100%;
+}
+
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
 
 
     }   
@@ -3086,6 +3951,141 @@ text-align: center;
 
 
 
+/*The visit Monrovia starts here*******************************************/
+
+
+
+#hero_text{
+    font-size: 3rem;
+    color: white;
+    margin-top: 160px;
+}
+
+#second_hero_text{
+font-size: 1.5rem;
+color: white;
+font-family: monospace;
+}
+
+.find_flight_container{
+width: 300px;
+height: fit-content;
+padding: 10px 10px 10px 10px;
+background-color: #ff5a3c;
+color: white;
+display: flex;
+justify-content: space-between;
+font-size: 1.2rem;
+}
+
+/*The Parking and Transit page*/
+/*Home parking*/
+
+.home_parking{
+background-color: #D21312;
+color: #ffffff;
+height: 8vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+}
+
+.home_inner_div{
+width: 80%;
+height: 8vh;
+margin: 40px;
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+
+
+.faq_text_and_search_container{
+display: flex;
+justify-content: space-between;
+}
+/*Hotels Near*/
+.hotels_near_in_RIA{
+margin: 35px;
+margin-bottom: 0px;
+}
+
+.hotels_near_in_RIA > h2{
+color: #D21312;
+font-size: 1.9rem;
+width: 110%;
+}
+
+
+.hotels_near_in_RIA > p{
+font-size: 1.5rem;
+width: 80%;
+}
+
+/*Box Section*/
+
+.grey_line{
+border: 2px solid grey;
+box-shadow: 5px 5px 2px 0px gray;
+width: 75%;
+height: 60vh;
+margin-left: 40px;
+margin-top: 20px;
+}
+
+.box_image > h3{
+font-size: 1.6rem;
+flex-direction: column;
+margin: 30px;
+color: #D21312;
+}
+.box_image > p{
+font-size: 1.4rem;
+flex-direction: column;
+margin: 20px;
+width: 80%;
+}
+
+.box img {
+display: flex;
+width: 100%;
+height: 18vh;
+
+}
+
+.box{
+margin: 25px;
+width: 80%;
+display: block;
+
+}
+
+/*BUTTON*/
+
+.btm button{
+background-color: #D21312;
+border-color: #D21312;
+color: #fff;
+width: 35%;
+height: 5vh;
+margin-bottom: 50px;
+margin-top: 25px;
+padding: 5px 5px;
+font-size: 1.3rem;
+}
+
+.btm{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+/*The Visit Monronvia  Responsiveness ends here************************************8/
+
+
     /*FOOTER CONTAINER***********************************************************************/
     footer{
         padding: 10px;
@@ -3099,6 +4099,99 @@ text-align: center;
 .apm{
     font-size: 1rem;
 }
+
+
+
+/*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
+.newsroom_master_container{
+    padding: 10px;
+}
+.newsroom_master_container img{
+    height: 60%;
+    width: 100%;
+ }
+
+.newsroom_section1{
+    width: 100%;
+    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+}
+
+.newsroom_sect1_parent_article_container{
+    flex-direction: column;
+    width: 100%;
+    gap: 0rem;
+    
+   }
+
+   .newsroom_sect1_article1_text_container{
+    line-height: 1.1;
+   }
+
+
+   /*section 2*/
+
+.newsroom_section2{
+    width: 100%;
+    padding: 15px;
+
+}
+
+.article_container{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.releases_card{
+    width: 100%;
+}
+/*More Stories in the news room section*/
+.article2_more_stories_grid_container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(237, 235, 218);
+    margin-top: 0.01rem;
+   
+    
+
+}
+
+.more_stories_text{
+    position: relative;
+    top: 0.5rem;
+}
+
+
+
+.news_room_stories{
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news_room_stories img{
+    height:  50%;
+    width: 100%;
+}
+
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
+
 
 }
 
