@@ -9,7 +9,7 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
-  <header>
+  <header id="header">
     <!--Thea first nav-bar that container the logo and white search bar-->
       <section class="header_1st_section">
 
@@ -25,7 +25,7 @@
                 
               <div class="white_div_container_a1">
                 <form action="" class="search_bar_form">
-                  <input type="text" name="Search" placeholder="Search">
+                  <input type="search" name="Search" placeholder="Search">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
                 <div class="flag_container">
@@ -35,21 +35,21 @@
 
                 <div class="hand_burger_menu"><i class="fa-solid  fa-bars"></i>
                   <ul class="handBurger_menu_dropdown">
-                    <li class="main_link_label line"><a href="#">Flights</a>
-                      <ol class="flight_drop_down2">
+                    <li class="flight_btn"><a href="#"><h3>Flights</h3></a>
+                      <ol class="flight_drop_down1">
                         <li><a href="flightStatus.html">Flight Status</a></li>
                         <li><a href="airlineInformation.html">Flight Information</a></li>
                       </ol>
                     </li>
-                    <li class="main_link_label line"><a href="#">Terminal Information</a>
-                      <ol class="terminal_info2">
+                    <li class="terminal_info_btn"><a href="#"><h3>Terminal Information</h3></a>
+                      <ol class="terminal_drop_down1">
                         <li><a href="faqs.html">FAQs</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="">About Us</a></li>
                         <li><a href="newsroom.html">Newsroom</a></li>
                       </ol>
                     </li>
-                    <li><a href="Maps.html">Parking and Transport</a></li>
-                    <li><a href="visitMonrovia.html">Visit Monrovia</a></li>
+                    <li><a href="Maps.html"><h3>Parking and Transport</h3></a></li>
+                    <li><a href="visitMonrovia.html"><h3>Visit Monrovia</h3> </a></li>
                   </ul>
                   
                 </div>
@@ -94,7 +94,7 @@
 
           <nav class="nav-bar ">
              <ul class="nav-link">
-                 <li class="main_link_label line"><a href="#">Flights</a>
+                <li class="main_link_label line"><a href="#">Flights</a>
                  <!--This is the dropdown within the flight main link-->
                    <ul class="dropdown subMenu01">
                      <li><a href="flightStatus.html">Flight Status</a></li>
@@ -128,7 +128,8 @@
 
 
       </div>
-  </header>
+  </header> 
+
 
 <!--BEGAINING of the flight status page hero Section--->    
 <Section class="Airline_Information_hero_section">
