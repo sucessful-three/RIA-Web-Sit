@@ -1061,7 +1061,7 @@ outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./Images/bgforfstatuspage.jpeg);
+    background: url(./Images/brussels.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1109,7 +1109,7 @@ outline: none;
 
 /*Visit Monrovia*/
 .visit_monrovia_link a{
-    color: white;
+    color: var(--white);
     font-size: 1.3em;
 }
 
@@ -1142,13 +1142,13 @@ line-height: 1.5;
 
 #hero_text{
         font-size: 3rem;
-        color: white;
+        color: var(--white);
         margin-top: 160px;
 }
 
 #second_hero_text{
     font-size: 1.5rem;
-    color: white;
+    color: var(--white);
     font-family: monospace;
 }
 
@@ -1157,7 +1157,7 @@ line-height: 1.5;
     height: fit-content;
     padding: 10px 10px 10px 10px;
     background-color: #ff5a3c;
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
@@ -1167,8 +1167,8 @@ line-height: 1.5;
 /*Home parking*/
 
 .home_parking{
-    background-color: #D21312;
-    color: #ffffff;
+    background-color: var(--red);
+    color: var(--white);
     height: 8vh;
     display: flex;
     flex-direction: column;
@@ -1185,7 +1185,7 @@ line-height: 1.5;
     align-items: center;
 }
 .home_inner_div a{
-color: #fff;
+color: var(--white);
 }
 
 
@@ -1201,7 +1201,7 @@ color: #fff;
 }
 
 .hotels_near_in_RIA > h2{
-color: #D21312;
+color: var(--red);
 font-size: 1.9rem;
 }
 
@@ -1225,7 +1225,7 @@ font-size: 1.9rem;
     font-size: 1.6rem;
     flex-direction: column;
     margin: 30px;
-    color: #D21312;
+    color: var(--red);
 }
 .box_image > p{
 font-size: 1.2rem;
@@ -1298,15 +1298,16 @@ flex-direction: column;
 /*BUTTON*/
 
 .btm button{
-    background-color: #D21312;
-    border-color: #D21312;
-    color: #fff;
+    background-color: var(--red);
+    border-color: var(--red);
+    color: var(--white);
     width: 10%;
     height: 5vh;
     margin-bottom: 50px;
     margin-top: 25px;
     padding: 5px 5px;
     font-size: 1.3rem;
+    outline: none;
 }
 
 .btm{
@@ -1318,7 +1319,7 @@ flex-direction: column;
 
 
 .btm a{
-    color: #fff;
+    color: var(--white);
 }
 
 /*The Visit Monronvia ends here*/
@@ -1335,7 +1336,7 @@ margin: 90px;
 }
 
 .body_sec h2{
-    color: #D21312;
+    color: var(--red);
     font-size: 2.1rem;
 }
 
