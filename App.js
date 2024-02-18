@@ -10,11 +10,11 @@ $(".fa-bars").on("click", function(){
 });
 //Displaying the FLIGHT AND TERMINAL INFORMATION DROP DOWN
 $(".flight_btn").on("click", function(){
-  $(".flight_drop_down2").toggleClass("show_flag_cont");
+  $(".flight_drop_down1").toggleClass("show_flight_cont");
 });
 
-$(".ter_info_btn").on("click", function(){
-  $(".terminal_info2").toggleClass("show_ter_info");
+$(".terminal_info_btn").on("click", function(){
+  $(".terminal_drop_down1").toggleClass("show_ter_info");
 });
 
 
