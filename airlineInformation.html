@@ -35,11 +35,23 @@
 
                 <div class="hand_burger_menu"><i class="fa-solid  fa-bars"></i>
                   <ul class="handBurger_menu_dropdown">
-                    <ol>Fight</ol>
-                    <ol>Terminal Information</ol>
-                    <li>Parking and Transport</li>
-                    <ol>Visit Monrovia</ol>
+                    <li class="main_link_label line"><a href="#">Flights</a>
+                      <ol class="flight_drop_down2">
+                        <li><a href="flightStatus.html">Flight Status</a></li>
+                        <li><a href="airlineInformation.html">Flight Information</a></li>
+                      </ol>
+                    </li>
+                    <li class="main_link_label line"><a href="#">Terminal Information</a>
+                      <ol class="terminal_info2">
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                      </ol>
+                    </li>
+                    <li><a href="Maps.html">Parking and Transport</a></li>
+                    <li><a href="visitMonrovia.html">Visit Monrovia</a></li>
                   </ul>
+                  
                 </div>
               </div>
 
@@ -97,7 +109,7 @@
                  <ul class="dropdown subMenu02">
                     <li><a href="faqs.html">FAQs</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="newsroom.html">Newsroom</a></li>
                  </ul>
               </li>
 
@@ -120,103 +132,107 @@
 
 <!--BEGAINING of the flight status page hero Section--->    
 <Section class="Airline_Information_hero_section">
-    <!--Call to action text-->
-        <article class="Airline_Information_hero_article">
-          <div class="Airline_Information_hero_div">
-            <h1 id="Airline_Information_hero_text">Airline & Destination</h1>
-          </div>
-        </article>
-     
+      <!--Call to action text-->
+          <article class="Airline_Information_hero_article">
+            <div class="Airline_Information_hero_div">
+              <h1 id="Airline_Information_hero_text">Airline & Destination</h1>
+            </div>
+          </article>
  </section>   
     
     <!--END of the flight status page hero Section----------------------------------------------------------------->    
     
-    <!--Home flight Status starts here------------------->
+ <!--Home Airline_Information starts here------------------->
  <div class="home_Airline_Information">
-        <div class="home_Airline_Information_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_Airline_Information_span">&#12297;</span> <h2><a href="ariline information.html" class="Airline_Information">Airline Information</a></h2></div>
- </div>
-      
-   <!--Home flight Status ends here------------------->
+  <div class="home_Airline_Information_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_Airline_Information_span">&#62;</span> <h2><a href="ariline information.html" class="Airline_Information">Airline Information</a></h2></div>
+</div>
+
+<!--Home Airline Information ends here------------------->
 
 <!--The airline serve in Monrovia and table starts here-->
- <section class="airline_information_serve_table">
-    <div class="airline_information_serve">
-        <h3 class="airline_information_label">Airlines Serving Robert International Airport</h3>
-        <p class="airline_information_text">Serveral daily flights comes Monrovia with other capitals of the sub-region and international flight allow passenger traffic between Europe, Middle East and other contients, directly with a connection.</p>
-    </div>
-    <div class="airline_information_table_container_outer">
-        
-    </div>
-    <div class="airline_information_table_container">
-        <p class="table_description"><i></i>Airlines flying from/to Monrovia Robert airport (updated weekly)</p>
-        <table class="airline_information_table">
-            <thead>
-                <tr>
-                    <th>Airline</th>
-                    <th>Code(IATA)</th>
-                    <th>Code(ICOA)</th>
-                    <th>Website</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th><img src="./Images/klm-removebg-preview.png" alt="KML logo" width="100px"></th>
-                    <th>KL</th>
-                    <th>KL</th>
-                    <th><a href="#">-</a></th>
-                </tr>
-                <tr>
-                    <th><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya Airways Logo" width="100px"></th>
-                    <th>KQ</th>
-                    <th>KQA</th>
-                    <th><a href="#">https://www.kenya-airway.com/ph/en/</a></th>
-                </tr>
-                <tr>
-                    <th><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels Airlines logo" width="100px"></th>
-                    <th>SN</th>
-                    <th> </th>
-                    <th><a href="#">https://www.brusselsairlines.com/en/be/</a></th>
-                </tr>
-                <tr>
-                    <th><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" width="100px"></th>
-                    <th>AT</th>
-                    <th>RaM</th>
-                    <th><a href="#">-</a></th>
-                </tr>
-                <tr>
-                    <th><img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="Air Cote dIvoire logo" width="100px"></th>
-                    <th>HF</th>
-                    <th>VRE</th>
-                    <th><a href="#">https://www.aircotedivoire.com/</a></th>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<section class="airline_information_serve_table">
+  <div class="airline_information_serve">
+      <h3 class="airline_information_label">Airlines Serving Robert International Airport</h3>
+     
+      <p class="airline_information_text">Serveral daily flights comes Monrovia with other capitals of the sub-region and international flight allow passenger traffic between Europe, Middle East and other contients, directly with a connection.</p>
+  </div>
+  <div class="airline_information_table_container_outer">
+      <div class="airline_information_table_container">
+         <div class="table_description_div"><i class="fa-solid fa-phone-volume"></i>
+        <p class="table_description">Airlines flying from/to Monrovia Robert airport (updated weekly)</p>
+      </div>
+      
+      <table class="airline_information_table">
+          <thead>
+              <tr>
+                  <th>Airline</th>
+                  <th>Code(IATA)</th>
+                  <th>Code(ICOA)</th>
+                  <th>Website</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><img src="./Images/klm-removebg-preview.png" alt="KML logo" class="table-airline-logo-static"></td>
+                  <td>KL</td>
+                  <td>KL</td>
+                  <td><a href="#">-</a></td>
+              </tr>
+              <tr>
+                  <td><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya Airways Logo" class="table-airline-logo-static"></td>
+                  <td>KQ</td>
+                  <td>KQA</td>
+                  <td><a href="#">https://www.kenya-airway.com/ph/en/</a></td>
+              </tr>
+              <tr>
+                  <td><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels Airlines logo" class="table-airline-logo-static"></td>
+                  <td>SN</td>
+                  <td> </td>
+                  <td><a href="#">https://www.brusselsairlines.com/en/be/</a></td>
+              </tr>
+              <tr>
+                  <td><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" class="one-large"></td>
+                  <td>AT</td>
+                  <td>RaM</td>
+                  <td><a href="#">-</a></td>
+              </tr>
+              <tr>
+                  <td><img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="Air Cote dIvoire logo" class="table-airline-logo-static"></td>
+                  <td>HF</td>
+                  <td>VRE</td>
+                  <td><a href="#">https://www.aircotedivoire.com/</a></td>
+              </tr>
+          </tbody>
+      </table>
+   </div>
+  </div>
+  
 
- </section>
+</section>
 <!--The airline serve in Monrovia and table ends here-->
+
 
 
 
 <!--The destination serve from airport starts here-->
 <section class="destination_serve">
-<div class="destination_serve_div">
-    <h3 class="destination_serve_label">Destinations serve from our airport</h3>
-    <ul>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Abidjan</p></li>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Kotoka Airport</p></li>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Amsterdam Schiphal</p></li>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Lungi International Airport</p></li>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Brussels Airport</p></li>
-        <li><span><i class="fa-solid fa-map-location-dot"></i></span><p>Mohamed V Airport</p></li>
-    </ul>
-</div>
-</section>
-<!--The destination serve from airport ends here-->
+  <div class="destination_serve">
+      <h3 class="destination_serve_label">Destinations serve from our airport</h3>
+      <ul >
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Abidjan</p></li>
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Kotoka Airport</p></li>
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Amsterdam Schiphal</p></li>
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Lungi International Airport</p></li>
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Brussels Airport</p></li>
+          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Mohamed V Airport</p></li>
+      </ul>
+  </div>
+  </section>
+  <!--The destination serve from airport ends here-->
 
 <footer class="footer">
   <!--The footer Logo Container -->
-  <div id="footer_logo_container"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo"></a>
+  <div id="footer_logo_container"><a href="airlineInformation.html"><img src="./Images/Airport-logo.png" alt="Logo"></a>
   </div>
     <!--The  Feature Destination container  -->
   <div class="feature_destination_container">
