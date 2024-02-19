@@ -1582,6 +1582,70 @@ margin: 90px;
 
 /*The Maps Styles endeding */
 
+
+/*The about section***************************************************/
+
+.flight-status{
+    color: #fff;
+}
+.Our_history_container{
+    display: flex;
+    align-items: center;
+    margin: 90px;
+    
+     
+ }
+ .Our_history_image > img{
+     box-shadow: 25px 28px 5px 2px rgb(217, 216, 216);
+ }
+ 
+ .our_history_1 > p{
+ width: 80%;
+ font-size: 1.5rem;
+ }
+ .our_history_1 a{
+     color: #D21312;
+     position: absolute;
+     margin-top: 30px;
+     font-size: 1.2rem;
+ }
+ 
+ .our_history_1 > h2{
+     color: #D21312;
+     font-size: 1.8rem;
+ }
+
+
+.MAP_RIA{
+    display: flex;
+   align-items: center;
+   margin: 90px;
+}
+
+.map_image > img{
+    width: 80%;
+}
+
+
+.map_of_RIA{
+    margin-left: 40px;
+    width: 40%;
+}
+
+.map_of_RIA  > h2{
+color: #D21312;
+font-size: 1.8rem;
+}
+
+.map_of_RIA > p{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+/* The end of the About Us section**************************************/
+
+
+
 /*The footer section  */
 
 
@@ -2283,7 +2347,89 @@ flex-direction: column;
     color: #fff;
 }
 
-/*The Visit Monronvia ends here*/
+/*The Visit Monronvia ends here*****************************************/
+
+
+/*The About Us Section ***********************************************/
+
+
+
+.flight-status{
+    color: #fff;
+}
+.Our_history_container{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+ }
+
+ .our_history_1{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+ }
+
+ .our_history_1 > a{
+    position: absolute;
+    top: 1730px;
+ }
+ .Our_history_image > img{
+     box-shadow: 15px 18px 5px 2px rgb(217, 216, 216);
+     position: absolute;
+     right: 30px;
+     
+
+ }
+ .Our_history_image{
+    display: flex;
+    width: 20%;
+
+ }
+ 
+ .our_history_1 > p{
+ font-size: 1.6rem;
+ }
+ 
+ .our_history_1 > h2{
+     color: #D21312;
+     font-size: 2.1rem;
+ }
+
+
+.MAP_RIA{
+    display: ;
+   align-items: center;
+   flex-direction: column;
+   margin: 70px;
+}
+
+.map_image > img{
+    width: 60%;
+}
+
+
+.map_of_RIA{
+    margin-left: 10px;
+    width: 40%;
+    
+}
+
+.map_of_RIA  > h2{
+color: #D21312;
+font-size: 1.8rem;
+width: 170%;
+}
+
+.map_of_RIA > p{
+   width: 160%;
+position: relative;
+right: 250px;
+}
+
+/* The end of the About Us section**************************************/
+
+
 
 
 footer{
@@ -3664,8 +3810,77 @@ flex-direction: column;
 
 
 
-/*The Visit Monronvia  Responsiveness ends here************************************8/
+/*The Visit Monronvia  Responsiveness ends here************************************/
 
+/*  The About us sectio***************************************************/
+
+.Our_history_container{
+    display: block;
+    align-items: center;
+    margin: 40px;
+ }
+ .Our_history_image > img{
+     box-shadow: 25px 28px 5px 2px rgb(217, 216, 216);
+     width: 90%;
+     margin: 10px;
+ }
+ 
+ .our_history_1 > p{
+ width: 100%;
+ font-size: 1.5rem;
+ }
+ .our_history_1 a{
+     color: #D21312;
+     position: absolute;
+     margin-top: 185px;
+     font-size: 1.2rem;
+ }
+ 
+ .our_history_1 > h2{
+     color: #D21312;
+     font-size: 1.8rem;
+ }
+
+
+.MAP_RIA{
+    display: block;
+   align-items: center;
+   margin: 30px;
+   
+}
+
+.map_image > img{
+    width: 90%;
+    margin: 20px;
+    
+}
+
+
+.map_of_RIA{
+    width: 40%;
+    
+}
+
+.map_of_RIA  > h2{
+color: #D21312;
+font-size: 1.8rem;
+width: 290%;
+position: relative;
+right: 50px;
+margin: 10px;
+
+}
+
+.map_of_RIA > p{
+    margin: 20px;
+    font-size: 1.5rem;
+    width: 200%;
+    position: relative;
+right: 50px;
+
+}
+
+/* The end of the About Us section**************************************/
 
 
 /*Footer Section*/
