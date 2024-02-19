@@ -1563,7 +1563,7 @@ margin: 90px;
 
 
 
-/*The Maps Styles endeding */
+/*The Maps Styles ending */
 
 /*The footer section  */
 
@@ -1962,6 +1962,129 @@ margin-top: 0px;
     width: 20rem;
     height: 15rem;
 }
+
+/*The Airline Information page styling starts here*/
+
+/*BEGAINING of the Airline Information page hero Section styling*/
+
+.Airline_Information_hero_div{
+    margin-top: 8.1rem;
+}
+
+#Airline_Information_hero_text{
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+/*ENDING of the Airline_Information page hero Section styling*/
+
+/*The static tabel on the Airline_Information page styling starts here*/
+
+.airline_information_serve_table{
+    width: 100vw;
+    height: 84vh;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.911) 99%), url(./Images/bgfrotable.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airline_information_serve{
+    width: 86%;
+    margin-left: 3rem;
+}
+
+.airline_information_label{
+    font-size: 1.8rem;
+}
+
+.airline_information_text{
+    color: #2d2d2dc0;
+    font-size: 1.2rem;
+}
+
+.airline_information_table_container{
+    width: 88%;
+    height: 48vh;
+}
+
+.table_description_div{
+    width: max-content;
+    height: 12vh; 
+    margin-left: 2rem;
+    gap: 1.5rem;
+}
+
+.table_label_icon{
+    font-size: 3rem;
+}
+
+.table_description{
+    word-spacing: .2rem;
+    font-size: 1.2rem;
+}
+
+.airline_information_table {
+    width: 80%;
+    margin-left: 2rem;
+    font-size: 1rem;
+
+}
+
+.airline_information_table  th{
+    padding-bottom: 1rem;
+    padding: 4px 6px;
+    
+}
+
+.airline_information_table th,
+.airline_information_table td {
+  padding: 4px 6px;
+  text-align: center;
+}
+
+
+.table-airline-logo-static{
+    width: 120px; 
+}
+
+.one-large{
+    width: 90px;
+}
+
+/*The static table on the Airline Information page styling ends here*/
+
+.destination_serve{
+    height: 50vh;
+}
+
+.destination_serve{
+    margin-left: 1.5rem;
+    width: 80%;
+}
+
+.destination_serve_label{
+    font-size: 2rem;
+}
+
+.destination_serve > ul{
+    gap: 1.5rem;
+}
+ 
+
+.location-icon{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.location_text{
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/*The Airline Information page styling ends here*/
+
 
 /*The portion of the search flight on the flight status page styling starts here*/
 
@@ -3450,6 +3573,137 @@ outline: none;
         /*The show casing table of the scrollable table styling ends here*/
         
         /*The Fight Status page styling ends here*/
+
+        /*The Airline Information page styling starts here*/
+
+/*BEGAINING of the Airline Information page hero Section styling*/
+.Airline_Information_hero_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Airline_Information_hero_div{
+    margin-top: 8.5rem;
+}
+
+#Airline_Information_hero_text{
+    font-size: 4.3rem;
+    line-height: 3.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+/*ENDING of the Airline_Information page hero Section styling*/
+
+.home_Airline_Information_inner{
+    margin-left: 3rem;
+}
+
+/*The static tabel on the Airline_Information page styling starts here*/
+
+.airline_information_serve_table{
+    width: 100vw;
+    height: 84vh;
+    
+}
+
+.airline_information_serve{
+    width: 86%;
+    height: 26vh;
+    margin-left: 2rem;
+}
+
+.airline_information_label{
+    font-size: 1.7rem;
+}
+
+
+
+.airline_information_table_container_outer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.airline_information_table_container{
+    width: 90%;
+    height: 50vh;
+}
+
+.table_description_div{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 1.8rem;
+}
+
+.table_description{
+    word-spacing: .2rem;
+}
+
+.airline_information_table {
+    width: 60%;
+    margin-left: 0rem;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.airline_information_table  th{
+    
+    padding-bottom: 1rem;
+    padding: 0px 0px;
+    font-size: .9rem;
+    
+}
+
+.airline_information_table th,
+.airline_information_table td {
+  padding: 0px 0px;
+  width: fit-content;
+  text-align: left;
+  font-weight: normal;
+  
+}
+
+
+
+.table-airline-logo-static{
+    width: 100px; 
+}
+
+.one-large{
+    width: 70px;
+}
+
+/*The static table on the Airline Information page styling ends here*/
+
+.destination_serve{
+    width: 100vw;
+    height: 46vh;
+}
+
+.destination_serve{
+    margin-left: 1.5rem;
+    width: 90%;
+    gap: 2.1rem;
+}
+
+.location-icon{
+    font-size: 2.2rem;
+}
+
+.location_text{
+    font-size: 1.5rem;
+   
+}
+
+/*The Airline Information page styling ends here*/
+
         
 /* The Maps Styles */
 
