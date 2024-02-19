@@ -1,8 +1,22 @@
+
+
+// trying Scroll behavior
+
+window.onscroll= function scrollFunction(){
+  var myHeader=$("header");
+    if (document.documentElement.scrollTop > 700 ){
+      $(myHeader).slideUp(400);
+  }
+  else{$(myHeader).slideDown(800);}
+} // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
+ 
+ 
  //Creating a function that toggle the handburger menu 
 showNavDropDown();
-
+faqsDropDown();
 function showNavDropDown(){
     
+
 $(".fa-bars").on("click", function(){
   //Displaying the handburger drop down
     $(this).toggleClass("fa-x");
@@ -10,15 +24,18 @@ $(".fa-bars").on("click", function(){
 });
 //Displaying the FLIGHT AND TERMINAL INFORMATION DROP DOWN
 $(".flight_btn").on("click", function(){
-  $(".flight_drop_down2").toggleClass("show_flag_cont");
+  $(".flight_drop_down1").toggleClass("show_flight_cont");
 });
 
-$(".ter_info_btn").on("click", function(){
-  $(".terminal_info2").toggleClass("show_ter_info");
+$(".terminal_info_btn").on("click", function(){
+  $(".terminal_drop_down1").toggleClass("show_ter_info");
 });
 
 
 }
+
+
+
 
 
 //Creating a callback function to display the find your flight options and also rotate the angle down
@@ -66,16 +83,21 @@ function showImg(){
 }
 
 
-// trying Scroll behavior
 
-window.onscroll= function scrollFunction(){
-  let eh;
-  var myHeader=$("#header");
-    if (document.documentElement.scrollTop > 700 ){
-      $(myHeader).slideUp(400);
-  }
-  else{$(myHeader).slideDown(800);}
-} // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
- 
 
- 
+
+  
+//This is a function that display the FAQS Question to bring out the Answer for Each of the question
+function faqsDropDown(){
+  var ques=$(".question");
+
+let i;
+for(i = 0; i < ques.length; i++){
+  ques[i].addEventListener("click", function(){
+ //togging between showing and hidding answer
+    var ans= this.nextElementSibling;
+    
+    $(ans).fadeToggle();
+  });
+}
+}

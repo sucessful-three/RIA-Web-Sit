@@ -194,6 +194,7 @@ header{
     
 }
 
+
 @keyframes slidUp_burger{
     from {transform: translateY(200px)}
     to{transform: translateY(0px);}
@@ -284,6 +285,8 @@ justify-content: center;
     padding-left: 1rem;
     padding-top: 1rem;
 }
+
+
 
 .dropdown:hover li {
     border-bottom: none;
@@ -1306,11 +1309,12 @@ outline: none;
 
 
 .FAQ_main_container{
-    height: 100vh;
+    height: max-content;
     width: 100%;
     padding: 50px;
     background-color: rgb(251, 251, 251);
     display: flex;
+    gap: 2.5rem;
     flex-direction: column;
     justify-content: space-evenly;
     transition: 0.5s ease;
@@ -1323,6 +1327,8 @@ outline: none;
     flex-direction: column;
     gap: 2rem;
 }
+
+
 
 /*The visit Monrovia starts here*/
 
@@ -1517,7 +1523,6 @@ flex-direction: column;
 }
 
 .top_faq{
-    
     width: 18rem;
     height: 2.5rem;
     display: flex;
@@ -1533,7 +1538,8 @@ flex-direction: column;
     width: 90vw;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    transition: 1s ease;
     
 }
 .question{
@@ -1543,7 +1549,18 @@ flex-direction: column;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: 1s ease;
 }
+
+.answer{
+    height: 3.5rem;
+    width: 45%;
+    background-color: var(--white);
+    overflow: hidden;
+    display: none;
+    transition: 1s ease;
+}
+
 
 
 /* The Maps Styles */
@@ -1564,6 +1581,91 @@ margin: 90px;
 
 
 /*The Maps Styles ending */
+
+
+/*The about section***************************************************/
+
+.flight-status{
+    color: #070A52;
+}
+.Our_history_container{
+    width: 100vw;
+    height: 100vh;
+     
+ }
+
+.our_history_1{
+    padding-top: 4rem;
+    width: 80%;
+    height: 42vh;
+    display: flex;
+    gap: 20rem;
+    margin-left: 6rem;
+}
+
+.our_histiory_content{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.our_history_label{
+    color: var(--red);
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.our_history_text{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    word-spacing: .2rem;
+}
+
+.show_more_link{
+    color: var(--red);
+    font-weight: 800;
+}
+
+ .Our_history_image > img{
+     box-shadow: 25px 28px 5px 2px rgb(217, 216, 216);
+ }
+
+.MAP_RIA{
+    padding-top: 8rem;
+    width: 80%;
+    height: 46vh;
+    display: flex;
+    gap: 16rem;
+    margin-left: 6rem;
+}
+
+.map_image > img{
+    width: 25rem;
+}
+
+.map_of_RIA_label_text{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.map_of_RIA_label{
+    color: var(--red);
+    font-weight: 800;
+    font-size: 1.6rem; 
+}
+
+.map_of_RIA_text{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    word-spacing: .2rem; 
+}
+
+/* The end of the About Us section**************************************/
+
+
 
 /*The footer section  */
 
@@ -1878,11 +1980,13 @@ footer a{
 .handBurger_menu_dropdown{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
     text-align: center;
     font-size: 1.8rem;
     background-color: #070952cb;
     color: var(--white);
+    padding: 24px;
     position: absolute;
     top: 9.85rem;
     right: 0.1rem;
@@ -1891,6 +1995,10 @@ footer a{
     transition: 1s ease; 
     display: none;
 
+}
+
+.handBurger_menu_dropdown a{
+    color: var(--white);
 }
 
 .hand_burger_menu i{
@@ -1905,18 +2013,24 @@ footer a{
 
 
 
-
-.flight_drop_down2 , .terminal_info2  {
+.flight_drop_down1 , .terminal_drop_down1  {
  display: none;
 }
 
-
-.flight_drop_down2 a, .show_ter_info a{
-    color: var(--white);
-    font-size: 1.2rem;
-    font-family: var(--poppin);
-    color:var(--red);
+.flight_drop_down1 li a, .terminal_drop_down1 li a{
+    font-size: 1.6rem;
 }
+
+
+.flight_drop_down1 a, .show_ter_info a{
+    color: var(--white);
+    font-family: var(--poppin);
+    
+}
+.flight_btn{
+    line-height: 1.5;
+}
+
 
 
 /*THE LATEST NEWS STYLE FOR TABLET*****************/
@@ -2377,7 +2491,72 @@ flex-direction: column;
     color: #fff;
 }
 
-/*The Visit Monronvia ends here*/
+/*The Visit Monronvia ends here*****************************************/
+
+
+/*The about section***************************************************/
+
+.our_history_1{
+    width: 90%;
+    height: 46vh;
+    flex-direction: row;
+    gap: 6rem;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+
+.our_histiory_content{
+    padding-top: 4rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.our_history_label{
+   letter-spacing: .1rem;
+}
+
+.our_history_text{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    word-spacing: .2rem;
+}
+
+
+
+ .Our_history_image > img{
+     width: 18rem;
+ }
+
+.MAP_RIA{
+    width: 90%;
+    height: 46vh;
+    flex-direction: row;
+    gap: 3rem;
+    margin-left: 2.5rem;
+    align-items: center;
+}
+
+.map_image > img{
+    width: 16rem;
+}
+
+.map_of_RIA_label_text{
+    width: 50%;
+    gap: 1.4rem;
+}
+
+.map_of_RIA_label{
+    font-size: 1.3rem; 
+    word-spacing: .2rem;
+}
+
+.map_of_RIA_text{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+/* The end of the About Us section**************************************/
+
 
 
 footer{
@@ -2680,25 +2859,44 @@ footer{
         
         }
         
-        .flight_drop_down2 , .terminal_info2  {
-         display: none;
-        }
+        
+.handBurger_menu_dropdown a{
+    color: var(--white);
+}
+
+.hand_burger_menu i{
+    font-size: larger;
+}
+
+.flag_container{
+    gap: 1.2rem;
+    align-items: center;
+    display: none;
+}
+
+
+
+.flight_drop_down1 , .terminal_drop_down1  {
+ display: none;
+}
+
+.flight_drop_down1 li a, .terminal_drop_down1 li a{
+    font-size: 1.6rem;
+}
+
+
+.flight_drop_down1 a, .show_ter_info a{
+    color: var(--white);
+    font-family: var(--poppin);
+    
+}
+.flight_btn{
+    line-height: 1.5;
+}
         
         
-        .flight_drop_down2 a, .show_ter_info a{
-            color: var(--white);
-            font-size: 1.2rem;
-            font-family: var(--poppin);
-            color:var(--red);
-        }
         
         
-        
-        
-        .show_hand_burger{
-            display: flex;
-        
-         }   
         /*END OF CLASS FOR JAVA SCRIPT*/
         
         /*HAND BURGER MENU ENDS******************************************************/
@@ -3211,22 +3409,32 @@ footer{
     top: 8rem;
     right: 0.1rem;
     width: 100%;
-    height: 35vh;
+    height: 60vh;
     display: none;
 
 }
 
-.flight_drop_down2 , .terminal_info2  {
- display: none;
-}
-
-
-.flight_drop_down2 a, .show_ter_info a{
+.handBurger_menu_dropdown li a{
     color: var(--white);
-    font-size: 1.2rem;
-    font-family: var(--poppin);
-    color:var(--red);
 }
+.flight_drop_down1 , .terminal_drop_down1  {
+    display: none;
+   }
+   
+   .flight_drop_down1 li a, .terminal_drop_down1 li a{
+       font-size: 1.6rem;
+   }
+   
+   
+   .flight_drop_down1 a, .show_ter_info a{
+       color: var(--white);
+       font-family: var(--poppin);
+       
+   }
+   .flight_btn{
+       line-height: 1.5;
+   }
+   
 
 
 
@@ -3860,8 +4068,84 @@ flex-direction: column;
 
 
 
-/*The Visit Monronvia  Responsiveness ends here************************************8/
+/*The Visit Monronvia  Responsiveness ends here************************************/
 
+/*The about section***************************************************/
+
+
+.Our_history_container{
+    width: 100vw;
+    height: 120vh;
+     display: flex;
+     flex-direction: column;
+     gap: 4rem;
+ }
+
+.our_history_1{
+    padding-top: 4rem;
+    width: 80%;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-left: 2rem;
+}
+
+.our_histiory_content{
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.our_history_label{
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.our_history_text{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    word-spacing: .2rem;
+}
+
+
+ .Our_history_image > img{
+     width: 24rem;
+     box-shadow: 17px 18px 5px 2px rgb(217, 216, 216);
+ }
+
+.MAP_RIA{
+    margin-top: 8rem;
+    width: 100%;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.map_image > img{
+    width: 25rem;
+}
+
+.map_of_RIA_label_text{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.map_of_RIA_label{
+   
+    font-size: 1.4rem; 
+    padding-top: 2rem;
+}
+
+.map_of_RIA_text{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    word-spacing: .2rem; 
+}
+
+/* The end of the About Us section**************************************/
 
 
 /*Footer Section*/
@@ -4443,8 +4727,87 @@ justify-content: center;
     width: 100%;
 }
 
-/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
 
+/*The about section***************************************************/
+
+.Our_history_container{
+    width: 100vw;
+    height: 165vh;
+ }
+
+.our_history_1{
+    padding-top: 2rem;
+    width: 90%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.our_histiory_content{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.our_history_label{
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.our_history_text{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    word-spacing: .2rem;
+}
+
+
+
+ .Our_history_image > img{
+     width: 22rem;
+ }
+
+.MAP_RIA{
+    padding-top: 12rem;
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.map_image > img{
+    width: 22rem;
+}
+
+.map_of_RIA_label_text{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.map_of_RIA_label{
+    font-weight: 800;
+    font-size: 1.6rem; 
+}
+
+.map_of_RIA_text{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    word-spacing: .2rem; 
+}
+
+/* The end of the About Us section**************************************/
+
+
+
+
+/*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+    
 
 
 }
@@ -4461,6 +4824,8 @@ justify-content: center;
     display: flex;
    animation: slideDown 0.5s ease;
  }   
+   
+
 
  .show_ter_info{
     display: flex;
@@ -4469,7 +4834,7 @@ justify-content: center;
 }
 
 
-.show_flag_cont{
+.show_flight_cont{
     display: flex;
     flex-direction: column;
     gap:3px;
@@ -4480,6 +4845,10 @@ justify-content: center;
 .hide{
     display: none;
     
+}
+
+.active{
+    display: block
 }
 
 /*SCRIPT CLASS ENDS******************************************************/
