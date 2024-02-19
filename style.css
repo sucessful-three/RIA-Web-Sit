@@ -605,8 +605,10 @@ transform: rotate(180deg);
     justify-content: space-between;
     width: 86%;
     align-items: center;
-    height: 8vh;
+    height: max-content;
+    margin-top: 1.5em;
     margin-left: 3rem;
+    background-color: red;
  
 }
 
@@ -702,6 +704,9 @@ transform: rotate(180deg);
     margin-top: 2rem;
     margin-left: 3rem;
     font-size: 1.2rem;
+}
+.card_slider1{
+    display: none;
 }
 
 /*The latset news in monrovia styling starts here*/
@@ -824,7 +829,7 @@ outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 18vh;
+    margin-top: 20vh;
     background-color: rgba(0, 0, 0, 0.297);
 }
 
@@ -1440,8 +1445,8 @@ font-size: 1.9rem;
 /*Box Section*/
 
 .grey_line{
-    border: 2px solid grey;
-    box-shadow: 5px 5px 2px 0px gray;
+    border: 2px solid rgb(207, 207, 207);
+    box-shadow: 0px 1px 6px 0px rgb(174, 174, 174);
     width: 80%;
     margin-left: 100px;
     margin-top: 20px;
@@ -1567,15 +1572,17 @@ flex-direction: column;
 
 .body_sec{
 margin: 90px;
+width: 70%;
 
 }
 .body_sec p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .body_sec h2{
     color: var(--red);
     font-size: 2.1rem;
+    line-height: 5rem;
 }
 
 
@@ -3931,6 +3938,7 @@ outline: none;
     }
     .body_sec p{
         font-size: 1.5rem;
+    
     }
     
     .body_sec h2{
