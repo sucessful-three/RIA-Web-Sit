@@ -1309,11 +1309,12 @@ outline: none;
 
 
 .FAQ_main_container{
-    height: 100vh;
+    height: max-content;
     width: 100%;
     padding: 50px;
     background-color: rgb(251, 251, 251);
     display: flex;
+    gap: 2.5rem;
     flex-direction: column;
     justify-content: space-evenly;
     transition: 0.5s ease;
@@ -1326,6 +1327,8 @@ outline: none;
     flex-direction: column;
     gap: 2rem;
 }
+
+
 
 /*The visit Monrovia starts here*/
 
@@ -1520,7 +1523,6 @@ flex-direction: column;
 }
 
 .top_faq{
-    
     width: 18rem;
     height: 2.5rem;
     display: flex;
@@ -1536,7 +1538,8 @@ flex-direction: column;
     width: 90vw;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    transition: 1s ease;
     
 }
 .question{
@@ -1546,7 +1549,18 @@ flex-direction: column;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: 1s ease;
 }
+
+.answer{
+    height: 3.5rem;
+    width: 45%;
+    background-color: var(--white);
+    overflow: hidden;
+    display: none;
+    transition: 1s ease;
+}
+
 
 
 /* The Maps Styles */
@@ -4577,6 +4591,10 @@ justify-content: center;
 .hide{
     display: none;
     
+}
+
+.active{
+    display: block
 }
 
 /*SCRIPT CLASS ENDS******************************************************/

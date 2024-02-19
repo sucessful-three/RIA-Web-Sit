@@ -1,7 +1,4 @@
- 
-$(".Liberia_flag_icon").on("click", function(){
-  $(this).fadeOut();
-});
+
 
 // trying Scroll behavior
 
@@ -16,9 +13,10 @@ window.onscroll= function scrollFunction(){
  
  //Creating a function that toggle the handburger menu 
 showNavDropDown();
-
+faqsDropDown();
 function showNavDropDown(){
     
+
 $(".fa-bars").on("click", function(){
   //Displaying the handburger drop down
     $(this).toggleClass("fa-x");
@@ -35,6 +33,9 @@ $(".terminal_info_btn").on("click", function(){
 
 
 }
+
+
+
 
 
 //Creating a callback function to display the find your flight options and also rotate the angle down
@@ -84,3 +85,19 @@ function showImg(){
 
 
 
+
+  
+//This is a function that display the FAQS Question to bring out the Answer for Each of the question
+function faqsDropDown(){
+  var ques=$(".question");
+
+let i;
+for(i = 0; i < ques.length; i++){
+  ques[i].addEventListener("click", function(){
+ //togging between showing and hidding answer
+    var ans= this.nextElementSibling;
+    
+    $(ans).fadeToggle();
+  });
+}
+}
