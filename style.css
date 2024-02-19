@@ -3833,11 +3833,14 @@ outline: none;
     width: 100vw;
     display: flex;
     justify-content: center;
+ 
 }
 
 .airline_information_table_container{
     width: 90%;
-    height: 50vh;
+    height: 60vh;
+    overflow-x: scroll;
+    padding: 15px;
 }
 
 .table_description_div{
@@ -3884,6 +3887,10 @@ outline: none;
     width: 100px; 
 }
 
+.table_body{
+  
+    
+}
 .one-large{
     width: 70px;
 }
@@ -4455,6 +4462,12 @@ text-align: center;
         
     }
     
+    .table td {
+        font-weight: normal;
+        color: #2d2d2dc0;
+        background-color: red;
+       
+    }
     .table th,
     .table td {
         padding: 4px 4px;
