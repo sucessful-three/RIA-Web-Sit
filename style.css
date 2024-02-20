@@ -1200,26 +1200,60 @@ outline: none;
 
 }
 
-.airline_information_table  th{
-    border-bottom: 2px solid #7b7b7bc0;
-    border-top: 2px solid #7b7b7bc0;
-    padding-bottom: 1rem;
-    padding: 4px 6px;
-    font-size: 1.2rem;
-    
+.airline_information_table_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 36vh;
+    background: var(--blue);
+    border: 2px solid #D21312;
+    margin-left: 3rem;
 }
 
-.airline_information_table th,
-.airline_information_table td {
-  padding: 4px 6px;
-  text-align: center;
-  font-weight: normal;
-  
+.white{
+    width: 215px;
+    background: white;
+     height: 60px;
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.airline_information_table tbody tr:nth-last-of-type(odd){
-    background: #cdcdcd;
+.black{
+    width: 215px;
+    background: var(--white);
+     height: 60px;
+    border: 2px solid yellow; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
+
+.gray{
+    background: gray; 
+    width: 215px; 
+    height: 40px; 
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_white{
+    background: white; 
+    width: 215px; 
+    height: 40px; 
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 .table-airline-logo-static{
     width: 110px; 
@@ -4463,6 +4497,222 @@ text-align: center;
     
 
 /*This style is from the Flight status page that ends here*/
+
+/*The Airline Information page styling starts here*/
+
+/*BEGAINING of the Airline Information page hero Section styling*/
+.Airline_Information_hero_section{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+ 
+    background: url(./Images/brussels.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Airline_Information_hero_div{
+    height: 86.2vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.4rem;
+    background: #00000089;
+}
+
+#Airline_Information_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+}
+
+/*ENDING of the Airline_Information page hero Section styling*/
+
+.home_Airline_Information{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_Airline_Information_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_Airline_Information_inner > h2 a{
+    color: var(--white);
+}
+
+.home_Airline_Information_span{
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.home_Airline_Information_inner > h2  a:hover{
+    color: var(--blue);
+}
+
+.home_Airline_Information_inner > h2 .Airline_Information{
+    color: var(--blue);
+}
+
+
+/*The static tabel on the Airline_Information page styling starts here*/
+
+.airline_information_serve_table{
+    width: 100vw;
+    height: 84vh;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.911) 99%), url(./Images/bgfrotable.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airline_information_serve{
+    width: 36%;
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    justify-content: center;
+    background: transparent;
+    margin-left: 20rem;
+}
+
+.airline_information_label{
+    color: var(--red);
+    font-size: 1.7rem;
+    font-family: var(--poppin);
+}
+
+.airline_information_text{
+    color: var(--grayfortext);
+    font-size: 1.1rem;
+    font-family: var(--poppin);  
+    line-height: 1.6rem;
+}
+
+.airline_information_table_container_outer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.airline_information_table_container{
+    width: 60%;
+    height: 50vh;
+    background: var(--white); 
+    box-shadow: 2px 2px 16px 0px rgba(184, 158, 184, 1);
+    border-radius: .6rem;
+    
+}
+
+.table_description_div{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    gap: 1.5rem;
+}
+
+.table_description{
+    word-spacing: .2rem;
+}
+
+.airline_information_table {
+    width: 80%;
+    margin-left: 6rem;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.airline_information_table  th{
+    border-bottom: 2px solid #7b7b7bc0;
+    border-top: 2px solid #7b7b7bc0;
+    padding-bottom: 1rem;
+    padding: 4px 6px;
+    font-size: 1.2rem;
+    
+}
+
+.airline_information_table th,
+.airline_information_table td {
+  padding: 4px 6px;
+  text-align: center;
+  font-weight: normal;
+  
+}
+
+.airline_information_table tbody tr:nth-last-of-type(odd){
+    background: #cdcdcd;
+}
+
+.table-airline-logo-static{
+    width: 110px; 
+}
+
+.one-large{
+    width: 80px;
+}
+
+/*The static table on the Airline Information page styling ends here*/
+
+.destination_serve{
+    width: 100vw;
+    height: 60vh;
+}
+
+.destination_serve{
+    margin-left: 10rem;
+    width: 60%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.destination_serve_label{
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.destination_serve > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+ 
+.location_icon_text{
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    justify-self: center;
+}
+
+.location-icon{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.location_text{
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+/*The Airline Information page styling ends here*/
 
      .logo_div img{
         height: 6rem;
