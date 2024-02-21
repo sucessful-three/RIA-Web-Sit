@@ -9,8 +9,16 @@ window.onscroll= function scrollFunction(){
   }
   else{$(myHeader).slideDown(800);}
 } // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
- 
- 
+
+function flightDropDown(){
+  var flightLink=$(".flight_link");
+  var flightDrop=$(".flight_dropdown");
+  $(flightLink).on("mouseenter", function(){
+    $(flightDrop).style.display="block";
+  });
+}
+
+flightDropDown();
  //Creating a function that toggle the handburger menu 
 showNavDropDown();
 faqsDropDown();
@@ -83,10 +91,6 @@ function showImg(){
 }
 
 
-
-
-
-  
 //This is a function that display the FAQS Question to bring out the Answer for Each of the question
 function faqsDropDown(){
   var ques=$(".question");
@@ -101,3 +105,46 @@ for(i = 0; i < ques.length; i++){
   });
 }
 }
+
+
+// Creating the Latest News section functionality
+var litNewsIndex = 1;
+displaySlides(litNewsIndex);
+
+// Function to slide image forward or backward
+function pushSlide(n) {
+  displaySlides(litNewsIndex += n);
+}
+
+function displaySlides(n) {
+  var litNews_slides = $(".news_slider");
+  
+  // Adding a conditional statement for the slides
+  if (n > litNews_slides.length) {
+    litNewsIndex = 1;
+  }
+  if (n < 1) {
+    litNewsIndex = litNews_slides.length;
+  }
+  
+  for (let l = 0; l < litNews_slides.length; l++) {
+    litNews_slides[l].style.display = "none";
+  } 
+  
+  litNews_slides[litNewsIndex - 1].style.display = "flex";
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+

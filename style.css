@@ -530,6 +530,7 @@ transform: rotate(180deg);
     width: 100vw;
     background-color: var(--gray);
     display: flex;
+    gap: 2rem;
     padding: 15px;
     overflow-x: hidden;
     
@@ -587,18 +588,22 @@ transform: rotate(180deg);
 
 /*The latset news in monrovia styling starts here*/
 
-.latest_news_in_monrovia_master_container{
-    width: 66%;
-    height: 78vh;
+.latest_news_in_monrovia_container{
+    width: 65%;
+    height: 90%;
     background-color: var(--red);
     background: var(--gray);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
     flex-direction: column;
-    gap: 2rem;
+
+    
     
 }
+
+
 
 .latest_news_label_angle{
     display: flex;
@@ -608,13 +613,12 @@ transform: rotate(180deg);
     height: max-content;
     margin-top: 1.5em;
     margin-left: 3rem;
-    background-color: red;
  
 }
 
 .latest_news_label_h3{
     font-size: 2rem;
-
+    color: var(--red);
     font-weight: 900;
 }
 
@@ -663,19 +667,26 @@ transform: rotate(180deg);
 }
 
 /*The two cards styling starts here*/
+.all_latest_news{
+    width: 100%;
+
+    
+}
+
+.news_slider{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
 
 .card_2_img, .card_1_img{
-    width: 22.75rem;
-    height: 16.5rem;
+    width: 90%;
+    height: 17rem;
 }
 
-.cards_container{
-    display: flex;
-    width: 100%;
-    margin-left: 3rem;
-    margin-top: 3rem;
 
-}
 
 .card_1, .card_2{
     display: flex;
@@ -687,6 +698,7 @@ transform: rotate(180deg);
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    
 }
 
 .h3_date{
@@ -697,16 +709,17 @@ transform: rotate(180deg);
 .h3_news_heading{
     width: 75%;
     font-weight: 900;
+    color: var(--red);
 }
 
 .read_more_stories{
-    width: 60%;
-    margin-top: 2rem;
-    margin-left: 3rem;
-    font-size: 1.2rem;
+position: relative;
+right: 20rem;
+font-size: 1.2rem;
 }
-.card_slider1{
-    display: none;
+
+.read_more_stories a{
+    color: var(--blue);
 }
 
 /*The latset news in monrovia styling starts here*/
@@ -727,7 +740,7 @@ transform: rotate(180deg);
     font-size: 2.5rem;
     text-align: center;
     margin-top: 40px;
-    color: var(--black);
+    color: var(--blue);
 }
 
 .Our_Airlines img{
