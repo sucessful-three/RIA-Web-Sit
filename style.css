@@ -1644,7 +1644,7 @@ width: 70%;
 
 }
 .body_sec p{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 .body_sec h2{
@@ -1701,6 +1701,10 @@ width: 70%;
     color: var(--red);
     font-weight: 800;
 }
+.show_more_link:hover{
+    color: gray;
+    cursor: pointer;
+}
 
  .Our_history_image > img{
      box-shadow: 25px 28px 5px 2px rgb(217, 216, 216);
@@ -1740,6 +1744,126 @@ width: 70%;
 
 /* The end of the About Us section**************************************/
 
+/* Show More Section ************************************************/
+
+
+
+.liberia_p_content{
+width: 80%;
+font-size: 1.2rem;
+margin: 40px;
+color: #000;
+}
+
+.liberia_content h2{
+font-size: 1.9rem;
+}
+
+.liberia_content_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.liberia_content > .btm{
+    background: #070A52;
+    border: none;
+  margin: 20px;
+  padding: 10px;
+}
+.liberia_content > .btm:hover{
+    background: rgb(164, 163, 163);
+}
+
+
+/* Show More Section Ending *****************************************/
+
+
+/* OTHERS BEACHES NEAR RIA ****************************************88/
+
+/*Box Section*/
+
+.h2_content{
+    text-align: center;
+    margin-top: 10px;
+}
+.grey_line2{
+    border: 2px solid rgb(207, 207, 207);
+    box-shadow: 4px 6px 3px  rgb(174, 174, 174);
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+.box_image2 > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 30px;
+    color: var(--red);
+}
+.box_image2 > p{
+font-size: 1.2rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box2 img {
+    display: flex;
+    width: 100%;
+    
+}
+
+.grey_line2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grey_line2:hover{
+    transition: all 5s ease-in;
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm button:hover{
+    background: grey;
+    border-color: grey;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The others beaches ends here*/
 
 
 /*The footer section  */
@@ -1761,6 +1885,10 @@ footer{
 }
 footer a{
     color: var(--white);
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 /*The footer logo container  */
 #footer_logo_container{
@@ -2402,6 +2530,9 @@ margin-top: 0px;
 
 
 
+
+
+
 /*The Visitmonronvia Responsiveness*************************/
 /*The visit Monrovia starts here*****************************/
 
@@ -2637,6 +2768,45 @@ flex-direction: column;
 }
 
 /* The end of the About Us section**************************************/
+
+
+/* Show More Section ************************************************/
+
+
+
+.liberia_p_content{
+width: 80%;
+font-size: 1.2rem;
+margin: 40px;
+color: #000;
+}
+
+.liberia_content h2{
+font-size: 1.9rem;
+}
+
+.liberia_content_img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.liberia_content > .btm{
+    background: #070A52;
+    border: none;
+  margin: 20px;
+  padding: 10px;
+}
+.liberia_content > .btm:hover{
+    background: rgb(164, 163, 163);
+}
+
+
+/* Show More Section Ending *****************************************/
+
+
+
 
 
 
@@ -3206,6 +3376,91 @@ footer{
                     padding: 24px;
                     font-size: medium;
                 }
+
+
+
+/* OTHERS BEACHES NEAR RIA ****************************************88/
+
+/*Box Section*/
+
+.grey_line2{
+    border: 2px solid rgb(207, 207, 207);
+    box-shadow: 4px 6px 3px  rgb(174, 174, 174);
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.box_image2 > h3{
+    font-size: 1.6rem;
+    flex-direction: column;
+    margin: 20px;
+    color: var(--red);
+}
+.box_image2 > p{
+font-size: 1.2rem;
+flex-direction: column;
+    margin: 30px;
+}
+
+.box2 img {
+    display: flex;
+    width: 100%;
+    
+}
+
+.grey_line2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grey_line2:hover{
+    transition: all 5s ease-in;
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.3rem;
+}
+
+.btm button:hover{
+    background: grey;
+    border-color: grey;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The others beaches ends here*/
+
+
+
 
         /*Footer Section*/
             #footer_logo_container{
@@ -3983,12 +4238,7 @@ flex-direction: column;
     margin: 30px;
 }
 
-.box img {
-    display: flex;
-    width: 100%;
-    height: 14vh;
-    
-}
+
 
 .box{
    margin: 30px;
@@ -4000,23 +4250,12 @@ flex-direction: column;
 /*BUTTON*/
 
 .btm button{
-    background-color: #D21312;
-    border-color: #D21312;
-    color: #fff;
     width: 35%;
     height: 5vh;
-    margin-bottom: 50px;
     margin-top: 25px;
-    padding: 5px 5px;
     font-size: 1.3rem;
 }
 
-.btm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
 
 
@@ -4099,6 +4338,47 @@ flex-direction: column;
 }
 
 /* The end of the About Us section**************************************/
+
+
+             
+/* Show More Section ************************************************/
+
+
+
+.liberia_p_content{
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 40px;
+    color: #000;
+    }
+    
+    .liberia_content h2{
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .liberia_content_img{
+        display: block;
+        margin-left: 40px;
+    }
+    .liberia_content_img  > img{
+        width: 60%;
+       
+    }
+
+    
+    .liberia_content > .btm{
+        background: #070A52;
+        border: none;
+      margin: 20px;
+      padding: 10px;
+    }
+    .liberia_content > .btm:hover{
+        background: rgb(164, 163, 163);
+    }
+
+    
 
 
 /*Footer Section*/
@@ -4799,6 +5079,91 @@ justify-content: center;
 /*The Visit Monronvia  Responsiveness ends here************************************8/
 
 
+
+
+
+/* OTHERS BEACHES NEAR RIA ****************************************88/
+
+/*Box Section*/
+
+.grey_line2{
+    border: 2px solid rgb(207, 207, 207);
+    box-shadow: 4px 6px 3px  rgb(174, 174, 174);
+    width: 40%;
+    height: 250px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.box_image2 > h3{
+    font-size: 1.3rem;
+    flex-direction: column;
+    margin: 20px;
+    color: var(--red);
+}
+.box_image2 > p{
+font-size: 1.1rem;
+flex-direction: column;
+    margin: 10px;
+}
+
+.box2 img {
+    display: flex;
+    width: 100%;
+    height:;
+    
+}
+
+.grey_line2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.grey_line2:hover{
+    transition: all 5s ease-in;
+}
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    background-color: #D21312;
+    border-color: #D21312;
+    color: #fff;
+    width: 40%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-size: 1.1rem;
+}
+
+.btm button:hover{
+    background: grey;
+    border-color: grey;
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.btm a{
+    color: #fff;
+}
+
+/*The others beaches ends here*/
+
     /*FOOTER CONTAINER***********************************************************************/
     footer{
         padding: 10px;
@@ -4979,6 +5344,48 @@ justify-content: center;
 /* The end of the About Us section**************************************/
 
 
+                
+/* Show More Section ************************************************/
+
+
+
+.liberia_p_content{
+    width: 80%;
+    font-size: 1.3rem;
+    margin: 40px;
+    color: #000;
+    }
+    
+    .liberia_content h2{
+    font-size: 1.9rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .liberia_content_img{
+        display: block;
+        margin-left: 40px;
+        gap: 30px;
+    }
+    .liberia_content_img  > img{
+        width: 60%;
+       
+    }
+
+    
+    .liberia_content > .btm{
+        background: #070A52;
+        border: none;
+      margin: 20px;
+      padding: 10px;
+    }
+    .liberia_content > .btm:hover{
+        background: rgb(164, 163, 163);
+    }
+    
+    
+    /* Show More Section Ending *****************************************/
+    
 
 
 /*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
