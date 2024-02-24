@@ -2809,6 +2809,60 @@ font-size: 1.9rem;
 
 
 
+/* OTHERS BEACHES NEAR RIA ****************************************88/
+
+/*Box Section*/
+
+.grey_line2{
+    width: 40%;
+    height: 450px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.box_image2 > h3{
+    font-size: 1.3rem;
+    margin: 40px;
+}
+.box_image2 > p{
+font-size: 1.1rem;
+    margin: 40px;
+}
+
+.box2 img {
+    display: flex;
+    width: 100%;
+    
+}
+
+.grey_line2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    width: 40%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+/*The end of the box section2**************************************************/
+
+
+
+
 
 footer{
 
@@ -4221,8 +4275,8 @@ width: 150%;
     border: 2px solid grey;
     box-shadow: 5px 5px 2px 0px gray;
     width: 75%;
-    height: 45vh;
-    margin-left: 50px;
+    height: 55vh;
+    margin-left: 45px;
     margin-top: 20px;
 }
 
@@ -4235,14 +4289,17 @@ width: 150%;
 .box_image > p{
 font-size: 1.4rem;
 flex-direction: column;
-    margin: 30px;
+    margin: 20px;
+    width: 40%;
 }
 
 
 
+
+
 .box{
-   margin: 30px;
-    width: 80%;
+   margin: 20px;
+    width: 140%;
     display: block;
     
 }
@@ -4379,6 +4436,61 @@ flex-direction: column;
     }
 
     
+
+
+/* OTHERS BEACHES NEAR RIA ****************************************88/
+
+/*Box Section*/
+
+.grey_line2{
+    width: 40%;
+    height: 270px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.box_image2 > h3{
+    font-size: 1.3rem;
+    margin: 20px;
+}
+.box_image2 > p{
+font-size: 1.1rem;
+flex-direction: column;
+    margin: 10px;
+}
+
+.box2 img {
+    display: flex;
+    width: 100%;
+    
+}
+
+.grey_line2_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.box{
+   margin: 100px;
+    width: 80%;
+    display: flex;
+    
+}
+
+/*BUTTON*/
+
+.btm button{
+    width: 40%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+/*The end of the box section2**************************************************/
+
+
 
 
 /*Footer Section*/
@@ -5025,33 +5137,27 @@ width: 75%;
 height: 60vh;
 margin-left: 40px;
 margin-top: 20px;
+display: block;
 }
 
 .box_image > h3{
-font-size: 1.6rem;
-flex-direction: column;
-margin: 30px;
-color: #D21312;
+font-size: 1.4rem;
+margin: 10px;
 }
 .box_image > p{
-font-size: 1.4rem;
-flex-direction: column;
-margin: 20px;
-width: 80%;
+font-size: 1.3rem;
+margin: 10px;
+width: 60%;
 }
 
-.box img {
-display: flex;
-width: 100%;
+.box > img {
+width: 60%;
 height: 18vh;
-
+display: block;
 }
 
 .box{
-margin: 25px;
-width: 80%;
 display: block;
-
 }
 
 /*BUTTON*/
@@ -5069,7 +5175,7 @@ font-size: 1.3rem;
 }
 
 .btm{
-display: flex;
+display: block;
 align-items: center;
 justify-content: center;
 
@@ -5110,7 +5216,6 @@ flex-direction: column;
 .box2 img {
     display: flex;
     width: 100%;
-    height:;
     
 }
 
@@ -5134,32 +5239,11 @@ flex-direction: column;
 /*BUTTON*/
 
 .btm button{
-    background-color: #D21312;
-    border-color: #D21312;
-    color: #fff;
     width: 40%;
     height: 5vh;
     margin-bottom: 50px;
     margin-top: 25px;
-    padding: 5px 5px;
     font-size: 1.1rem;
-}
-
-.btm button:hover{
-    background: grey;
-    border-color: grey;
-}
-
-.btm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-.btm a{
-    color: #fff;
 }
 
 /*The others beaches ends here*/
