@@ -590,20 +590,16 @@ transform: rotate(180deg);
 
 .latest_news_in_monrovia_container{
     width: 65%;
-    height: 90%;
-    background-color: var(--red);
+    height: max-content;
     background: var(--gray);
     display: flex;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 2rem;
     flex-direction: column;
-
-    
-    
+    transition: 0.5s ease-in-out;
 }
-
-
 
 .latest_news_label_angle{
     display: flex;
@@ -722,9 +718,12 @@ font-size: 1.2rem;
     color: var(--blue);
 }
 
-/*The latset news in monrovia styling starts here*/
 
   /*Latest News in Monorovia Section styling ends here*/
+
+
+
+
 
 /*Our Airlines style*/
 .Our_Airlines{
@@ -2004,6 +2003,14 @@ footer a{
    
 }
 }
+
+
+
+
+
+
+
+
       
 /* Media Query for Tablets Ipads portrait mode *******************************************************************************************/
 @media (min-width: 580px) and (max-width: 1024px) {
@@ -2134,24 +2141,46 @@ footer a{
     color: var(--white);
 }
 
-.latest_news_label_angle{
-    width: 80vw;
+.latest_news_in_monrovia_container{
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
+    padding-bottom: 0rem;
+   
+}
+
+
+.latest_news_label_angle{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-left: 0;
+
+}
+
+.all_latest_news{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+padding-left: 2rem;
     
 }
 
-.cards_container{
-justify-content: center;
-gap: 3rem;
-margin-left: 0px;
-margin-top: 0px;
+
+.news_slider{
+padding: 0.2rem;
 }
 
 .card_2_img, .card_1_img{
     width: 20rem;
     height: 15rem;
 }
-
+.read_more_stories{
+    position: relative;
+    right: 13rem;
+    font-size: 1.2rem;
+    }
 
 
 /*The portion of the search flight on the flight status page styling starts here*/
@@ -2977,8 +3006,7 @@ footer{
         
         
         
-        
-        /*END OF CLASS FOR JAVA SCRIPT*/
+    
         
         /*HAND BURGER MENU ENDS******************************************************/
         
@@ -3070,6 +3098,48 @@ footer{
            
             
          }
+
+         .latest_news_in_monrovia_container{
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 0rem;
+   
+}
+
+
+.latest_news_label_angle{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-left: 0;
+
+}
+
+.all_latest_news{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+padding-left: 2rem;
+    
+}
+
+
+.news_slider{
+padding: 0.2rem;
+}
+
+.card_2_img, .card_1_img{
+    width: 20rem;
+    height: 15rem;
+}
+.read_more_stories{
+    position: relative;
+    right: 13rem;
+    font-size: 1.2rem;
+    }
+
         
          
         
@@ -3635,50 +3705,76 @@ footer{
  
 /*The latset news in monrovia styling starts here*/
 
-.latest_news_in_monrovia_master_container{
-    width: 100%;
-    height: 100%;
-    background-color: var(--red);
-    background: var(--gray);
-    padding-bottom: 10px;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-
-    
+.lates_news_in_monrovia_master_container{
+background-color: var(--white);
 }
+.latest_news_in_monrovia_container{
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 0rem;
+    background-color: rgb(252, 248, 248);
+
+   
+}
+
 
 .latest_news_label_angle{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
     width: 100%;
-    height: 30%;
-    padding-top: 10px;
-    
-}
-
-
-.latest_news_angle{
-    margin-right: 5rem;
-}
-
-
-
-.cards_container{
-    width: 100vw;
     justify-content: center;
-    margin-left: 2rem;
-    margin-top: 0px;
-    }
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-left: 0;
+
+}
+
+.all_latest_news{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+padding-left: 0;
     
-    .card_2_img, .card_1_img{
-        width: 10rem;
-        height: 6rem;
+}
+
+
+.news_slider{
+padding: 0.2rem;
+gap: 1.5rem;
+flex-direction: column;
+
+}
+
+.card_2_img, .card_1_img{
+    width: 100%;
+    height: 60%;
+}
+
+.card_text{
+width: 100%;
+text-align: center;
+line-height: 1.5;
+}
+
+.h3_news_heading{
+width: 100%;
+}
+
+.h3_date{
+margin-top: 1rem;
+}
+.read_more_stories{
+    position: relative;
+    right: 0rem;
+    bottom: 5rem;
+    font-size: 1.2rem;
     }
+
+
+
+
+
 /*Our Airlines style*/
 .Our_Airlines{
     height:fit-content;
