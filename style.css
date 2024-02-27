@@ -2095,7 +2095,37 @@ footer a:hover{
 
 /*THE NEWSROOM PAGE ENDS HERE***********************************************************************/
 
-/**Script CLASS*****************************************************/
+
+
+/* The Services page in the footer  starts here By Alvin***********************************************************************/
+
+.services_master_container{
+    height: max-content;
+    width: 100%;
+    padding: 24px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+   
+}
+.services_hero_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services_hero_container h1{
+    margin-top: 15rem;
+    font-size: 2.5rem;
+    font-family: var(--poppin);
+    width: 60%;
+}
+
+
 
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/

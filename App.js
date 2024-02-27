@@ -4,7 +4,7 @@
 
 window.onscroll= function scrollFunction(){
   var myHeader=$("header");
-    if (document.documentElement.scrollTop > 700 ){
+    if (document.documentElement.scrollTop > 50 ){
       $(myHeader).slideUp(400);
   }
   else{$(myHeader).slideDown(800);}
