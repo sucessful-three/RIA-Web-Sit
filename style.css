@@ -6,7 +6,10 @@
     text-decoration: none;
 }
 
-
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
 :root {
     --red: #D21312;
     --blue: #070A52;
@@ -1845,7 +1848,7 @@ flex-direction: column;
 
 footer{
     color: var(--white);
-    height: 60vh;
+    height: 65vh;
     width: 100vw;
     background: var(--blue);
     display: grid;
@@ -1856,13 +1859,16 @@ footer{
     transition: 0.5s ease;
     overflow-x: hidden;
     
+    
 }
 footer a{
     color: var(--white);
+    
+   
 }
 
 footer a:hover{
-    text-decoration: underline;
+    color: var(--red);
 }
 /*The footer logo container  */
 #footer_logo_container{
@@ -2114,7 +2120,7 @@ footer a:hover{
   
 }
   .looping_image_container{
-    width: 35%;
+    width: max-content ;
 
   }
 
@@ -2127,13 +2133,14 @@ footer a:hover{
   }
   
   .services_content_list{
-    position: relative;
-    width: 90%;
+
+    width: max-content;
     height: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr  auto ;
     gap: 5px;
+
   }
 
 .services_content_container h2{
@@ -2146,49 +2153,19 @@ footer a:hover{
 
 .services_list{
     display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+
+  
 }
 
-.scroll_container{
-    margin: 30px;
-
-   
-}
-
-
-
-.section1_container p{
-    font-size: 16px;
-    width: 70%;
-}
-
-.section1_container h2{
-font-size: 36px;
-}
-
-.section1_container img{
-    width: 20vw;
-    height: 50vh;
-}
-
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 20px;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 50px;}
-#section3 {padding-top:50px;height:500px;color: #000; background-color:var(--grayfortext); margin-bottom: 30px;}
-#section4 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 30px;}
-#section5 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 50px;}
-#section6 {padding-top:50px;height:500px;color: #000; background-color: var(--grayfortext); margin-bottom: 30px;}
-#section7 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 30px;}
-#section8 {padding-top:50px;height:500px;color: #fff; background-color: var(--grayfortext); margin-bottom: 30px;}
-#section9 {padding-top:50px;height:500px;color: #fff; background-color:var(--red)}
-
-
-.services_list a, i{
+.services_list a{
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 850;
     font-family: var(--poppin);
     color: var(--blue);
     transition: 0.2s ease-in-out;
+
     
 }
 .services_list a:hover{
@@ -2198,6 +2175,32 @@ font-size: 36px;
 .services_list  i{
     color: var(--red);
 }
+.scroll_container{
+    margin: 30px;
+
+   
+}
+
+
+
+
+
+
+/**/
+.services_details{
+    height: max-content;
+   
+}
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12{
+    height: min-content;
+    color: #fff;
+     padding: 24px;
+}
+ 
+
+
+
+
 
 
 
@@ -3201,7 +3204,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    padding: 30px;  
+    padding: 0px;  
+    
 
    
   
@@ -3224,6 +3228,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr  auto ;
     gap: 2rem;
+   
   }
 
 .services_content_container h2{
@@ -3236,8 +3241,7 @@ footer{
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+ text-align: justify;
 }
 
 .services_list a, i{
@@ -3254,6 +3258,10 @@ footer{
 }
 .services_list  i{
     color: var(--red);
+}
+.img-fluid{
+    height: 100%;
+    
 }
 
 }
@@ -3997,8 +4005,7 @@ flex-direction: column;
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+text-align: justify;
 }
 
 .services_list a, i{
@@ -5226,8 +5233,7 @@ text-align: center;
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: justify;
 }
 
 .services_list a, i{
@@ -5937,6 +5943,7 @@ flex-direction: column;
   .services_content_container{
     width: 100%;
     flex-direction: column;
+
     gap: 20px;
 
   }
@@ -5958,11 +5965,7 @@ flex-direction: column;
 }
 
 
-.services_list{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .services_list a, i{
     font-size: 1.1rem;
