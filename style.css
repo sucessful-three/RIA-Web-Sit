@@ -1792,6 +1792,7 @@ flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+   height: max-content;
 }
 
 .grey_line2:hover{
