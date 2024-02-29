@@ -723,6 +723,10 @@ font-size: 1.2rem;
     color: var(--blue);
 }
 
+.read_more_stories a:hover{
+    color: #cdcdcd;
+}
+
 
   /*Latest News in Monorovia Section styling ends here*/
 
@@ -829,12 +833,11 @@ outline: none;
 /*BEGAINING of the flight status page hero Section styling*/
 .flight_status_hero_section{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center; 
     background-image: url(./Images/brussels.jpg);
-   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -862,7 +865,7 @@ outline: none;
 /*ENDING of the flight status page hero Section styling*/
 
 .home_flight_status{
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     background: var(--red);
 }
@@ -1514,40 +1517,6 @@ font-size: 1.9rem;
     width: 40%;
 }
 
-/*Box Section*/
-
-.grey_line{
-    border: 2px solid rgb(207, 207, 207);
-    box-shadow: 0px 1px 6px 0px rgb(174, 174, 174);
-    width: 80%;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-
-.box_image > h3{
-    font-size: 1.6rem;
-    flex-direction: column;
-    margin: 30px;
-    color: var(--red);
-}
-.box_image > p{
-font-size: 1.2rem;
-flex-direction: column;
-    margin: 30px;
-}
-
-.box img {
-    display: flex;
-    width: 60%;
-    
-}
-
-.box{
-   margin: 100px;
-    width: 80%;
-    display: flex;
-    
-}
 
 /*BUTTON*/
 
@@ -1786,7 +1755,7 @@ font-size: 1.9rem;
 
 /* OTHERS BEACHES NEAR RIA ****************************************88/
 
-/*Box Section*/
+/*Box Section2*/
 
 .h2_content{
     text-align: center;
@@ -2157,6 +2126,7 @@ footer a:hover{
   }
   
   .services_content_list{
+    position: relative;
     width: 90%;
     height: 70%;
     display: grid;
@@ -2178,6 +2148,39 @@ footer a:hover{
   justify-content: center;
   align-items: center;
 }
+
+.scroll_container{
+    margin: 30px;
+
+   
+}
+
+
+
+.section1_container p{
+    font-size: 16px;
+    width: 70%;
+}
+
+.section1_container h2{
+font-size: 36px;
+}
+
+.section1_container img{
+    width: 20vw;
+    height: 50vh;
+}
+
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 20px;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 50px;}
+#section3 {padding-top:50px;height:500px;color: #000; background-color:var(--grayfortext); margin-bottom: 30px;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 30px;}
+#section5 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 50px;}
+#section6 {padding-top:50px;height:500px;color: #000; background-color: var(--grayfortext); margin-bottom: 30px;}
+#section7 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 30px;}
+#section8 {padding-top:50px;height:500px;color: #fff; background-color: var(--grayfortext); margin-bottom: 30px;}
+#section9 {padding-top:50px;height:500px;color: #fff; background-color:var(--red)}
+
 
 .services_list a, i{
     font-size: 1.15rem;
@@ -2771,40 +2774,8 @@ width: 95%;
     width: 80%;
 }
 
-/*Box Section*/
+/*Box Section*************************************************************/
 
-.grey_line{
-    border: 2px solid grey;
-    box-shadow: 5px 5px 2px 0px gray;
-    width: 85%;
-    margin-left: 60px;
-    margin-top: 20px;
-}
-
-.box_image > h3{
-    font-size: 1.7rem;
-    flex-direction: column;
-    margin: 30px;
-    color: #D21312;
-}
-.box_image > p{
-font-size: 1.4rem;
-flex-direction: column;
-    margin: 30px;
-}
-
-.box img {
-    display: flex;
-    width: 60%;
-    
-}
-
-.box{
-   margin: 100px;
-    width: 80%;
-    display: flex;
-    
-}
 
 /*BUTTON*/
 
@@ -2833,6 +2804,8 @@ flex-direction: column;
 }
 
 /*The Visit Monronvia ends here*****************************************/
+
+
 
 
 /*The about section***************************************************/
@@ -3605,7 +3578,7 @@ padding: 0.2rem;
 
 /* OTHERS BEACHES NEAR RIA ****************************************88/
 
-/*Box Section*/
+/*Box Section***********************************************/
 
 .grey_line2{
     border: 2px solid rgb(207, 207, 207);
@@ -4591,52 +4564,32 @@ width: 150%;
     width: 80%;
 }
 
-/*Box Section*/
-
-.grey_line{
-    border: 2px solid grey;
-    box-shadow: 5px 5px 2px 0px gray;
-    width: 75%;
-    height: 55vh;
-    margin-left: 45px;
-    margin-top: 20px;
-}
-
-.box_image > h3{
-    font-size: 1.6rem;
-    flex-direction: column;
-    margin: 30px;
-    color: #D21312;
-}
-.box_image > p{
-font-size: 1.4rem;
-flex-direction: column;
-    margin: 20px;
-    width: 40%;
-}
+/*THE BOX SECTION******************************************/
 
 
 
-
-
-.box{
-   margin: 20px;
-    width: 140%;
-    display: block;
-    
-}
 
 /*BUTTON*/
 
 .btm button{
-    width: 35%;
+    width: 10%;
     height: 5vh;
+    margin-bottom: 50px;
     margin-top: 25px;
-    font-size: 1.3rem;
+
+}
+
+.btm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
-
+.btm a{
+    color: #fff;
+}
 
 
 /*The Visit Monronvia  Responsiveness ends here************************************/
@@ -4646,7 +4599,7 @@ flex-direction: column;
 
 .Our_history_container{
     width: 100vw;
-    height: 120vh;
+    height: max-content;
      display: flex;
      flex-direction: column;
      gap: 4rem;
@@ -5346,37 +5299,7 @@ font-size: 1.5rem;
 width: 80%;
 }
 
-/*Box Section*/
-
-.grey_line{
-border: 2px solid grey;
-box-shadow: 5px 5px 2px 0px gray;
-width: 75%;
-height: 60vh;
-margin-left: 40px;
-margin-top: 20px;
-display: block;
-}
-
-.box_image > h3{
-font-size: 1.4rem;
-margin: 10px;
-}
-.box_image > p{
-font-size: 1.3rem;
-margin: 10px;
-width: 60%;
-}
-
-.box > img {
-width: 60%;
-height: 18vh;
-display: block;
-}
-
-.box{
-display: block;
-}
+/*Box Section**********************************************************************/
 
 /*BUTTON*/
 
@@ -5408,7 +5331,7 @@ justify-content: center;
 
 /* OTHERS BEACHES NEAR RIA ****************************************88/
 
-/*Box Section*/
+/*Box Section2*/
 
 .grey_line2{
     border: 2px solid rgb(207, 207, 207);
