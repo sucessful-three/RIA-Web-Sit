@@ -2351,35 +2351,7 @@ footer{
   
 }
 
-<<<<<<< HEAD
-.scroll_container{
-    margin: 30px;
-
-   
-}
-
-
-
-.section1_container p{
-    font-size: 16px;
-    width: 70%;
-}
-
-.section1_container h2{
-font-size: 36px;
-}
-
-.section1_container img{
-    width: 20vw;
-    height: 50vh;
-}
-
-
-
-.services_list a, i{
-=======
 .services_list a{
->>>>>>> 6ed7fd25ab02e81a6e78d6ff1dc5af8a7059715d
     font-size: 1.15rem;
     font-weight: 850;
     font-family: var(--poppin);
