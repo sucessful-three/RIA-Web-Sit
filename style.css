@@ -1840,6 +1840,8 @@ flex-direction: column;
 /*The others beaches ends here*/
 
 
+
+
 /*The footer section  */
 
 
@@ -2172,15 +2174,6 @@ font-size: 36px;
     height: 50vh;
 }
 
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 20px;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 50px;}
-#section3 {padding-top:50px;height:500px;color: #000; background-color:var(--grayfortext); margin-bottom: 30px;}
-#section4 {padding-top:50px;height:500px;color: #fff; background-color: var(--red); margin-bottom: 30px;}
-#section5 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 50px;}
-#section6 {padding-top:50px;height:500px;color: #000; background-color: var(--grayfortext); margin-bottom: 30px;}
-#section7 {padding-top:50px;height:500px;color: #fff; background-color: var(--blue); margin-bottom: 30px;}
-#section8 {padding-top:50px;height:500px;color: #fff; background-color: var(--grayfortext); margin-bottom: 30px;}
-#section9 {padding-top:50px;height:500px;color: #fff; background-color:var(--red)}
 
 
 .services_list a, i{
