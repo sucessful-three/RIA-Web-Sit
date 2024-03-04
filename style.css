@@ -1547,6 +1547,41 @@ font-size: 1.9rem;
     color: #fff;
 }
 
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: flex;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: 310px;
+    width: 70%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+/*Cards section end ****************************************************************************/
+
+
 /*The Visit Monronvia ends here*/
 
 
@@ -1768,7 +1803,7 @@ font-size: 1.9rem;
     border: 2px solid rgb(207, 207, 207);
     box-shadow: 4px 6px 3px  rgb(174, 174, 174);
     width: 20%;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
@@ -1842,21 +1877,13 @@ flex-direction: column;
 
 /*The others beaches ends here*/
 
+
 /*The Contact page styling starts here*/
 
-<<<<<<< HEAD
 
 
-/*The footer section  */
-
-
-footer{
-    color: var(--white);
-    height: 60vh;
-=======
 /*BEGAINING of the contact page hero Section styling*/
 .contact_hero_section{
->>>>>>> 6ed7fd25ab02e81a6e78d6ff1dc5af8a7059715d
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -3075,6 +3102,44 @@ width: 95%;
 /*Box Section*************************************************************/
 
 
+
+
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: 310px;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+
+/*Cards section end ****************************************************************************/
+
 /*BUTTON*/
 
 .btm button{
@@ -4173,6 +4238,7 @@ flex-direction: column;
 
 
 
+
         /*Footer Section*/
             #footer_logo_container{
                 width: 10rem;
@@ -4466,7 +4532,7 @@ text-align: justify;
     }
 
     .header_1st_section{
-        height: fit-content;
+        height: max-content;
     
     }
     .logo_div{
@@ -5169,8 +5235,6 @@ width: 150%;
 /*THE BOX SECTION******************************************/
 
 
-
-
 /*BUTTON*/
 
 .btm button{
@@ -5820,16 +5884,58 @@ text-align: center;
 }
 
 
-
     }   
 
+     /*END OF LANDING PAGE Media QUERY*/
 
+
+    /*******************Media Query for Max-width 360px**********************************************************************/
+    @media (max-width: 360px) {    
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+     height: max-content;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 255px;
+    height: 130px;
+    margin: 15px;
+}
+
+/*BUTTON*/
+
+.btm button{
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    margin: 30px;
+    }
+    
+    
+
+
+/*Cards section end ****************************************************************************/
+        
+    }
+
+    /********************************The ENDING OF THE MEDIA QUERY 360PX***********************************************************/
 
 
 
     
     
-    /*END OF LANDING PAGE Media QUERY*/
+   
 
      
 
@@ -6146,26 +6252,47 @@ width: 80%;
 
 /*Box Section**********************************************************************/
 
+
+
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+     height: fit-content;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 220px;
+    height: 130px;
+    margin: 15px;
+}
+
 /*BUTTON*/
 
 .btm button{
-background-color: #D21312;
-border-color: #D21312;
-color: #fff;
-width: 35%;
-height: 5vh;
-margin-bottom: 50px;
-margin-top: 25px;
-padding: 5px 5px;
-font-size: 1.3rem;
-}
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin: 90px;
+    }
+    
+    
 
-.btm{
-display: block;
-align-items: center;
-justify-content: center;
 
-}
+/*Cards section end ****************************************************************************/
+
+
+
+
 
 
 /*The Visit Monronvia  Responsiveness ends here************************************8/
