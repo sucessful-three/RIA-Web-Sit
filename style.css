@@ -6,7 +6,10 @@
     text-decoration: none;
 }
 
-
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
 :root {
     --red: #D21312;
     --blue: #070A52;
@@ -1839,7 +1842,9 @@ flex-direction: column;
 
 /*The others beaches ends here*/
 
+/*The Contact page styling starts here*/
 
+<<<<<<< HEAD
 
 
 /*The footer section  */
@@ -1848,101 +1853,292 @@ flex-direction: column;
 footer{
     color: var(--white);
     height: 60vh;
+=======
+/*BEGAINING of the contact page hero Section styling*/
+.contact_hero_section{
+>>>>>>> 6ed7fd25ab02e81a6e78d6ff1dc5af8a7059715d
     width: 100vw;
-    background: var(--blue);
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 2.5fr 1fr;
-    padding: 20px;
-    transition: 0.5s ease;
-    overflow-x: hidden;
-    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(./Images/brussels.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-footer a{
+
+.contact_hero_div{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+#contact_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+.home_contact{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_contact_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_contact_inner > h2 .home{
     color: var(--white);
 }
 
-footer a:hover{
-    text-decoration: underline;
+.home_contact_inner > h2 .home:hover{
+    color: var(--blue);
+    transition: all 1s ease-in-out;
 }
-/*The footer logo container  */
-#footer_logo_container{
+
+.home_contact_span{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.contact{
+    color: var(--blue);
+}
+
+
+/*The airport section styling starts here*/
+
+.airport_contact_sec_one{
+    width: 100vw;
+    height: 96vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.826) 0%, rgba(255, 255, 255, 0.977) 50%, rgb(255, 255, 255) 99%), url(./Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airport_contact_form_contaner1{
+    width: 50vw;
+    height: 76vh;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.airport_contact_form_contaner2{
+    width: 50vw;
+    height: 76vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.airport_contact_sec_label_h2{
+    color: var(--blue);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contact_page_icon_label_text_article{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.contact_page_icon_label_text_div{
+    display: flex;
+    gap: 1.8rem;
+
     
 }
 
-
-/*The footer Feature Destination container  */
-.feature_destination_container{
+.contact_page_label_text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 15px;
-   
-}
-.destinations_links_contianer{
-    line-height: 2;
-    text-align: left;
+    gap: .6rem;  
 }
 
-/*The footer airport container*/
-.the_airport_container{
+.contact_page_label_text div h2{
+    color: var(--grayfortext);
+    font-weight: 500;
+}
+
+.contact_page_label_text div p{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.1rem;
+    white-space: .2rem;
+    letter-spacing: 1px;
+}
+
+.contact_page_icon_div{
+    position: relative;
+    top: .4rem;
+}
+
+.contact_page_icon_div > i{
+    font-size: 1.6rem;
+    color: var(--blue);
+}
+
+
+/*The second section but it is the airport user info */
+.airport_user_info_sec_two{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+}
+
+.airport_contact_user_input_contaner1{
+    height: 80vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
-    align-items: left;
-    gap: 15px;
+    align-items: center;
+}
+
+.airport_contact_user_input_label_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.airport_contact_user_input_label{
+    width: 60%;
+}
+
+.airport_contact_user_input_label > h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    word-spacing: .2rem;
     
 }
-.the_airport_link_container{
-    line-height: 1.8;
-    text-align: center;
-    text-align: left;
+
+.airport_contact_user_input_text{
+    width: 80%;
 }
 
-/*The footer quick link container*/
-.the_quick_link_container{
+
+.airport_contact_user_input_text > p{
+    font-size: 1.3rem;
+    word-spacing: .1rem;
+    font-weight: 500;
+    color: var(--grayfortext);
+}
+
+.airport_contact_user_input_contaner2{
+    height: 80vh;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-}
-.the_quick_link{
-    line-height: 1.5;
-    text-align: left;
 }
 
-/*The footer Connect with us section*/
-.connect_with_us_copyright_container{
+.contact_form_contact_page {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name_input, .email_input, .subject_input {
+    width: 20rem;
+    height: 2.6rem;
+    background: #F5F5F5;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.subject_input::placeholder{
+    font-size: 1.1rem;
+}
+
+.textarea_input{
+    width: 20rem;
+    background: #F5F5F5;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    height: 9rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    color: var(--blue);
+}
+
+.textarea_input::placeholder{
+    font-size: 1.1rem;
+}
+
+.contact_page_submit_btn{
+    padding: 12px 26px;
+    border: none;
+    border-radius: .2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.contact_page_submit_btn:hover{
+    transition: all .5s ease;
+    background: var(--red);
+    color: var(--black);
+}
+
+/*The airport section styling ends here*/
+
+/*The google map section styling starts here*/
+
+.airport_google_map_sec{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    grid-column: span 4;
-    border-top: 2px solid white;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
-.connect_withus_container{
-  line-height: 2;
-}
-
-
-.connect_icons{
-    word-spacing: 20px;
-}
-
-.small_logo{
-    display: none;
+    
+.ria_goolgle_map_direction{
+    width: 96%;
+    height: 80vh;
+    border: none;
+    border-radius: .2rem;
 }
 
 
-/*End of footer*/
 
+/*The google map section styling ends here*/
 
+/*The Contact page styling ends here*/
 /*THE NEWSROOM PAGE STARTS HERE***********************************************************************/
 
 .newsroom_master_container{
@@ -2116,7 +2312,7 @@ footer a:hover{
   
 }
   .looping_image_container{
-    width: 35%;
+    width: max-content ;
 
   }
 
@@ -2129,13 +2325,14 @@ footer a:hover{
   }
   
   .services_content_list{
-    position: relative;
-    width: 90%;
+
+    width: max-content;
     height: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr  auto ;
     gap: 5px;
+
   }
 
 .services_content_container h2{
@@ -2148,10 +2345,13 @@ footer a:hover{
 
 .services_list{
     display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+
+  
 }
 
+<<<<<<< HEAD
 .scroll_container{
     margin: 30px;
 
@@ -2177,11 +2377,15 @@ font-size: 36px;
 
 
 .services_list a, i{
+=======
+.services_list a{
+>>>>>>> 6ed7fd25ab02e81a6e78d6ff1dc5af8a7059715d
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 850;
     font-family: var(--poppin);
     color: var(--blue);
     transition: 0.2s ease-in-out;
+
     
 }
 .services_list a:hover{
@@ -2191,6 +2395,134 @@ font-size: 36px;
 .services_list  i{
     color: var(--red);
 }
+.scroll_container{
+    margin: 30px;
+
+   
+}
+
+/**/
+.services_details{
+    height: max-content;
+   
+}
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12{
+    height: min-content;
+    color: #fff;
+     padding: 24px;
+}
+ 
+/*The footer section  */
+
+
+footer{
+    color: var(--white);
+    height: 65vh;
+    width: 100vw;
+    background: var(--blue);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 2.5fr 1fr;
+    padding: 20px;
+    transition: 0.5s ease;
+    overflow-x: hidden;
+    
+    
+}
+
+footer a{
+    color: var(--white);
+    
+   
+}
+
+footer a:hover{
+    color: var(--red);
+}
+
+/*The footer logo container  */
+#footer_logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*The footer Feature Destination container  */
+.feature_destination_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 15px;
+   
+}
+.destinations_links_contianer{
+    line-height: 2;
+    text-align: left;
+}
+
+/*The footer airport container*/
+.the_airport_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 15px;
+    
+}
+
+.the_airport_link_container{
+    line-height: 1.8;
+    text-align: center;
+    text-align: left;
+}
+
+/*The footer quick link container*/
+.the_quick_link_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.the_quick_link{
+    line-height: 1.5;
+    text-align: left;
+}
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 4;
+    border-top: 2px solid white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.connect_withus_container{
+  line-height: 2;
+}
+
+.connect_icons{
+    word-spacing: 20px;
+}
+
+.small_logo{
+    display: none;
+}
+
+/*End of footer*/
+
+
+
+
+
+
+
 
 
 
@@ -2957,7 +3289,131 @@ font-size: 1.1rem;
 /*The end of the box section2**************************************************/
 
 
+/*The Contact page styling starts here*/
 
+/*BEGAINING of the contact page hero Section styling*/
+
+.contact_hero_div{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0vh;
+}
+
+#contact_hero_text{
+    font-size: 5rem;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+.home_contact_inner{
+    gap: 1.5rem;
+    margin-left: 2rem;
+}
+
+.home_contact_inner > h2 .home, .home_contact_span, .contact{
+    font-size: 1.6rem;
+}
+
+/*The airport section styling starts here*/
+
+.airport_contact_sec_one{
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.991) 50%, rgb(255, 255, 255) 99%), url(./Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airport_contact_form_contaner1{
+    margin-top: 4rem;
+    width: 100vw;
+    height: 62vh;
+    gap: 3rem;
+}
+
+.airport_contact_form_contaner2{
+    width: 100vw;
+    height: 60vh;
+}
+
+.airport_contact_sec_label_h2{
+    font-size: 2.9rem;
+}
+
+.contact_page_icon_label_text_div{
+    gap: 2rem;
+}
+
+.contact_page_label_text div p{
+    font-size: 1.3rem;
+}
+
+.contact_page_icon_div > i{
+    font-size: 2rem;
+}
+
+
+/*The second section but it is the airport user info */
+.airport_user_info_sec_two{
+    height: 135vh;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.airport_contact_user_input_contaner1{
+    margin-top: 6rem;
+    height: 70vh;
+    width: 100%;
+}
+
+.airport_contact_user_input_label{
+    width: 70%;
+}
+
+.airport_contact_user_input_text{
+    width: 84%;
+    line-height: 2rem;
+}
+
+.airport_contact_user_input_text > p{
+    font-size: 1.4rem;
+}
+
+.contact_page_image{
+    width: 34rem;
+}
+
+.airport_contact_user_input_contaner2{
+    height: 60vh;
+    width: 100%;
+}
+
+.name_input, .email_input, .subject_input {
+    width: 38rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.subject_input::placeholder{
+    font-size: 1.1rem;
+}
+
+.textarea_input{
+    width: 38rem;
+    font-size: 1.2rem;
+}
+
+.textarea_input::placeholder{
+    font-size: 1.2rem;
+}
+
+/*The airport section styling ends here*/
+
+/*The Contact page styling ends here*/
 
 
 footer{
@@ -3194,7 +3650,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    padding: 30px;  
+    padding: 0px;  
+    
 
    
   
@@ -3217,6 +3674,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr  auto ;
     gap: 2rem;
+   
   }
 
 .services_content_container h2{
@@ -3229,8 +3687,7 @@ footer{
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+ text-align: justify;
 }
 
 .services_list a, i{
@@ -3247,6 +3704,10 @@ footer{
 }
 .services_list  i{
     color: var(--red);
+}
+.img-fluid{
+    height: 100%;
+    
 }
 
 }
@@ -3990,8 +4451,7 @@ flex-direction: column;
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+text-align: justify;
 }
 
 .services_list a, i{
@@ -4935,7 +5395,156 @@ flex-direction: column;
 
 /*The end of the box section2**************************************************/
 
+/*The Contact page styling starts here*/
 
+/*BEGAINING of the contact page hero Section styling*/
+.contact_hero_div{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0vh;
+}
+
+#contact_hero_text{
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+.home_contact_inner{
+    gap: 1.5rem;
+    margin-left: 2.3rem;
+}
+
+.home_contact_inner > h2 .home, .home_contact_span, .contact{
+    font-size: 1.6rem;
+}
+
+/*The airport section styling starts here*/
+
+.airport_contact_sec_one{
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.991) 50%, rgb(255, 255, 255) 99%), url(./Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airport_contact_form_contaner1{
+    margin-top: 4rem;
+    width: 50vw;
+    height: 80vh;
+    gap: 3rem;
+}
+
+.airport_contact_form_contaner2{
+    width: 10vw;
+    height: 40vh;
+}
+
+.airport_contact_sec_label_h2{
+    font-size: 2.8rem;
+}
+
+.contact_page_icon_label_text_div{
+    max-width: fit-content;
+    gap: 2rem;
+}
+
+.contact_page_label_text div p{
+    font-size: 1.3rem;
+}
+
+.contact_page_icon_div > i{
+    font-size: 2rem;
+}
+
+.contact_page_image{
+    width: 32rem;
+}
+
+/*The second section but it is the airport user info */
+.airport_user_info_sec_two{
+    height: 130vh;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.airport_contact_user_input_contaner1{
+    margin-top: 6rem;
+    height: 75vh;
+    width: 88%;
+}
+
+.airport_contact_user_input_label{
+    width: 70%;
+}
+
+.airport_contact_user_input_text{
+    width: 100%;
+    line-height: 2rem;
+}
+
+.airport_contact_user_input_text > p{
+    font-size: 1.4rem;
+}
+
+.icon > .contact_page_image{
+   width: 28.2rem;
+}
+
+.airport_contact_user_input_contaner2{
+    height: 60vh;
+    width: 100%;
+    text-align: center;
+}
+
+.name_input, .email_input, .subject_input {
+    width: 26rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.subject_input::placeholder{
+    font-size: 1.1rem;
+}
+
+.textarea_input{
+    width: 26rem;
+    font-size: 1.2rem;
+}
+
+.textarea_input::placeholder{
+    font-size: 1.2rem;
+}
+
+/*The airport section styling ends here*/
+
+/*The google map section styling starts here*/
+
+.airport_google_map_sec{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.ria_goolgle_map_direction{
+    width: 90%;
+    height: 80vh;
+    border: none;
+    border-radius: .2rem;
+    font-size: 2rem;
+}
+
+/*The google map section styling ends here*/
+
+/*The Contact page styling ends here*/
 
 
 /*Footer Section*/
@@ -5219,8 +5828,7 @@ text-align: center;
 
 .services_list{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: justify;
 }
 
 .services_list a, i{
@@ -5654,6 +6262,111 @@ flex-direction: column;
 
 /*The others beaches ends here*/
 
+/*The Contact page styling starts here*/
+
+/*BEGAINING of the contact page hero Section styling*/
+.contact_hero_div{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0vh;
+}
+
+#contact_hero_text{
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+.home_contact_inner{
+    gap: 1.5rem;
+    margin-left: 2.3rem;
+}
+
+.home_contact_inner > h2 .home, .home_contact_span, .contact{
+    font-size: 1.6rem;
+}
+
+/*The airport section styling starts here*/
+
+.airport_contact_sec_one{
+    width: 100vw;
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.991) 50%, rgb(255, 255, 255) 99%), url(./Images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airport_contact_form_contaner1{
+    margin-top: 4rem;
+    width: 100%;
+    height: 95vh;
+    gap: 3rem;
+}
+
+.airport_contact_form_contaner2{
+    height: 40vh;
+}
+
+.airport_contact_sec_label_h2{
+    font-size: 2.8rem;
+}
+
+.contact_page_icon_label_text_div{
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.contact_page_label_text div p{
+    font-size: 1.3rem;
+}
+
+.contact_page_icon_div > i{
+    font-size: 2rem;
+}
+
+.contact_page_image{
+    width: 32rem;
+}
+
+/*The second section but it is the airport user info */
+.airport_user_info_sec_two{
+    height: 188vh;
+    gap: 3rem;
+}
+
+.airport_contact_user_input_contaner1{
+    margin-top: 6rem;
+    height: 100vh;
+    width: 87%;
+}
+
+.airport_contact_user_input_label{
+    width: 80%;
+}
+
+.icon > .contact_page_image{
+   width: 26.2rem;
+}
+
+.airport_contact_user_input_contaner2{
+    height: 70vh;
+}
+
+.name_input, .email_input, .subject_input, .textarea_input {
+    width: 24rem;
+}
+
+
+/*The airport section styling ends here*/
+
+/*The Contact page styling ends here*/
+
+
     /*FOOTER CONTAINER***********************************************************************/
     footer{
         padding: 10px;
@@ -5930,6 +6643,7 @@ flex-direction: column;
   .services_content_container{
     width: 100%;
     flex-direction: column;
+
     gap: 20px;
 
   }
@@ -5951,11 +6665,7 @@ flex-direction: column;
 }
 
 
-.services_list{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .services_list a, i{
     font-size: 1.1rem;
