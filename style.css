@@ -5508,18 +5508,19 @@ outline: none;
 .body_sec{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.1rem;
     margin: 20px;
     
     }
     .body_sec p{
         font-size: 1.5rem;
+        width: 130%;
     
     }
     
     .body_sec h2{
         font-size: 2.0rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
     
     
@@ -5589,7 +5590,6 @@ outline: none;
 .hotels_near_in_RIA > h2{
 color: #D21312;
 font-size: 1.9rem;
-width: 150%;
 }
 
 
@@ -5599,6 +5599,42 @@ width: 150%;
 }
 
 /*THE BOX SECTION******************************************/
+
+
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: max-content;
+    width: 70%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 280px;
+    height: 120px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+/*Cards section end ****************************************************************************/
 
 
 /*BUTTON*/
@@ -6591,6 +6627,32 @@ flex-direction: column;
 
 
 
+    
+
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 20px;
+    
+    }
+    .body_sec p{
+        font-size: 1.5rem;
+        width: 130%;
+    
+    }
+    
+    .body_sec h2{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 
 
 /*The visit Monrovia starts here*******************************************/
@@ -6688,6 +6750,16 @@ width: 80%;
     width: 220px;
     height: 130px;
     margin: 15px;
+}
+
+
+
+.all_box_content h2{
+    width: 110%;
+}
+
+.all_box_content p{
+    font-size: 16px;
 }
 
 /*BUTTON*/
