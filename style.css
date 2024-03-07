@@ -510,12 +510,16 @@ transform: rotate(180deg);
     gap: 30px;
     transition: 1s ease;
     color: rgba(0, 0, 0, 0.336);
+    background: -webkit-linear-gradient(transparent 50%, var(--red) 50%);
+    background-size: 100px 600px;
+ }
+ 
+ .grid:hover{
+   background-position: 0 -300px;
+   color: white;
+
  }
 
- .grid:hover{
-    background-color: var(--red);
-    color: var(--white);
- }
 
  .grid i{
     font-size: 4rem;
@@ -1548,6 +1552,41 @@ font-size: 1.9rem;
     color: #fff;
 }
 
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: flex;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: 310px;
+    width: 70%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+/*Cards section end ****************************************************************************/
+
+
 /*The Visit Monronvia ends here*/
 
 
@@ -1769,7 +1808,7 @@ font-size: 1.9rem;
     border: 2px solid rgb(207, 207, 207);
     box-shadow: 4px 6px 3px  rgb(174, 174, 174);
     width: 20%;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 20px;
 }
 
@@ -1843,7 +1882,10 @@ flex-direction: column;
 
 /*The others beaches ends here*/
 
+
 /*The Contact page styling starts here*/
+
+
 
 /*BEGAINING of the contact page hero Section styling*/
 .contact_hero_section{
@@ -2671,10 +2713,294 @@ footer a:hover{
 
 
 
+/*End of the Services Page*/
 
 
 
+/*Begaining of the Things To Know page *************************************************************/
+#carouselExample{
+position: relative;
 
+}
+.country_visa{
+height: 100%;
+width: 100%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: #00000073;
+font-size: 3rem;
+font-weight: 900;
+
+}
+
+/*List of the things user should know*/
+.things_to_know_master_section{
+    height: max-content;
+    width: 100%;
+    background-color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: 30px;
+}   
+
+.things_card_container{
+    height: 100%;
+    width: 100%;
+     display: grid;
+     grid-template-columns: repeat(3, 400px);
+     grid-template-rows: repeat(3, 450px) ;
+     gap: 30px;
+     justify-content: center;
+    padding: 30px;
+}
+
+.things_card{
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+/*The first things card start********************************************************/
+.things_card1{
+    display: flex;
+    gap: 15px;
+    grid-column: span 2;
+    background-color: white;
+}
+.things_image_container1{
+    width: 60%;
+    height: 100%;
+}
+.things_image_container1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.things_content_container1{
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+/*The first things card Ends Here****************************************************/
+
+/*The second things card Starts Here****************************************************/
+.things_card2{
+    display: block;
+    background-color: white;
+
+}
+.things_image_container2{
+    width: 100%;
+    height: 45%;
+}
+.things_image_container2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.things_content_container2{
+    width: 100%;
+    height: 55%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+
+}
+.things_btn2{
+    width: fit-content;
+}
+/*The Second things card Ends Here****************************************************/
+
+
+/*The Third things card Starts Here****************************************************/
+
+.things_card3{ 
+    display: block;
+    background-color: white;
+}
+.things_image_container3{
+    width: 100%;
+    height: 45%;
+}
+.things_image_container3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.things_content_container3{
+    width: 100%;
+    height: 55%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+
+}
+.things_btn3{
+    width: fit-content;
+}
+
+/*The Third things card Ends Here****************************************************/
+
+
+/*The Forth things card starts Here****************************************************/
+
+
+.things_card4{ 
+    display: block;
+    background-color: white;
+}
+.things_image_container4{
+    width: 100%;
+    height: 45%;
+}
+.things_image_container4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.things_content_container4{
+    width: 100%;
+    height: 55%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+
+}
+.things_btn4{
+    width: fit-content;
+}
+
+/*The forth things CARDS ends here***********************/
+
+/*The fifth things CARDS Starts here***********************/
+.things_card5{
+     grid-row: span 2;
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+
+     
+    }
+
+    .things_image_container5{
+        width: 100%;
+        height: 40%;
+       
+    }
+    .things_image_container5 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    
+    }
+    
+    .things_content_container5{
+        width: 100%;
+        height: 40%;
+        display: flex; 
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+        padding: 0px 15px;
+    
+    }
+    .things_btn5{
+        width: fit-content;
+    }
+/*The fifth things CARDS ends here***********************/
+
+/*The Sixth things CARDS Starts here***********************/
+.things_card6{ 
+    display: block;
+    background-color: white;
+}
+.things_image_container6{
+    width: 100%;
+    height: 45%;
+}
+.things_image_container6 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.things_content_container6{
+    width: 100%;
+    height: 55%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+
+}
+.things_btn6{
+    width: fit-content;
+}
+
+/*The sixth things CARDS ends here***********************/
+
+
+/*The seventh things CARDS Starts here***********************/
+
+
+.things_card7{ 
+    display: block;
+    background-color: white;
+}
+.things_image_container7{
+    width: 100%;
+    height: 45%;
+}
+.things_image_container7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.things_content_container7{
+    width: 100%;
+    height: 55%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    
+
+}
+.things_btn7{
+    width: fit-content;
+}
+
+/*The seventh things CARDS ends here***********************/
 
 
 
@@ -2711,9 +3037,6 @@ footer a:hover{
    
 }
 }
-
-
-
 
 
 
@@ -3254,6 +3577,44 @@ width: 95%;
 /*Box Section*************************************************************/
 
 
+
+
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: 310px;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+
+/*Cards section end ****************************************************************************/
+
 /*BUTTON*/
 
 .btm button{
@@ -3768,6 +4129,51 @@ footer{
     top: 3rem;
 }
 /*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
+
+
+
+
+ /********************The Things to know by Alvin Starts here*******************************/
+  /*List of the things user should know*/
+  .things_to_know_master_section{
+
+    padding: 20px;
+}  
+ .things_card_container{
+    padding: 20px;
+    height: max-content;
+    width: 100%;
+    grid-template-columns: repeat(2, 330px);
+    grid-template-rows:  repeat(4, 500px);
+    gap: 2rem;
+ 
+}
+
+/*The first things card start********************************************************/
+.things_card1{
+flex-direction: column;
+   grid-column: span 1;
+
+
+}
+.things_image_container1, .things_image_container2, .things_image_container3, .things_image_container4, .things_image_container6, .things_image_container7{
+   width: 100%;
+   height: 40%;
+   
+}
+
+.things_content_container1, .things_content_container2, .things_content_container3, .things_content_container4, .things_content_container6, .things_content_container7{
+   padding: 30px;
+   width: 100%;
+   height: 60%;
+   flex-direction: column;
+}
+
+.thingsl_card{
+    height: max-content;
+}
+/*The first things card Ends Here****************************************************/
+
 /* The Services page in the footer  starts here By Alvin***********************************************************************/
 
 .services_master_container{
@@ -4352,6 +4758,7 @@ flex-direction: column;
 
 
 
+
         /*Footer Section*/
             #footer_logo_container{
                 width: 10rem;
@@ -4621,7 +5028,43 @@ text-align: justify;
     color: var(--red);
 }
 
+ 
+ /********************The Things to know by Alvin Starts here*******************************/
+  /*List of the things user should know*/
+.things_to_know_master_section{
 
+    padding: 10px;
+}  
+ .things_card_container{
+    padding: 0px;
+    height: max-content;
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows:  repeat(8, 450px);
+ 
+}
+
+/*The first things card start********************************************************/
+.things_card1{
+flex-direction: column;
+   grid-column: span 1;
+
+
+}
+.things_image_container1, .things_image_container2, .things_image_container3, .things_image_container4, .things_image_container6, .things_image_container7{
+   width: 100%;
+   height: 50;
+   
+}
+
+.things_content_container1, .things_content_container2, .things_content_container3, .things_content_container4, .things_content_container6, .things_content_container7{
+   padding: 30px;
+   width: 100%;
+   height: 50%;
+   flex-direction: column;
+   overflow-y: scroll;
+}
+/*The first things card Ends Here****************************************************/
 
      }
     
@@ -4631,7 +5074,7 @@ text-align: justify;
 
 
 
- /* Media Query for Mobile Devices */
+ /* Media Query for Mobile Devices ********************************************/
  @media(max-width: 480px) {
     :root {
         font-size: 12.5px;
@@ -4645,7 +5088,7 @@ text-align: justify;
     }
 
     .header_1st_section{
-        height: fit-content;
+        height: max-content;
     
     }
     .logo_div{
@@ -5255,18 +5698,19 @@ outline: none;
 .body_sec{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.1rem;
     margin: 20px;
     
     }
     .body_sec p{
         font-size: 1.5rem;
+        width: 130%;
     
     }
     
     .body_sec h2{
         font-size: 2.0rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
     
     
@@ -5336,7 +5780,6 @@ outline: none;
 .hotels_near_in_RIA > h2{
 color: #D21312;
 font-size: 1.9rem;
-width: 150%;
 }
 
 
@@ -5348,6 +5791,40 @@ width: 150%;
 /*THE BOX SECTION******************************************/
 
 
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+    height: max-content;
+    width: 70%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 280px;
+    height: 120px;
+    margin: 30px;
+}
+
+.all_box_content{
+    margin: 40px;
+}
+
+.all_box_content h2{
+    color: var(--red);
+    font-size: 26px;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+/*Cards section end ****************************************************************************/
 
 
 /*BUTTON*/
@@ -5905,6 +6382,44 @@ text-align: center;
 /*THE NEWS ROOM BY ALVIN ENDS HERE************************************/
 
 
+ /********************The Things to know by Alvin Starts here*******************************/
+  /*List of the things user should know*/
+.things_to_know_master_section{
+
+    padding: 10px;
+}  
+ .things_card_container{
+    padding: 0px;
+    height: max-content;
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows:  repeat(7, 450px);
+ 
+}
+
+/*The first things card start********************************************************/
+.things_card1{
+flex-direction: column;
+   grid-column: span 1;
+
+
+}
+.things_image_container1, .things_image_container2, .things_image_container3, .things_image_container4, .things_image_container6, .things_image_container7{
+   width: 100%;
+   height: 50;
+   
+}
+
+.things_content_container1, .things_content_container2, .things_content_container3, .things_content_container4, .things_content_container6, .things_content_container7{
+   padding: 30px;
+   width: 100%;
+   height: 50%;
+   flex-direction: column;
+   overflow-y: scroll;
+}
+/*The first things card Ends Here****************************************************/
+
+
 /* The Services page in the footer  starts here By Alvin***********************************************************************/
 
 .services_master_container{
@@ -6002,13 +6517,66 @@ text-align: center;
 
     }   
 
+     /*END OF LANDING PAGE Media QUERY*/
 
+
+    /*******************Media Query for Max-width 360px**********************************************************************/
+    @media (max-width: 360px) {    
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+     height: max-content;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 255px;
+    height: 130px;
+    margin: 15px;
+}
+
+/*BUTTON*/
+
+.btm button{
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 40px;
+    margin-top: 25px;
+    margin: 30px;
+    }
+    
+    
+ /********************The Things to know by Alvin Starts here*******************************/
+ .things_card_container{
+    padding: 0px;
+    height: max-content;
+    width: 100%;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows:  repeat(7, 400px);
+ 
+}
+
+
+
+/*Cards section end ****************************************************************************/
+        
+    }
+
+    /********************************The ENDING OF THE MEDIA QUERY 360PX***********************************************************/
 
 
 
     
     
-    /*END OF LANDING PAGE Media QUERY*/
+   
 
      
 
@@ -6249,6 +6817,32 @@ text-align: center;
 
 
 
+    
+
+/* The Maps Styles */
+
+.body_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 20px;
+    
+    }
+    .body_sec p{
+        font-size: 1.5rem;
+        width: 130%;
+    
+    }
+    
+    .body_sec h2{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    
+    /*The Maps Styles endeding */
+
+
 
 
 /*The visit Monrovia starts here*******************************************/
@@ -6325,26 +6919,57 @@ width: 80%;
 
 /*Box Section**********************************************************************/
 
+
+
+
+/*cards SECTION************************************************************************/
+
+.all_box{
+    display: block;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(180, 179, 179);
+     height: fit-content;
+    width: 80%;
+    
+}
+
+
+.all_box_image  > img{
+    width: 220px;
+    height: 130px;
+    margin: 15px;
+}
+
+
+
+.all_box_content h2{
+    width: 110%;
+}
+
+.all_box_content p{
+    font-size: 16px;
+}
+
 /*BUTTON*/
 
 .btm button{
-background-color: #D21312;
-border-color: #D21312;
-color: #fff;
-width: 35%;
-height: 5vh;
-margin-bottom: 50px;
-margin-top: 25px;
-padding: 5px 5px;
-font-size: 1.3rem;
-}
+    width: 35%;
+    height: 5vh;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    margin: 90px;
+    }
+    
+    
 
-.btm{
-display: block;
-align-items: center;
-justify-content: center;
 
-}
+/*Cards section end ****************************************************************************/
+
+
+
+
 
 
 /*The Visit Monronvia  Responsiveness ends here************************************8/
@@ -6620,6 +7245,45 @@ flex-direction: column;
     height:  50%;
     width: 100%;
 }
+/*The News Room Ends Here***************************************************/
+
+ /********************The Things to know by Alvin Starts here*******************************/
+ /*List of the things user should know*/
+.things_to_know_master_section{
+
+    padding: 10px;
+}  
+ .things_card_container{
+    padding: 0px;
+    height: max-content;
+    width: 100%;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows:  repeat(7, 400px);
+ 
+}
+/*The first things card start********************************************************/
+.things_card1{
+ flex-direction: column;
+    grid-column: span 1;
+
+}
+.things_image_container1{
+    width: 100%;
+    height: 40%;
+    
+}
+
+.things_content_container1{
+    padding: 30px;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+/*The first things card Ends Here****************************************************/
+
+
+
 
 
 /*The about section***************************************************/
