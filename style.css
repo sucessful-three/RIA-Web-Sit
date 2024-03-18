@@ -19,6 +19,7 @@ a{
     font-size: 16px;
     --poppin: 'Poppins', sans-serif;
     --grayfortext: #7b7b7bc0;
+    --roboto: "Roboto", sans-serif;
 }
 
 html{
@@ -2414,9 +2415,187 @@ flex-direction: column;
     color: #fff;
      padding: 24px;
 }
+
+
+
+/*The Contact page styling starts here*/
+
+/*BEGAINING of the contact page hero Section styling*/
+.business_opportunity_hero_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(./Images/brussels.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.business_opportunity_hero_div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+#business_opportunity_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--poppin);
+    font-weight: 700;
+    margin-top: 10rem;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+/*The red div after the hero section styling starts here*/
+.home_business_opportunity{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_business_opportunity_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_business_opportunity_inner > h2 .home{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.home_business_opportunity_inner > h2 .home:hover{
+    color: var(--blue);
+    transition: all 1s ease-in-out;
+}
+
+.home_business_opportunity_span{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.business_opportunity{
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+/*The red div after the hero section styling ends here*/
+
+/*The cards section of the business opportunity page starts here*/
+
+.busOppor_label_text_cards_container{
+    background: var(--white);
+    height: 152vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.busOppor_label_div > h3{
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+}
+
+.busOppor_text_div > h2{
+     color: var(--grayfortext);
+     font-weight: 400;
+     font-size: 2rem;
+     font-family: var(--roboto);
+}
+
+.busOppor_label_text_inner_cont1{
+    width: 78%;
+    height: 24vh;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+
+}
+
+.busOppor_cards_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 78%;
+    height: 100vh;
+    gap: 2rem;
+    margin-left: 8%;
+}
+
+.busOppor_cards_main_container:hover .busOppor_card_2nd_para{
+  border-bottom: 3px solid #D21312;  
+   transition: all .4s ease-in; 
+}
+ 
+.busOppor_card_image{
+    width: 420px;
+    height: 15rem;
+    border-radius: .8rem;
+}
+
+.busOppor_cards_main_container:hover .busOppor_card_image{
+    box-shadow: 2px 2px 26px 0px rgb(75, 72, 75); 
+     transition: all .4s ease-in; 
+  }
+
+.busOppor_card_h3_1st_para{
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
+    width: 90%;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.busOppor_card_h3{
+    color: var(--red);
+    font-family: var(--roboto);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+
+.busOppor_card_1st_para{
+    color: var(--grayfortext);
+    font-family: var(--roboto);
+    font-size: 1.1rem;
+    line-height: 1.5rem; 
+    font-weight: 500;
+}
+
+.busOppor_card_2nd_para{
+    color: var(--grayfortext);
+    font-family: var(--poppin);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    width: max-content;
+   
+}
+
+/*The cards section of the business opportunity page ends here*/
+
+/*The Business Opportunity page styling ends here*/
  
 /*The footer section  */
-
 
 footer{
     color: var(--white);
@@ -3811,6 +3990,66 @@ font-size: 1.1rem;
 /*The airport section styling ends here*/
 
 /*The Contact page styling ends here*/
+
+/*The red div after the hero section styling starts here*/
+
+.home_business_opportunity_inner{
+    gap: 1.5rem;
+    margin-left: 2rem;
+}
+
+.home_business_opportunity_inner > h2 .home{
+    font-size: 1.6rem;
+}
+
+/*The red div after the hero section styling ends here*/
+
+/*The cards section of the business opportunity page starts here*/
+
+.busOppor_label_text_cards_container{
+    height: 160vh;
+    gap: .5rem;
+}
+
+.busOppor_label_div > h3{
+    font-size: 1.1rem;
+}
+
+.busOppor_text_div > h2{
+     font-size: 1.5rem;
+}
+
+.busOppor_label_text_inner_cont1{
+    width: 90%;
+    height: 18vh;
+    margin-left: 3.5%;
+    gap: 1rem;
+}
+
+.busOppor_label_text_inner_cont{
+    
+}
+
+.busOppor_cards_container{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 120vh;
+    gap: 2rem;
+    margin-left: 3.5%;
+}
+ 
+.busOppor_card_image{
+    width: 340px;
+    height: 12rem;
+}
+
+.busOppor_card_2nd_para{
+    font-size: 1.2rem;
+}
+
+/*The cards section of the business opportunity page ends here*/
+
+/*The Business Opportunity page styling ends here*/
 
 
 footer{
@@ -6060,6 +6299,105 @@ flex-direction: column;
 /*The Contact page styling ends here*/
 
 
+/*The Contact page styling starts here*/
+
+/*BEGAINING of the contact page hero Section styling*/
+
+#business_opportunity_hero_text{
+    text-align: center;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+/*The red div after the hero section styling starts here*/
+
+.home_business_opportunity_inner{
+    margin-left: 2rem;
+}
+
+/*The red div after the hero section styling ends here*/
+
+/*The cards section of the business opportunity page starts here*/
+
+.busOppor_label_text_cards_container{
+    height: 166vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.busOppor_label_div > h3{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.busOppor_text_div > h2{
+     font-size: 1.5rem;
+}
+
+.busOppor_label_text_inner_cont1{
+    width: 90%;
+    height: 24vh;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+
+}
+
+.busOppor_cards_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    width: 78%;
+    height: 120vh;
+    gap: 2rem;
+    margin-left: 5%;
+}
+ 
+.busOppor_card_image{
+    width: 180px;
+    height: 12rem;
+}
+
+.busOppor_cards_indiv{
+    display: flex;
+    gap: 1rem;
+}
+
+.busOppor_label_1st_2nd_para{
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+}
+
+.busOppor_card_h3_1st_para{
+    display: flex;
+    flex-direction: column;
+    height: 4vh;
+    width: 90%;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.busOppor_card_1st_para{
+    display: none;
+}
+
+.busOppor_card_2nd_para{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+   
+}
+
+/*The cards section of the business opportunity page ends here*/
+
+/*The Business Opportunity page styling ends here*/
+
 /*Footer Section*/
     #footer_logo_container{
         width: 10rem;
@@ -7026,6 +7364,54 @@ flex-direction: column;
 /*The airport section styling ends here*/
 
 /*The Contact page styling ends here*/
+
+/*The Contact page styling starts here*/
+
+/*BEGAINING of the contact page hero Section styling*/
+
+#business_opportunity_hero_text{
+    font-size: 3.5rem;
+}
+
+/*ENDING of the Contact page hero Section styling*/
+
+/*The red div after the hero section styling starts here*/
+
+.home_business_opportunity_inner{
+    margin-left: 1rem;
+}
+
+/*The red div after the hero section styling ends here*/
+
+/*The cards section of the business opportunity page starts here*/
+
+.busOppor_label_text_cards_container{
+    height: 210vh;
+}
+
+.busOppor_label_text_inner_cont1{
+    width: 95%;
+    margin-left: 3%;
+}
+
+.busOppor_cards_container{
+    margin-left: 3%;
+    gap: 1.2rem;
+}
+ 
+.busOppor_card_image{
+    width: 170px;
+    height: 11rem;
+}
+
+.busOppor_card_2nd_para{
+    margin-top: 1.8rem;
+   
+}
+
+/*The cards section of the business opportunity page ends here*/
+
+/*The Business Opportunity page styling ends here*/
 
 
     /*FOOTER CONTAINER***********************************************************************/
