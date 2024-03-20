@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert International Airport Website</title>
+   
     <link rel="icon" type="image/x-icon" href="./Images/favicon-img.png" sizes="8rem" >
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   <link rel="stylesheet" href="style.css">
+ 
+
+ 
 </head>
 <body>
   <header id="header">
@@ -45,7 +52,7 @@
                     <li class="terminal_info_btn"><a href="#"><h3>Terminal Information</h3></a>
                       <ol class="terminal_drop_down1">
                         <li><a href="faqs.html">FAQs</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="About.html">About Us</a></li>
                         <li><a href="newsroom.html">Newsroom</a></li>
                       </ol>
                     </li>
@@ -109,7 +116,7 @@
                 <!--This is the dropdown within the Terminal Information main link-->
                  <ul class="dropdown subMenu02">
                     <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="About.html">About Us</a></li>
                     <li><a href="newsroom.html">Newsroom</a></li>
                  </ul>
               </li>
@@ -129,112 +136,98 @@
 
 
       </div>
-  </header> 
-
-
-<!--BEGAINING of the flight status page hero Section--->    
-<Section class="Airline_Information_hero_section">
-      <!--Call to action text-->
-          <article class="Airline_Information_hero_article">
-            <div class="Airline_Information_hero_div">
-              <h1 id="Airline_Information_hero_text">Airline & Destination</h1>
-            </div>
-          </article>
- </section>   
+  </header>    
     
-    <!--END of the flight status page hero Section----------------------------------------------------------------->    
-    
- <!--Home Airline_Information starts here------------------->
- <div class="home_Airline_Information">
-  <div class="home_Airline_Information_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_Airline_Information_span">&#62;</span> <h2><a href="ariline information.html" class="Airline_Information">Airline Information</a></h2></div>
-</div>
+ <!--The Destination Call to Action Section-->
+ <main id="destination_main_container">
+    <section class="destination_hero_section">
 
-<!--Home Airline Information ends here------------------->
+      <article class="destination_hero_section_text_container">
+        <h1 class="destination_call_to_action">Call to <span id="destination_em">Action</span> Hero Text</h1>
+        <p>Lorem ipsum dolor sit amet consectetur qui iusto exercitatio isuse. <br> 
+           adipisicing elit. Tempore nostrum omnis qui iusto exercitatio dug. <br>
+          eligendi! Ducimus qui iusto exercitatio? ducimus quid eoid tioeo</p>
+          <p id="insperation">"Paragraph of <span id="insp">Insperation</span>"</p>
+      </article>
 
-<!--The airline serve in Monrovia and table starts here-->
-<section class="airline_information_serve_table">
-  <div class="airline_information_serve">
-      <h3 class="airline_information_label">Airlines Serving Robert International Airport</h3>
-     
-      <p class="airline_information_text">Serveral daily flights comes Monrovia with other capitals of the sub-region and international flight allow passenger traffic between Europe, Middle East and other contients, directly with a connection.</p>
-  </div>
-  <div class="airline_information_table_container_outer">
-      <div class="airline_information_table_container">
-         <div class="table_description_div"><i class="fa-solid fa-phone-volume table_label_icon"></i>
-        <p class="table_description">Airlines flying from/to Monrovia Robert airport (updated weekly)</p>
+      <div class="image_container">
+        <img src="./Images/ROB_last_routes.jpg" alt="" class="destination_map_image">
       </div>
-      
-      <section class="airline_information_table_section">
-        <!--The table head starts here-->
-        <div class="white img_div_size"><p class="table_head">Airline</p></div>
-        <div class="black code_width"><p class="table_head">Code(IATA)</p></div>
-        <div class="white code_width"><p class="table_head">Code(ICOA)</p></div>
-        <div class="black website_link_width"><p class="table_head">Website</p></div>
-        <!--The table head ends here-->
+    </section>
 
-        <!--The table data starts here-->
+    <!--Section II-->
 
-        <!--The table first row data starts here-->
-        <div class="gray img_div_size"><img src="./Images/klm-removebg-preview.png" alt="KML logo" class="table-airline-logo-static"></div>
-        <div class="gray code_width text-size"><p>KL</p></div>
-        <div class="gray code_width text-size"><p>KL</p></div>
-        <div class="gray website_link_width"><a href="" class="airlineInformationTableLink">-</a></div>
+    <section id="our_trending_destination_container">
+        <div class="card" style="width: 100%;">
+          <img src="./Images/Luggage.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ghana</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a target="_blank" href="https://www.viator.com/Ghana/d4439-ttd?m=28353&supag=119539843896&supca=12519862699&supsc=kwd-305847203946&supai=505272885991&supdv=c&supnt=g&suplp=9067733&supli=2288&supti=kwd-305847203946&tsem=true&supci=kwd-305847203946&supap1=&supap2=&supfi=&gad_source=1&gclid=CjwKCAjwkuqvBhAQEiwA65XxQOUnixhV1SBoocSPIJxHmX0JUsphgSxb1bkNpsXX_KCmhuCT3q6M6xoC2HwQAvD_BwE" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
 
-        <div class="data_white img_div_size"><img src="./Images/Kenya-Airways-Logo-removebg-preview.png" alt="Kenya Airways Logo" class="table-airline-logo-static"></div>
-        <div class="data_white code_width text-size"><p>KQ</p></div>
-        <div class="data_white code_width text-size"><p>KQA</p></div>
-        <div class="data_white website_link_width"><a href="#" class="airlineInformationTableLink">https://www.kenya-airway.com/ph/en/</a></div>
+        <div class="card" style="width: 100%;">
+          <img src="./Images/toilet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Benju</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.rjtravelagency.com/tours-in-gambia/" class="btn btn-primary" target="_blank">Go somewhere</a>
+          </div>
+        </div>
 
-        <div class="gray img_div_size"><img src="./Images/Brussels_Airlines.svg-removebg-preview.png" alt="Brussels Airlines logo" class="table-airline-logo-static"></div>
-        <div class="gray code_width text-size"><p>SN</p></div>
-        <div class="gray code_width text-size"><p></p></div>
-        <div class="gray website_link_width"><a href="#" class="airlineInformationTableLink">https://www.brusselsairlines.com/en/be/</a></div>
+        <div class="card" style="width: 100%;">
+          <img src="./Images/john_beach.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Liege</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.viator.com/Belgium/d45-ttd?m=28353&supag=117916246694&supca=12517297154&supsc=kwd-20657663&supai=505121226432&supdv=c&supnt=g&suplp=9067733&supli=1001394&supti=kwd-20657663&tsem=true&supci=kwd-20657663&supap1=&supap2=&supfi=&gad_source=1&gclid=CjwKCAjwkuqvBhAQEiwA65XxQLydFXFWujqK_YRCrrMpGTiqmimrRhGIjssrc-F_4kR2JJPekZDwJBoCjuYQAvD_BwE" class="btn btn-primary" target="_blank">Go somewhere</a>
+          </div>
+        </div>
+      </div>
 
-        <div class="data_white img_div_size"><img src="./Images/Royal-Air-Maroc-logo-removebg-preview.png" alt="Royal Air Maroc Logo" class="one-large"></div>
-        <div class="data_white code_width text-size"><p>AT</p></div>
-        <div class="data_white code_width text-size"><p>RAM</p></div>
-        <div class="data_white website_link_width"><a href="" class="airlineInformationTableLink">-</a></div>
+      <div class="card" style="width: 100%;">
+        <img src="./Images/Lounge 1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Conakry</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.viator.com/Guinea/d22160-ttd" class="btn btn-primary" target="_blank">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%;">
+        <img src="./Images/hotel-pavilion.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nigeria</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.viator.com/Nigeria/d22316-ttd" class="btn btn-primary" target="_blank">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 100%;">
+        <img src="./Images/gas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Abidjan</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.viator.com/searchResults/all?text=ivory%20coast" class="btn btn-primary" target="_blank">Go somewhere</a>
+        </div>
+      </div>
+    </section>
+
+ </main>
+    
 
 
 
-        <div class="gray img_div_size"><img src="./Images/Air_Cote_dIvoire_logo-removebg-preview (2).png" alt="Air Cote dIvoire logo" class="table-airline-logo-static"></div>
-        <div class="gray code_width text-size"><p>HF</p></div>
-        <div class="gray code_width text-size"><p>VRE</p></div>
-        <div class="gray website_link_width"><a href="#" class="airlineInformationTableLink">https://www.aircotedivoire.com/</a></div>
 
 
-        <!--The table data starts here-->
-        </section>
 
-   </div>
-  </div>
+
+   
   
-
-</section>
-<!--The airline serve in Monrovia and table ends here-->
-
-
-
-
-<!--The destination serve from airport starts here-->
-<section class="destination_serve">
-  <div class="destination_serve">
-      <h3 class="destination_serve_label">Destinations serve from our airport</h3>
-      <ul >
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Abidjan</p></li>
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Kotoka Airport</p></li>
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Amsterdam Schiphal</p></li>
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Lungi International Airport</p></li>
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Brussels Airport</p></li>
-          <li class="location_icon_text"><span><i class="fa-solid fa-map-location-dot location-icon"></i></span><p class="location_text">Mohamed V Airport</p></li>
-      </ul>
-  </div>
-  </section>
-  <!--The destination serve from airport ends here-->
-
-  <footer class="footer">
+<footer class="footer">
     <!--The footer Logo Container -->
-    <div id="footer_logo_container"><abbr title="Top"><a href="airlineInformation.html"><img src="Images/Airport-logo.png" alt="Logo"></a></abbr>
+    <div id="footer_logo_container"><abbr title="RIA Logo"><a href="faqs.html"><img src="./Images/Airport-logo.png" alt="Logo"></a></abbr>
     </div>
       <!--The  Feature Destination container  -->
     <div class="feature_destination_container">
@@ -252,30 +245,26 @@
     </div>
      <!--The Airport container-->
     <div class="the_airport_container">
-        <h2>The Airport</h2>
+        <h3>The Airport</h3>
         <article class="the_airport_link_container">
-        <h3><a href="About.html">About Us</a></h3>
-        <h3><a href="newsroom.html">News</a></h3>
-        <h3><a href="./services.html">Services</a></h3>
-        <h3><a href="destination.html">Destination</a></h3>
-        <h3><a href="thingstoknow.html">Things To Know</a></h3>
-        <h3><a href="Maps.html">Parking</a></h3>
-        <h3><a href="#">Contact</a></h3>
-        <h3><a href="#">Passenger Statistic</a></h3>
-        </article>
+          <h3><a href="About.html">About Us</a></h3>
+          <h3><a href="newsroom.html">News</a></h3>
+          <h3><a href="services.html">Services</a></h3>
+          <h3><a href="destination.html">Destination</a></h3>
+          <h3><a href="#">Things To Know</a></h3>
+          <h3><a href="Maps.html">Parking</a></h3>
+          <h3><a href="contact.html">Contact</a></h3>
+          <h3><a href="#">Passenger Statistic</a></h3>
+          </article>
     </div>
   
-    <div class="the_quick_link_container">
+    <div id="the_quick_link_container">
      <h2>Quick Links</h2>
      <article class="the_quick_link">
       <h3><a href="#">Privacy & Cookies</a></h3>
-      <h3><a href="termsofuse.html">Website Terms of Use</a></h3>
+      <h3><a href="#">Website Terms of Use</a></h3>
       </article>
-  
-      <div class="small_logo">
-        <abbr title="Top"><a href="airlineInformation.html"><img src="./Images/Airport-logo.png" alt="Logo" ></a></abbr>
-      </div>
-    </div>  
+    </div>
      <!--The Connect with us and copy right container in the footer-->
     <article class="connect_with_us_copyright_container">
         <div class="connect_withus_container">
@@ -289,14 +278,15 @@
         </div>
   
         <!--The copy right conntainer-->
-        <div class="copy_right_container"><p class="apm">&#169; 2024 Robert International Airport</p></div>
+        <div class="copy_right_container"><p>&#169; 2024 Robert International Airport</p></div>
     </article>
   
   
   </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="App.js"></script>
    
 </body>
-</html>
+</html> 
