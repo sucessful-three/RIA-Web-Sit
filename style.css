@@ -3103,6 +3103,8 @@ font-weight: 900;
 }
 
 
+/* End of the Destination Page*/
+
 
 
 
@@ -4026,9 +4028,6 @@ font-size: 1.1rem;
     gap: 1rem;
 }
 
-.busOppor_label_text_inner_cont{
-    
-}
 
 .busOppor_cards_container{
     grid-template-rows: 1fr 1fr 1fr;
@@ -4391,7 +4390,70 @@ flex-direction: column;
     
 }
 
+
+/*The Begaining of the Destination Page*/
+
+.destination_hero_section{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
 }
+
+.destination_hero_section_text_container{
+width: 50%;
+    position: relative;
+    top: 40px;
+    
+}
+
+
+
+
+.image_container{
+       margin-top: 0px;
+}
+.image_container img{
+    height: 25em;
+    width: 350px;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   position: relative;
+   top: 50px;
+
+    
+}
+
+
+
+
+/*Section II*/
+#our_trending_destination_container{
+    height: max-content;
+    width: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.8fr 0.8fr;
+    gap: 20px;
+    padding: 24px;
+    
+ 
+}
+
+.card-img-top{
+    height: 60%;
+}
+/* Destination Page Ends Here*/
+
+
+}
+
+
+
 
 
 /* Media Query for low resolution  Tablets, Ipads ************************************/
@@ -5189,6 +5251,68 @@ flex-direction: column;
    overflow-y: scroll;
 }
 /*The first things card Ends Here****************************************************/
+
+
+
+
+
+/*The Begaining of the Destination Page*/
+
+.destination_hero_section{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.destination_hero_section_text_container{
+width: 50%;
+    position: relative;
+    top: 40px;
+    
+}
+
+
+
+
+.image_container{
+       margin-top: 0px;
+}
+.image_container img{
+    height: 25em;
+    width: 350px;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+   position: relative;
+   top: 50px;
+
+    
+}
+
+
+
+
+/*Section II*/
+#our_trending_destination_container{
+    height: max-content;
+    width: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.8fr 0.8fr;
+    gap: 20px;
+    padding: 24px;
+    
+ 
+}
+
+.card-img-top{
+    height: 60%;
+}
+/* Destination Page Ends Here*/
 
      }
     
@@ -6738,6 +6862,65 @@ flex-direction: column;
 
 
 
+
+
+/*The Begaining of the Destination Page*/
+
+.destination_hero_section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.destination_hero_section_text_container{
+   width: 100%;
+    position: relative;
+    top: 0px;
+    margin-top: 60px;
+    padding: 15px;
+}
+
+
+
+
+.image_container{
+      margin-top: 0px;
+}
+.image_container img{
+    height: 25em;
+    width: 100%;
+   border-radius: 20px;
+   
+   position: relative;
+   top: 0px;
+
+    
+}
+
+/*Section II*/
+#our_trending_destination_container{
+    height: max-content;
+    width: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr auto;
+    gap: 20px;
+    padding: 15px;
+    
+ 
+}
+
+.card-img-top{
+    height: 60%;
+}
+/* Destination Page Ends Here*/
+
     }   
 
      /*END OF LANDING PAGE Media QUERY*/
@@ -7768,6 +7951,65 @@ flex-direction: column;
 .services_list  i{
     color: var(--red);
 }
+
+
+/*The Begaining of the Destination Page*/
+
+.destination_hero_section{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.destination_hero_section_text_container{
+   width: 100%;
+    position: relative;
+    top: 0px;
+    margin-top: 60px;
+    padding: 15px;
+}
+
+
+
+
+.image_container{
+      margin-top: 0px;
+      width: 90%;
+}
+.image_container img{
+    height: 20em;
+    width: 100%;
+   border-radius: 20px;
+   
+   position: relative;
+   top: 0px;
+
+    
+}
+
+/*Section II*/
+#our_trending_destination_container{
+    height: max-content;
+    width: 100%;
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr auto;
+    gap: 20px;
+    padding: 15px;
+    
+ 
+}
+
+.card-img-top{
+    height: 60%;
+}
+/* Destination Page Ends Here*/
 
 
 }
