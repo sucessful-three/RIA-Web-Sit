@@ -10,7 +10,7 @@ window.onscroll= function scrollFunction(){
   else{$(myHeader).slideDown(800);}
 } // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
 
-function flightDropDown(){
+function flightDropDown(){  
   var flightLink=$(".flight_link");
   var flightDrop=$(".flight_dropdown");
   $(flightLink).on("mouseenter", function(){

@@ -37,9 +37,30 @@ For Desktop or large-size screen: 1024px -1200px
 For Extra-large size device: 1200px and more
 ***************************************/
 
-
-
-
+/*The scroll bar on the home page styling starts here*/
+/* width
+.scroll_bar::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+   */
+  /* Track 
+  .scroll_bar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   */
+  /* Handle 
+  .scroll_bar::-webkit-scrollbar-thumb {
+    background: var(--red);
+     border-radius: 2rem;
+  }
+  */
+  /* Handle on hover 
+  .scroll_bar::-webkit-scrollbar-thumb:hover {
+    background: var(--grayfortext); 
+  }
+*/
+/*The scroll bar on the home page styling ends here*/
 
 
 
@@ -335,7 +356,7 @@ justify-content: center;
 }
 .Call_to_action_text_container{
 height: 100%;
-width: 100%;
+width: 100vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -2595,6 +2616,337 @@ flex-direction: column;
 
 /*The Business Opportunity page styling ends here*/
  
+/*BEGAINING of the terms_of_use page hero Section styling*/
+.terms_of_use_hero_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(./Images/brussels.jpg);
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.terms_of_use_hero_div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+#terms_of_use_hero_text{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    word-spacing: .3rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+    margin-top: 10rem;
+}
+
+/*ENDING of the terms_of_use page hero Section styling*/
+
+/*The red div after the hero section styling starts here*/
+.home_terms_of_use{
+    height: 8vh;
+    width: 100vw;
+    background: var(--red);
+}
+
+.home_terms_of_use_inner{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 6rem;
+}
+
+.home_terms_of_use_inner > h2 .home{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.home_terms_of_use_inner > h2 .home:hover{
+    color: var(--blue);
+    transition: all 1s ease-in-out;
+}
+
+.home_terms_of_use_span{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.terms_of_use{
+    color: var(--blue);
+    font-size: 1.2rem;
+}
+/*The red div after the hero section styling ends here*/
+/*The starting of the terms_of_use_body_menu link section*/
+
+.terms_of_use_body_menu{
+    width: 100vw;
+    height: 14vh;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_to_all_downsection{
+    width: 90vw;
+    height: 13vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.link_for_section{
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-family: var(--roboto);
+    opacity: .3;
+}
+
+.link_for_section1 {
+    opacity: 1;
+}
+
+.link_for_section2:hover .terms_of_use_inner_link_div{
+    border-bottom: var(--red);
+}
+
+.terms_of_use_inner_link_div{
+    width: 100%;
+    height: 98%;
+}
+
+.terms_of_use_body_menu_label1{
+    width: 30%;
+    text-align: center;
+}
+
+.terms_of_use_body_menu_label{
+    text-align: center; 
+}
+/*The style for the link to each of the section ends here*/
+
+/*The style for first section starts here*/
+.terms_of_use_body1{
+    width: 100vw;
+    height: 96vh;
+}
+
+.terms_of_use_body1_label{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms_of_use_body1  .terms_of_use_body1_label_h2{
+    font-size: 3rem;
+    color: var(--grayfortext);
+    font-family: var(--roboto);
+    opacity: .5;
+    word-spacing: 5px;
+}
+
+.term_of_use_services_filicity{
+    width: 97%;
+    margin-left: 1.5%;
+}
+
+.term_of_use_services_filicity_label_div{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.term_of_use_services_filicity_h3{
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    color: var(--grayfortext);
+    opacity: .5;
+    word-spacing: 3px;
+}
+
+.term_of_use_services_filicity_ol-link1{
+    width: 96%;
+    margin-left: 2.8%; 
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+.term_of_use_services_filicity_ol-link2{
+    width: 96%;
+    margin-left: 2.8%; 
+}
+
+.term_of_use_services_filicity_ol-link2 > ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    height: 52vh;
+    justify-content: center;
+}
+
+.pdf_link{
+    list-style: disc;
+}
+
+.terms_of_use_document_pdf_link1, .terms_of_use_document_pdf_link2{
+    color: var(--blue);
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    transition: all ease-out .3s;
+}
+
+
+.terms_of_use_document_pdf_link1:hover{
+     color: var(--red);  
+}
+
+.terms_of_use_document_pdf_link2:hover{
+    color: var(--red);  
+}
+/*The style for first section ends here*/
+
+/*The style for second section starts here*/
+/*The explaination of the laws of the airport Style starts here*/
+
+.terms_of_use_body2{
+    width: 100vw;
+    height: max-content;
+}
+
+.terms_of_use_body2_menu_items_label{
+ 
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms_of_access_label{
+    font-size: 3rem;
+    color: var(--grayfortext);
+    font-family: var(--roboto);
+    opacity: .5;
+    word-spacing: 5px;
+}
+
+.terms_of_use_body2_article{
+    width: 92%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: max-content;
+
+    
+}
+
+.terms_of_use_body2_menu_items{
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   
+}
+
+.terms_of_use_body2_menu_items_h3{
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.terms_of_use_body2_menu_items_para, .terms_of_use_body2_menu_items_para1, .terms_of_use_body2_menu_items_para2{
+    font-family: var(--roboto);
+    word-spacing: 1px;
+    font-size: 17px;
+}
+
+/*The explaination of the laws of the airport ends here*/
+/*The style for second section ends here*/
+
+/*The style for third section ends here*/
+
+.terms_of_use_body3_menu_dos_donts_section{
+    width: 100vw;
+    height: max-content;
+}
+
+.terms_of_use_label_dos_nons{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.dos_nons_label_h2{
+    font-size: 3rem;
+    color: var(--grayfortext);
+    font-family: var(--roboto);
+    opacity: .5;
+    word-spacing: 5px; 
+}
+
+.terms_of_use_dos_nons_article{
+    width: 92%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    height: max-content;   
+}
+
+.terms_of_use_dos_container, .terms_of_use_donts_container{
+    display: flex;
+   flex-direction: column;
+   gap: .8rem;
+}
+
+.terms_of_use_label_donts, .terms_of_use_label_dos{
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.terms_of_use_para1, .terms_of_use_para2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.terms_of_use_body2_menu_items_para10_div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    gap: .8rem;
+}
+/*The style for third section ends here*/
+/*ENDING of the terms_of_use page hero Section styling*/
+
+
 /*The footer section  */
 
 footer{
@@ -4062,7 +4414,6 @@ font-size: 1.1rem;
     gap: 1rem;
 }
 
-
 .busOppor_cards_container{
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -4523,7 +4874,91 @@ width: 50%;
 }
 
 
+/*BEGAINING of the terms_of_use page hero Section styling*/
 
+/*The red div after the hero section styling starts here*/
+.home_terms_of_use_inner{
+    margin-left: 2rem;
+}
+
+.home_terms_of_use_inner > h2 .home, .home_terms_of_use_span, .terms_of_use{
+    font-size: 1.3rem;
+}
+
+/*The red div after the hero section styling ends here*/
+/*The starting of the terms_of_use_body_menu link section*/
+
+.link_for_section{
+    font-size: 1.2rem;
+}
+
+.link_for_section1 {   
+    font-size: 1rem;
+}
+.terms_of_use_body_menu_label1{
+    width: 40%;
+}
+/*The style for the link to each of the section ends here*/
+
+/*The style for first section starts here*/
+.terms_of_use_body1{
+    height: 80vh;
+}
+
+.terms_of_use_body1_label{
+    height: 16vh;
+}
+
+.term_of_use_services_filicity{
+    width: 96%;
+    margin-left: 3%;
+}
+
+.term_of_use_services_filicity_label_div{
+    height: 6vh;
+}
+
+.term_of_use_services_filicity_h3{
+    opacity: .8;
+}
+
+.term_of_use_services_filicity_ol-link1, .term_of_use_services_filicity_ol-link2{
+    width: 91%;
+    margin-left: 4.5%; 
+}
+
+
+.term_of_use_services_filicity_ol-link2 > ol{
+    height: 44vh;
+}
+
+/*The style for first section ends here*/
+
+/*The style for second section starts here*/
+/*The explaination of the laws of the airport Style starts here*/
+
+.terms_of_access_label, .terms_of_use_body1  .terms_of_use_body1_label_h2, .dos_nons_label_h2{
+    font-size: 2.5rem;
+    opacity: .8;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.terms_of_use_body2_menu_items_para, .terms_of_use_body2_menu_items_para1, .terms_of_use_body2_menu_items_para2{
+    font-size: 1.2rem;
+}
+
+/*The explaination of the laws of the airport ends here*/
+/*The style for second section ends here*/
+
+/*The style for third section ends here*/
+
+.terms_of_use_body3_menu_dos_donts_section{
+    padding-bottom: 4rem;
+}
+
+/*The style for third section ends here*/
+/*ENDING of the terms_of_use page hero Section styling*/
 
 
 /* Media Query for low resolution  Tablets, Ipads ************************************/
@@ -5012,7 +5447,102 @@ flex-direction: column;
 /*The others beaches ends here*/
 
 
+/*BEGAINING of the terms_of_use page hero Section styling*/
 
+#terms_of_use_hero_text{
+    font-size: 3rem;
+}
+
+/*The red div after the hero section styling starts here*/
+.home_terms_of_use_inner{
+    margin-left: 2rem;
+}
+
+.home_terms_of_use_inner > h2 .home, .home_terms_of_use_span, .terms_of_use{
+    font-size: 1rem;
+}
+
+/*The red div after the hero section styling ends here*/
+/*The starting of the terms_of_use_body_menu link section*/
+
+.link_for_section{
+    font-size: 1rem;
+}
+
+.link_for_section1, .link_for_section2 {   
+    font-size: .7rem;
+}
+
+.terms_of_use_body_menu_label1, .terms_of_use_body_menu_label2{
+    width: 88%;
+}
+
+.terms_of_use_body_menu_label3{
+    width: 90%;
+}
+
+/*The style for the link to each of the section ends here*/
+
+/*The style for first section starts here*/
+.terms_of_use_body1{
+    height: max-content;
+}
+
+.terms_of_use_body1_label{
+    height: 16vh;
+}
+
+.term_of_use_services_filicity{
+    width: 96%;
+    margin-left: 3%;
+}
+
+.term_of_use_services_filicity_label_div{
+    height: 12vh;
+}
+
+.term_of_use_services_filicity_h3{
+    opacity: .8;
+}
+
+.term_of_use_services_filicity_ol-link1, .term_of_use_services_filicity_ol-link2{
+    width: 95%;
+    margin-left: 5%; 
+}
+
+
+.term_of_use_services_filicity_ol-link2 > ol{
+    height: max-content;
+}
+
+/*The style for first section ends here*/
+
+/*The style for second section starts here*/
+/*The explaination of the laws of the airport Style starts here*/
+
+.terms_of_access_label, .terms_of_use_body1  .terms_of_use_body1_label_h2, .dos_nons_label_h2{
+    font-size: 1.7rem;
+    opacity: .8;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.terms_of_use_body2_menu_items_para, .terms_of_use_body2_menu_items_para1, .terms_of_use_body2_menu_items_para2{
+    font-size: 1rem;
+}
+
+/*The explaination of the laws of the airport ends here*/
+/*The style for second section ends here*/
+
+/*The style for third section ends here*/
+
+.terms_of_use_body3_menu_dos_donts_section{
+    padding-bottom: 4rem;
+}
+
+/*The style for third section ends here*/
+/*ENDING of the terms_of_use page hero Section styling*/
 
 
         /*Footer Section*/
@@ -6628,6 +7158,108 @@ flex-direction: column;
 
 /*The Business Opportunity page styling ends here*/
 
+/*BEGAINING of the terms_of_use page hero Section styling*/
+
+#terms_of_use_hero_text{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+/*The red div after the hero section styling starts here*/
+.home_terms_of_use_inner{
+    margin-left: 1rem;
+}
+
+.home_terms_of_use_inner > h2 .home, .home_terms_of_use_span, .terms_of_use{
+    font-size: 1.2rem;
+}
+
+/*The red div after the hero section styling ends here*/
+/*The starting of the terms_of_use_body_menu link section*/
+
+.link_for_section{
+    font-size: 1rem;
+}
+
+.link_for_section1, .link_for_section2 {   
+    font-size: .8rem;
+}
+
+.terms_of_use_body_menu_label1{
+ width: 60vw;
+} 
+
+.terms_of_use_body_menu_label2{
+    width: 60vw;
+}
+
+.terms_of_use_body_menu_label3{
+    width: 40vw;
+}
+
+/*The style for the link to each of the section ends here*/
+
+/*The style for first section starts here*/
+.terms_of_use_body1{
+    height: max-content;
+}
+
+.terms_of_use_body1_label{
+    height: 13vh;
+}
+
+.term_of_use_services_filicity{
+    width: 94%;
+    margin-left: 3%;
+}
+
+.term_of_use_services_filicity_label_div{
+    height: 10vh;
+}
+
+.term_of_use_services_filicity_h3{
+    opacity: .8;
+}
+
+.term_of_use_services_filicity_ol-link1, .term_of_use_services_filicity_ol-link2{
+    width: 95%;
+    margin-left: 5%; 
+}
+
+
+.term_of_use_services_filicity_ol-link2 > ol{
+    height: max-content;
+}
+
+/*The style for first section ends here*/
+
+/*The style for second section starts here*/
+/*The explaination of the laws of the airport Style starts here*/
+
+.terms_of_access_label, .terms_of_use_body1  .terms_of_use_body1_label_h2, .dos_nons_label_h2{
+    font-size: 2rem;
+    opacity: .8;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.terms_of_use_body2_menu_items_para, .terms_of_use_body2_menu_items_para1, .terms_of_use_body2_menu_items_para2{
+    font-size: 1.1rem;
+}
+
+/*The explaination of the laws of the airport ends here*/
+/*The style for second section ends here*/
+
+/*The style for third section ends here*/
+
+.terms_of_use_body3_menu_dos_donts_section{
+    padding-bottom: 3rem;
+}
+
+/*The style for third section ends here*/
+/*ENDING of the terms_of_use page hero Section styling
+
 /*Footer Section*/
     #footer_logo_container{
         width: 10rem;
@@ -7722,6 +8354,85 @@ flex-direction: column;
 
 /*The Business Opportunity page styling ends here*/
 
+/*BEGAINING of the terms_of_use page hero Section styling*/
+
+#terms_of_use_hero_text{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+/*The red div after the hero section styling starts here*/
+.home_terms_of_use_inner{
+    margin-left: 1rem;
+}
+
+.home_terms_of_use_inner > h2 .home, .home_terms_of_use_span, .terms_of_use{
+    font-size: 1.2rem;
+}
+
+/*The red div after the hero section styling ends here*/
+/*The starting of the terms_of_use_body_menu link section*/
+
+.link_for_section{
+    font-size: 1rem;
+}
+
+.link_for_section1, .link_for_section2 {   
+    font-size: .7rem;
+}
+
+.terms_of_use_body_menu_label1{
+ width: 60vw;
+} 
+
+.terms_of_use_body_menu_label2{
+    width: 60vw;
+}
+
+.terms_of_use_body_menu_label3{
+    width: 40vw;
+}
+
+/*The style for the link to each of the section ends here*/
+
+/*The style for first section starts here*/
+
+.terms_of_use_body1_label{
+    height: 13vh;
+}
+
+.term_of_use_services_filicity{
+    width: 94%;
+    margin-left: 3%;
+}
+
+.term_of_use_services_filicity_label_div{
+    height: 16vh;
+}
+
+.term_of_use_services_filicity_ol-link1, .term_of_use_services_filicity_ol-link2{
+    width: 94%;
+    margin-left: 4%; 
+}
+
+/*The style for first section ends here*/
+
+/*The style for second section starts here*/
+/*The explaination of the laws of the airport Style starts here*/
+
+.terms_of_access_label, .terms_of_use_body1  .terms_of_use_body1_label_h2, .dos_nons_label_h2{
+    font-size: 1.4rem;
+    word-spacing: 1px;
+}
+
+.terms_of_use_body2_menu_items_para, .terms_of_use_body2_menu_items_para1, .terms_of_use_body2_menu_items_para2{
+    font-size: 1.2rem;
+}
+
+/*The explaination of the laws of the airport ends here*/
+/*The style for second section ends here*/
+
+/*ENDING of the terms_of_use page hero Section styling
 
     /*FOOTER CONTAINER***********************************************************************/
     footer{
