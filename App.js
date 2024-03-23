@@ -136,7 +136,9 @@ function displaySlides(n) {
 
 
 
-
+//Privacy Policy 
+privacyPolicy();
+ 
   
 
 
