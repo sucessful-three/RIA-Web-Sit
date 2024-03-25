@@ -3449,10 +3449,67 @@ font-weight: 900;
 .privacy_policy_overview ul li span{
     color: black;
 }
-/*Begaining of the Privacy Policy page*/
+
 
 
 /*Ending of the Privacy Policy page*/
+
+
+
+/*Begaining of the Passengers Statistic  page*/
+#passenger_statistic_main_container{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.passenger_statistic_container{
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+   
+}
+
+.Passenger_statistic_table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+  }
+
+
+  .Passenger_statistic_table th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /*AirLines Statistic Styling Starts here*/
+  .passenger_statistic_airline_info{
+    height:max-content;
+    width: 80%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+  }
+
+  #statistic_airline_info_table{
+    height: 100%;
+    width: 100%;
+  }
+
+  #statistic_airline_info_table th, td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/
 @media (min-width: 1024px) and (max-width: 1280px){
@@ -4869,7 +4926,15 @@ width: 50%;
     color: black;
 }
 
+/*Passenger Statistic*/
+.Passenger_statistic_table {
+    width: 90%;
+  }
 
+   /*AirLines Statistic Styling Starts here*/
+   .passenger_statistic_airline_info{
+    width: 90%;
+   }
 
 }
 
@@ -5950,8 +6015,17 @@ width: 50%;
 }
 
 
-     }
+/*Passenger Statistic*/
+.Passenger_statistic_table {
+    width: fit-content;
+  }
+
+   /*AirLines Statistic Styling Starts here*/
+   .passenger_statistic_airline_info{
+    width: fit-content;
     
+     }
+}
 
 
 
@@ -7677,9 +7751,18 @@ flex-direction: column;
     margin-top: 100px;
 }
 
+/*Passenger Statistic*/
+.Passenger_statistic_table {
+    width: fit-content;
+  }
 
+   /*AirLines Statistic Styling Starts here*/
+   .passenger_statistic_airline_info{
+    width: fit-content;
+    
 
     }   
+}
 
    
 
@@ -7733,7 +7816,7 @@ flex-direction: column;
 /*Cards section end ****************************************************************************/
         
     }
-
+ 
     /********************************The ENDING OF THE MEDIA QUERY 360PX***********************************************************/
 
 
@@ -8868,6 +8951,18 @@ flex-direction: column;
     margin-top: 70px;
 }
 
+/*Passenger Statistic*/
+.Passenger_statistic_table {
+    width: fit-content;
+  }
+
+   /*AirLines Statistic Styling Starts here*/
+   .passenger_statistic_airline_info{
+    width: fit-content;
+    
+    
+   
+  }
 }
 
 
