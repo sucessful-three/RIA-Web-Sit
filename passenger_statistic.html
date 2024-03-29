@@ -8,13 +8,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!--The google fonts link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+  
   <header id="header">
     <!--Thea first nav-bar that container the logo and white search bar-->
       <section class="header_1st_section">
-
-          <div class="logo_div"><abbr title="RIA Logo"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo"></a></abbr></div>
+ 
+          <div class="logo_div"><abbr title="RIA Logo"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo" class="logo"></a></abbr></div>
 
           <!--The end of the logo container---------------------------------------------------------------------->
 
@@ -95,9 +103,9 @@
 
           <nav class="nav-bar ">
              <ul class="nav-link">
-                <li class="main_link_label line"><a href="#">Flights</a>
+                <li class="main_link_label line flight_link"><a href="#">Flights</a>
                  <!--This is the dropdown within the flight main link-->
-                   <ul class="dropdown subMenu01">
+                   <ul class="dropdown subMenu01 flight_dropdown">
                      <li><a href="flightStatus.html">Flight Status</a></li>
                      <li><a href="airlineInformation.html">Flight Information</a></li>
                    </ul>
@@ -131,70 +139,143 @@
       </div>
   </header> 
 
-<!--BEGAINING of the flight status page hero Section--->    
-<Section class="FAQ_hero_master_container">
-<!--Call to action text-->
-    <article class="FAQ__hero_article">
-      <div class="FAQ_text_container">
-        <h1 id="FAQ_hero_text">Frequently Ask Question</h1>
-      </div>
-    </article>
- 
-</section>   
 
-<!--END of the FAQ page hero Section----------------------------------------------------------------->    
-
-<!--Home FAQ starts here------------------->
-<div class="home_flight_status">
-    <div class="home_flight_status_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_flight_span">&#62;</span> <h2><a href="faqs.html" class="flight-status">FAQS</a></h2></div>
-  </div>
+<!--BEGAINING of the Business opportunity page hero Section--->    
+<Section class="business_opportunity_hero_section">
+  <!--Call to action text-->
+      <article class="business_opportunity_hero_article">
+        <div class="business_opportunity_hero_div">
+          <h1 id="business_opportunity_hero_text">Passenger Statistic</h1>
+        </div>
+      </article>
+  </section>   
+  <!--END of the Passenger Statistic page hero Section-------------------------------->    
   
-<!--Home FAQ ends here------------------->
-
-
-
-<!--------------------FREQUENTLY ASK QUESTION WHITE CONTAINER--------------========--------->
-
-<main class="FAQ_main_container">
-  <!--This is the FAQ HERO TEXT AND SEARCH BOX -->
-  <section class="faq_section1">
-<div class="faq_text_and_search_container">
-        <h2>Frequently Ask Question (FAQs)</h2>
-        <form action=""><input type="search" placeholder="Search" class="faq_input" >     <i class="fa-solid fa-magnifying-glass"></i></form>
+  <!--Home Business opportunity starts here------->
+  <div class="home_business_opportunity">
+      <div class="home_business_opportunity_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_business_opportunity_span">&#62;</span> <h2><a href="businessOpportities.html" class="business_opportunity">Passenger Statistic</a></h2></div>
     </div>
-  <!--This is the FAQ  Selection box--> 
-    <div class="Top_faq_container">
-        <h3>Top FAQS For</h3>
-        <form action="" class="top_faq">
-            <span>Select</span>
-            <img src="arrowdropdown.png" alt="angle-down">
-        </form>
-    </div>
-  </section>  
-    
-<section class="faq_section2">
-   <!--The question drop down -->
-  <div class="question_dropdown_container">
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum impedit aspernatur quaerat aliquam libero, id quae exercitationem totam accusamus delectus est alias at eveniet? Repellendus ab accusamus necessitatibus nemo.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem autem expedita dicta facere perspiciatis id temporibus laborum, deleniti, praesentium veniam sequi tempora! Sapiente optio dolorem odit tenetur minima fugit voluptates.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ducimus ullam sint dolores tempore reiciendis molestias, voluptatum laborum, non facilis necessitatibus laboriosam, in sunt perspiciatis error fugiat accusantium beatae? Odio!</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam dolor ratione, neque voluptatem corporis assumenda pariatur corrupti ullam optio, saepe obcaecati doloribus error quaerat illo iure maxime aliquam impedit.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laudantium nostrum, pariatur eveniet ut non quam recusandae, sint illo harum quia ipsam perferendis fuga aliquid ducimus odit vitae sunt ipsum?</div>
-  </div>
-</section>
  
+<br>
+<br>
+
+<main id="passenger_statistic_main_container">
+    <div class="passenger_statistic_container">
+        <h1>Airport Passenger Statistics</h1>
+        <table class="Passenger_statistic_table">
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Total Passengers</th>
+              <th>Domestic Passengers</th>
+              <th>International Passengers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021</td>
+              <td>10,000,000</td>
+              <td>7,000,000</td>
+              <td>3,000,000</td>
+            </tr>
+            <!-- Add more rows for other years -->
+            <tr>
+              <td>2022</td>
+              <td>12,000,000</td>
+              <td>8,000,000</td>
+              <td>4,000,000</td>
+            </tr>
+            <!-- Add more rows for other years -->
+            <tr>
+              <td>2023</td>
+              <td>13,700,0900</td>
+              <td>8,000,000</td>
+              <td>2,000,000</td>
+            </tr>
+               <!-- Add more rows for other years -->
+               <tr>
+                <td>2024</td>
+                <td>14,200,900</td>
+                <td>12,000,000</td>
+                <td>4,000,000</td>
+              </tr>
+          </tbody>
+        </table>
+        <p>Note: All figures are approximate and subject to change.</p>
+      </div>
+
+      <br>
+      <br>
+      <section class="passenger_statistic_airline_info">
+        <table id="statistic_airline_info_table">
+          <thead>
+             <tr>
+              <th>Years</th>
+              <th>Brussels Airlines</th>
+              <th>Kenya Airlines</th>
+              <th>Amaterdam Schiphol Airlines</th>
+              
+            
+             </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2021</td>
+              <td>8,200,900</td>
+              <td>2,900,800</td>
+              <td>13,320,400</td>
+            
+              
+            </tr>
+            <!--Next-->
+              <tr>
+              <td>2022</td>
+              <td>3,200,900</td>
+              <td>4,900,800</td>
+               <td>3,900,800</td>
+          
+            </tr>
+            <!--Next-->
+              <tr>
+              <td>2023</td>
+              <td>6200,900</td>
+              <td>4900,800</td>
+              <td>14,320,400</td>
+            
+            </tr>
+            <!--Next-->
+              <tr>
+              <td>2024</td>
+              <td>10,200,900</td>
+              <td>3,900,800</td>
+              <td>11,320,400</td>
+              
+            </tr>
+
+            <tr>
+              <th>Year</th>
+              <th>Kotoka Airlines</th>
+              <th>Abijan Airlines</th>
+              <th>Lungi Airlines</th>
+            </tr>
+
+            <tr>
+              <td>2021</td>
+              <td>1038,444,000</td>
+              <td>1000,333.606</td>
+              <td>33,54,555</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <br>
 </main>
-
-
-
+<br>
+<br>
 <footer class="footer">
   <!--The footer Logo Container -->
-  <div id="footer_logo_container"><abbr title="Top"><a href="faqs.html"><img src="Images/Airport-logo.png" alt="Logo"></a></abbr>
+  <div id="footer_logo_container"><abbr title="Top"><a href="index.html"><img src="Images/Airport-logo.png" alt="Logo"></a></abbr>
   </div>
     <!--The  Feature Destination container  -->
   <div class="feature_destination_container">
@@ -216,7 +297,7 @@
       <article class="the_airport_link_container">
       <h3><a href="About.html">About Us</a></h3>
       <h3><a href="newsroom.html">News</a></h3>
-      <h3><a href="./services.html">Services</a></h3>
+      <h3><a href="services.html">Services</a></h3>
       <h3><a href="destination.html">Destination</a></h3>
       <h3><a href="thingstoknow.html">Things To Know</a></h3>
       <h3><a href="Maps.html">Parking</a></h3>
@@ -233,7 +314,7 @@
     </article>
 
     <div class="small_logo">
-      <abbr title="Top"><a href="faqs.html"><img src="./Images/Airport-logo.png" alt="Logo" ></a></abbr>
+      <abbr title="Top"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo" ></a></abbr>
     </div>
   </div>  
    <!--The Connect with us and copy right container in the footer-->
@@ -255,8 +336,9 @@
 
 </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="App.js"></script>
    
 </body>
-</html> 
+</html>

@@ -10,11 +10,13 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
+ 
+  
   <header id="header">
     <!--Thea first nav-bar that container the logo and white search bar-->
       <section class="header_1st_section">
-
-          <div class="logo_div"><abbr title="RIA Logo"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo"></a></abbr></div>
+ 
+          <div class="logo_div"><abbr title="RIA Logo"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo" class="logo"></a></abbr></div>
 
           <!--The end of the logo container---------------------------------------------------------------------->
 
@@ -80,8 +82,6 @@
 
           </div>
            <!--The end of the white header div container------------------------------------------------------>
-
-
       </section>
 
       <div class="navbar_container">
@@ -95,9 +95,9 @@
 
           <nav class="nav-bar ">
              <ul class="nav-link">
-                <li class="main_link_label line"><a href="#">Flights</a>
+                <li class="main_link_label line flight_link"><a href="#">Flights</a>
                  <!--This is the dropdown within the flight main link-->
-                   <ul class="dropdown subMenu01">
+                   <ul class="dropdown subMenu01 flight_dropdown">
                      <li><a href="flightStatus.html">Flight Status</a></li>
                      <li><a href="airlineInformation.html">Flight Information</a></li>
                    </ul>
@@ -131,70 +131,39 @@
       </div>
   </header> 
 
-<!--BEGAINING of the flight status page hero Section--->    
-<Section class="FAQ_hero_master_container">
-<!--Call to action text-->
-    <article class="FAQ__hero_article">
-      <div class="FAQ_text_container">
-        <h1 id="FAQ_hero_text">Frequently Ask Question</h1>
-      </div>
-    </article>
- 
-</section>   
 
-<!--END of the FAQ page hero Section----------------------------------------------------------------->    
+<!--Begaining of the Privacy Policy Page-->
 
-<!--Home FAQ starts here------------------->
-<div class="home_flight_status">
-    <div class="home_flight_status_inner"><h2><a href="index.html" class="home">Home</a></h2> <span class="home_flight_span">&#62;</span> <h2><a href="faqs.html" class="flight-status">FAQS</a></h2></div>
-  </div>
-  
-<!--Home FAQ ends here------------------->
-
-
-
-<!--------------------FREQUENTLY ASK QUESTION WHITE CONTAINER--------------========--------->
-
-<main class="FAQ_main_container">
-  <!--This is the FAQ HERO TEXT AND SEARCH BOX -->
-  <section class="faq_section1">
-<div class="faq_text_and_search_container">
-        <h2>Frequently Ask Question (FAQs)</h2>
-        <form action=""><input type="search" placeholder="Search" class="faq_input" >     <i class="fa-solid fa-magnifying-glass"></i></form>
-    </div>
-  <!--This is the FAQ  Selection box--> 
-    <div class="Top_faq_container">
-        <h3>Top FAQS For</h3>
-        <form action="" class="top_faq">
-            <span>Select</span>
-            <img src="arrowdropdown.png" alt="angle-down">
-        </form>
-    </div>
-  </section>  
-    
-<section class="faq_section2">
-   <!--The question drop down -->
-  <div class="question_dropdown_container">
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nostrum impedit aspernatur quaerat aliquam libero, id quae exercitationem totam accusamus delectus est alias at eveniet? Repellendus ab accusamus necessitatibus nemo.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem autem expedita dicta facere perspiciatis id temporibus laborum, deleniti, praesentium veniam sequi tempora! Sapiente optio dolorem odit tenetur minima fugit voluptates.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ducimus ullam sint dolores tempore reiciendis molestias, voluptatum laborum, non facilis necessitatibus laboriosam, in sunt perspiciatis error fugiat accusantium beatae? Odio!</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam dolor ratione, neque voluptatem corporis assumenda pariatur corrupti ullam optio, saepe obcaecati doloribus error quaerat illo iure maxime aliquam impedit.</div>
-    <button class="question"><i class="fa-solid fa-plus"></i>WHERE CAN I FIND A PARTICULAR AIRLING FLGHT NUMBERS AND STATUS?</button>
-    <div class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi laudantium nostrum, pariatur eveniet ut non quam recusandae, sint illo harum quia ipsam perferendis fuga aliquid ducimus odit vitae sunt ipsum?</div>
-  </div>
-</section>
- 
+<main id="privacy_policy_main_container">
+  <section class="privacy_policy_overview">
+    <h2>Privacy Policy</h2>
+    <br>
+    <p>Roberts International Airport Company (hereinafter: “RIA Airport”) respects your privacy and protects and Processes your Personal Data in accordance with Regulation 2016/679 on the protection of individuals with regard to the processing of personal data and on the free movement of such data (the General Data Protection Regulation, also known as ‘GDPR’) and the Belgian Act of 30 July 2018 on the protection of individuals with regard to the processing of personal data (Framework Act).</p>
+    <br>
+    <p>In our <a href="#">Privacy Policy</a>, you will find important and relevant information with regard to the Processing of your Personal Data by Brussels Airport. This information will provide you, amongst others, with answers to the following questions: </p>
+    <br>
+    <ul>
+      <li><span>When does this privacy policy apply?</span></li>
+      <li><span> Who is responsible for your Personal Data and how can you contact us?</span></li>
+      <li><span>What Personal Data do we Process and for which Purpose(s)?</span></li>
+      <li><span>How long do we retain your Personal Data?</span></li>
+      <li><span>Who has access to your Personal Data and how is your Personal Data protected when transferred outside the EEA?</span></li>
+      <li><span>How do we protect your Personal Data?</span></li>
+      <li><span>What are your rights in relation to your Personal Data and how can you exercise these rights?</span></li>
+    </ul>
+    <br>
+    <p>In case of further questions, you can always contact our Data Protection Officer by post: Brussels Airport Company NV/SA, attn. the Data Protection Officer, Boulevard Auguste Reyers 80, B-1030 Brussels, or by email: <a href="mailto:">robertinternational@gmail.com</a></p>
+    <br>
+    <span>Last Updated: March 2024</span>
+  </section>
 </main>
 
+<!--Ending of the Privacy Policy Page main Section-->
 
 
 <footer class="footer">
   <!--The footer Logo Container -->
-  <div id="footer_logo_container"><abbr title="Top"><a href="faqs.html"><img src="Images/Airport-logo.png" alt="Logo"></a></abbr>
+  <div id="footer_logo_container"><abbr title="Top"><a href="index.html"><img src="Images/Airport-logo.png" alt="Logo"></a></abbr>
   </div>
     <!--The  Feature Destination container  -->
   <div class="feature_destination_container">
@@ -216,7 +185,7 @@
       <article class="the_airport_link_container">
       <h3><a href="About.html">About Us</a></h3>
       <h3><a href="newsroom.html">News</a></h3>
-      <h3><a href="./services.html">Services</a></h3>
+      <h3><a href="services.html">Services</a></h3>
       <h3><a href="destination.html">Destination</a></h3>
       <h3><a href="thingstoknow.html">Things To Know</a></h3>
       <h3><a href="Maps.html">Parking</a></h3>
@@ -228,17 +197,17 @@
   <div class="the_quick_link_container">
    <h2>Quick Links</h2>
    <article class="the_quick_link">
-    <h3><a href="privacy_policy.html">Privacy & Cookies</a></h3>
+    <h3><a href="privacy_policy.html">Privacy & Cookies</a></h3> 
     <h3><a href="termsofuse.html">Website Terms of Use</a></h3>
     </article>
 
     <div class="small_logo">
-      <abbr title="Top"><a href="faqs.html"><img src="./Images/Airport-logo.png" alt="Logo" ></a></abbr>
+      <abbr title="Top"><a href="index.html"><img src="./Images/Airport-logo.png" alt="Logo" ></a></abbr>
     </div>
   </div>  
    <!--The Connect with us and copy right container in the footer-->
   <article class="connect_with_us_copyright_container">
-      <div class="connect_withus_container">
+      <div class="connect_withus_container">  
           <h4>CONNECT WITH US</h4>
           <div class="connect_icons">
             <i class="fa-brands fa-facebook"></i>
@@ -255,8 +224,9 @@
 
 </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="App.js"></script>
    
 </body>
-</html> 
+</html>
