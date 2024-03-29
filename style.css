@@ -375,7 +375,7 @@ background-color: #0000008f;
 .img_container{
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     z-index: -99;
     image-resolution:var(--black);
 }
@@ -443,9 +443,30 @@ width: 100%;
     to {opacity: 1}
   }
 
-
-
 /*Find your flight container Drop Down*/
+
+
+/*This is the starting of the uparrow on the home section style*/
+.downarrow{
+    
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--red);
+    z-index: 99;
+    position: absolute;
+    left: 80%;
+    border: 2px dotted #070A52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow-a{
+    font-size: 1.8rem;
+    color: var(--white);
+}
+/*This is the ending of the uparrow on the home section style*/
 
 .find_ur_flight_drop_down{
     color: var(--white);
@@ -3419,6 +3440,206 @@ font-weight: 900;
 }
 /* Destination Page Ends Here*/
 
+/*The advertising page styling starts here*/
+/*The CTA section styling starts here*/
+.advertise_CTA_section{
+    width: 100vw;
+    height: 110vh; 
+}
+
+.advertise_CTA_section_text_container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background-color: #0000008f;
+    
+    
+    }
+    .advertise_CTA_section_text{
+        position: relative;
+        top: 9em;
+        line-height: 1.6;
+    }
+    .img_container{
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        z-index: -99;
+        image-resolution:var(--black);
+    }
+    .background_image{
+    height: 100%;
+    width: 100%;
+    
+    }
+    
+    
+    #advertise_CTA_section_text{
+            font-size: 3rem;
+            color: var(--white);
+            text-align: center;
+            
+    }
+    
+    #second_hero_text{
+        font-size: 1.5rem;
+        color: var(--white);
+        font-family: monospace;
+    }
+/*The CTA section styling starts here*/
+
+/*advertise_explaination_section*/
+
+.advertise_explaination_section{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.advertise_explaination_div{
+    width: 86%;
+    height: max-content;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.advertise_article_main_label{
+    font-family: var(--roboto);
+    font-size: 1.8rem;
+    color: var(--grayfortext);
+}
+
+.advertise_article_para{
+    width: 60vw;
+}
+
+.advertise_article_sub_label{
+    font-size: 1.3rem;
+    font-family: var(--roboto);
+    color: var(--blue);
+    word-spacing: 3px;
+    letter-spacing: 1px;  
+}
+
+.advertise_article_sub_label_unlist{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.advertise_article_sub_label_unlist li{
+    list-style: disc;
+    font-family: var(--roboto);
+    word-spacing: 1px;
+    font-size: 17px;
+}
+
+.advertise_article_para p{
+    font-family: var(--roboto);
+    word-spacing: 1px;
+    font-size: 17px;
+    line-height: 2rem;
+}
+
+.advertise_article_6_para_link{
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+    color: #D21312;
+    font-weight: 600;
+}
+
+.advertise_section_to_get_touch{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.advertise_div_to_get_touch{
+    height: 44vh;
+    width: 90%;
+    border-radius: .5rem;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--roboto);
+}
+
+.advertise_div_to_get_in_touch{
+    margin-left: 3rem;
+}
+
+.advertise_div_to_get_in_touch_label{
+    font-size: 2rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.advertise_div_to_get_in_touch_para{
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    width: 60%;
+}
+
+.advertise_div_to_get_in_touch_link{
+    display: flex;
+    gap: 4rem;
+}
+
+.advertise_call_btn_link{
+    padding: 18px 40px;
+    background: var(--white);
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    word-spacing: 4px;
+    border-radius: 2rem;
+    color: var(--blue);
+    transition: all .5s ease;
+}
+
+.advertise_call_btn_link:hover{
+    color: var(--white);
+    background: var(--red);
+}
+
+.advertise_email_btn_link{
+    padding: 18px 40px;
+    background: var(--red);
+    font-size: 1.5rem;
+    font-family: var(--roboto);
+    font-weight: 600;
+    word-spacing: 4px;
+    border-radius: 2rem;
+    transition: all .5s ease;
+    color: var(--white);
+}
+
+.advertise_email_btn_link:hover{
+    color: var(--blue);
+    background: var(--white);
+}
+
+
+
+
+/*The advertising page styling ends here*/
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/
 @media (min-width: 1024px) and (max-width: 1280px){
@@ -4400,6 +4621,63 @@ font-size: 1.1rem;
 /*The cards section of the business opportunity page ends here*/
 
 /*The Business Opportunity page styling ends here*/
+
+
+
+/*The advertising page styling starts here*/
+/*The CTA section styling starts here*/
+    #advertise_CTA_section_text{
+    padding-bottom: 2rem;
+    margin-top: 12rem;
+    }
+    
+    #second_hero_text{
+        font-family: var(--roboto);
+        word-spacing: 6px;
+    }
+/*The CTA section styling starts here*/
+
+/*advertise_explaination_section*/
+
+.advertise_explaination_div{
+    width: 88%;
+    padding-bottom: 4rem;
+}
+
+.advertise_article_para{
+    width: 86vw;
+}
+
+.advertise_article_sub_label_unlist li{
+    font-size: 18px;
+}
+
+.advertise_article_para p{
+    font-size: 18px;
+}
+
+.advertise_section_to_get_touch{
+    padding-bottom: 1rem;
+}
+
+.advertise_div_to_get_in_touch{
+    margin-left: 2rem;
+}
+
+.advertise_div_to_get_in_touch_label{
+    width: 90%;
+    font-size: 1.6rem;
+}
+
+.advertise_div_to_get_in_touch_para{
+    width: 80%;
+}
+
+.advertise_div_to_get_in_touch_link{
+    gap: 2rem;
+}
+
+/*The advertising page styling ends here*/
 
 
 footer{
@@ -7154,6 +7432,120 @@ flex-direction: column;
 /*The style for third section ends here*/
 /*ENDING of the terms_of_use page hero Section styling
 
+/*The advertising page styling starts here*/
+/*The CTA section styling starts here*/
+.advertise_CTA_section{
+    width: 100vw;
+    height: 110vh; 
+}
+
+.advertise_CTA_section_text_container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    gap: 4rem;
+    
+    }
+    .advertise_CTA_section_text{
+        position: relative;
+        top: 9em;
+        line-height: 1.6;
+    }
+    .img_container{
+        position: absolute;
+        height: 110vh;
+        width: 100vw;
+        z-index: -99;
+        image-resolution:var(--black);
+    }
+    .background_image{
+    height: 100%;
+    width: 100%;
+    }
+    
+    #advertise_CTA_section_text{
+        margin-bottom: 2rem;
+    }
+    
+    #second_hero_text{
+        font-size: 1.3rem;
+        font-family: var(--roboto);
+        text-align: center;
+    }
+/*The CTA section styling starts here*/
+
+/*advertise_explaination_section*/
+
+.advertise_explaination_div{
+    gap: 1.3rem;
+    padding-bottom: 4rem;
+}
+
+.advertise_article_main_label{
+    font-size: 1.7rem;
+}
+
+.advertise_article_para{
+    width: 88vw;
+}
+
+.advertise_article_sub_label{
+    font-size: 1.3rem;
+    word-spacing: 2px;
+}
+
+.advertise_article_sub_label_unlist li, .advertise_article_para p{
+    word-spacing: 1px;
+    font-size: 15px;
+}
+
+.advertise_article_6_para_link{
+    font-size: 1.1rem;
+}
+
+.advertise_div_to_get_touch{
+    height: max-content;
+    width: 92%;
+    gap: 2.2rem;
+    
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.advertise_div_to_get_in_touch{
+    margin-left: 1rem;
+}
+
+.advertise_div_to_get_in_touch_label{
+    font-size: 1.3rem;
+    width: 90%;
+}
+
+.advertise_div_to_get_in_touch_para{
+    font-size: .9rem;
+    width: 90%;
+}
+
+.advertise_div_to_get_in_touch_link{
+    gap: 1.5rem;
+}
+
+.advertise_call_btn_link, .advertise_email_btn_link {
+    padding: 16px 40px;
+    width: max-content;
+    font-size: 1.2rem;
+}
+
+.advertise_call_span{
+    display: none;
+}
+
+/*The advertising page styling ends here*/
+
 /*Footer Section*/
     #footer_logo_container{
         width: 10rem;
@@ -8448,7 +8840,65 @@ flex-direction: column;
 /*The first things card Ends Here****************************************************/
 
 
+/*The advertising page styling starts here*/
+/*The CTA section styling starts here*/
 
+.advertise_CTA_section_text_container{
+    gap: 2rem;
+    }
+    
+    
+    
+    #advertise_CTA_section_text{
+        margin-bottom: 2rem;
+    }
+    
+    #second_hero_text{
+        font-size: 1.3rem;
+        font-family: var(--roboto);
+        text-align: center;
+    }
+/*The CTA section styling starts here*/
+
+/*advertise_explaination_section*/
+
+.advertise_explaination_div{
+    gap: 1.3rem;
+    padding-bottom: 4rem;
+}
+
+.advertise_article_main_label{
+    font-size: 1.7rem;
+}
+
+.advertise_article_para{
+    width: 88vw;
+}
+
+.advertise_article_sub_label{
+    font-size: 1.3rem;
+    word-spacing: 2px;
+}
+
+.advertise_article_sub_label_unlist li, .advertise_article_para p{
+    font-size: 14px;
+}
+
+.advertise_div_to_get_in_touch_label{
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.advertise_div_to_get_in_touch_para{
+    font-size: .9rem;
+}
+
+.advertise_call_btn_link, .advertise_email_btn_link {
+    padding: 10px 30px;
+    width: max-content;
+}
+
+/*The advertising page styling ends here*/
 
 
 /*The about section***************************************************/
