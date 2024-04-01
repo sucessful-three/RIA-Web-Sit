@@ -1,6 +1,6 @@
 
 //Animation for the New Website section on the index page
-const indexSection1 =document.querySelector(".new_website_grid_container")
+const indexSection1 = document.querySelector(".new_website_grid_container")
 const indexSection2 = document.querySelector(".flight_today_container")
 const indexSection3 = document.querySelector(".latest_news_in_monrovia_container")
 const indexSection4 = document.querySelector(".all_latest_news")
