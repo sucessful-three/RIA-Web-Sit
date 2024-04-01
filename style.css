@@ -6906,14 +6906,12 @@ outline: none;
 }
 
 .hotels_near_in_RIA > h2{
-color: #D21312;
 font-size: 1.9rem;
 }
 
 
 .hotels_near_in_RIA > p{
-    font-size: 1.5rem;
-    width: 80%;
+    width: 100%;
 }
 
 /*THE BOX SECTION******************************************/
@@ -8118,6 +8116,10 @@ flex-direction: column;
 
 /*The others beaches ends here*/
 
+.hotels_near_in_RIA > p{
+    font-size: 1.5rem;
+    width: 110%;
+}
  
     /********************************The ENDING OF THE MEDIA QUERY 360PX***********************************************************/
 
@@ -8463,7 +8465,7 @@ width: 110%;
 
 .hotels_near_in_RIA > p{
 font-size: 1.5rem;
-width: 80%;
+width: 100%;
 }
 
 /*Box Section**********************************************************************/
