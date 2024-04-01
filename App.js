@@ -1,4 +1,59 @@
 
+//Animation for the New Website section on the index page
+const indexSection1 =document.querySelector(".new_website_grid_container")
+const indexSection2 = document.querySelector(".flight_today_container")
+const indexSection3 = document.querySelector(".latest_news_in_monrovia_container")
+const indexSection4 = document.querySelector(".all_latest_news")
+const indexSection5 = document.querySelector(".Our_Airlines")
+const indexSection6 = document.querySelector(".all_latest_news")
+const indexSection7 = document.querySelector(".subscribe_to_newsletter_container")
+
+//initializing option to pass it as arguement to the observer
+const options = {
+  rootMargin: "0px",
+  threshold: 0.25
+}
+
+const observer1 = new IntersectionObserver(
+  newWebsite,
+  options
+)
+
+
+observer1.observe(indexSection1)
+observer1.observe(indexSection2)
+observer1.observe(indexSection3)
+observer1.observe(indexSection4)
+observer1.observe(indexSection5)
+observer1.observe(indexSection6)
+//initializing a callbackFunction to be pass as an arguement also to the observer
+function newWebsite(entries){
+entries.forEach(entry => {
+  if(entry.isIntersecting){
+    //Animating the index section 1
+    if(entry.target.id === 'newWebsite'){
+      entry.target.classList.add("new_website_slideup")
+    }
+    //Animating the index section 2
+    if(entry.target.id === 'flightToday'){
+      entry.target.classList.add("flightTodayAnimation")
+    }
+    //Animating the index section 3
+    if (entry.target.id === 'latestNews'){
+      entry.target.classList.add("flightTodayAnimation")
+    }
+
+    //iAnimation the index section 4
+    if(entry.target.id === 'ourAirLines'){
+      entry.target.classList.add("our_airline_animation")
+    }
+     observer1.unobserve(entry.target)
+  }
+})
+}
+
+
+
 
 // trying Scroll behavior
 
@@ -20,7 +75,7 @@ function flightDropDown(){
 
 flightDropDown();
  //Creating a function that toggle the handburger menu 
-showNavDropDown();
+
 faqsDropDown();
 function showNavDropDown(){
     
@@ -41,7 +96,7 @@ $(".terminal_info_btn").on("click", function(){
 
 
 }
-
+showNavDropDown();
 
 
 
@@ -135,11 +190,9 @@ function displaySlides(n) {
 }
 
 
+//example
 
-//Privacy Policy 
-privacyPolicy();
- 
-  
+
 
 
 

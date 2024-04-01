@@ -538,7 +538,18 @@ transform: rotate(180deg);
     display: grid;
     grid-template-columns:1fr 1fr 1fr ;
     grid-template-rows:1fr 1fr ;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
     
+}
+
+.new_website_grid_container.new_website_slideup{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
  .grid{
     
@@ -599,14 +610,51 @@ transform: rotate(180deg);
     color: var(--white);
    background-color: var(--red);
     text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
  }
- 
+
+ .flight_today_container.flightTodayAnimation{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+ }
+
+ .flight_today_container :is(.flight_icon){
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 0.8s ease 0.7s, opacity 0.8s ease 0.7s;
+ }
+ /*Makiing all of the flight Today icon to Delay and slide from lift*/
+ .flight_today_container.flightTodayAnimation :is(.flight_icon){
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+ }
+
+ /*Making all of the flight Today Discription to slid from the right*/
+ .flight_today_container :is(.flight_description){
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 0.8s ease 0.7s, opacity 0.8s ease 0.7s;
+ }
+ .flight_today_container.flightTodayAnimation :is(.flight_description){
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+ }
  .flights_today_label{
    height: 20.5vh;
    display: flex;
    align-items: center;
    justify-content: center;
    width: 100%;
+
    
  }
 
@@ -653,7 +701,18 @@ transform: rotate(180deg);
     justify-content: space-between;
     padding-bottom: 2rem;
     flex-direction: column;
-    transition: 0.5s ease-in-out;
+    
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s ease 0.5s, opacity 1s ease 0.5s;
+    
+}
+
+.latest_news_in_monrovia_container.flightTodayAnimation{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .latest_news_label_angle{
@@ -793,6 +852,19 @@ font-size: 1.2rem;
     justify-content: space-evenly;
     align-items: center;
     overflow-x: hidden;
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+
+}
+
+/*Adding Animated Class to Our_AirLiines Section*/
+.Our_Airlines.our_airline_animation{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
 }
 .Our_Airlines > h3{
     font-size: 2.5rem;
