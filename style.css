@@ -30,9 +30,6 @@ overflow-x: hidden;
 
 /**************************************
         Media Query START
-For Mobile devices: 320px-480px
-For Tablets or iPad: 480px - 768px
-For Laptop or small-size screen: 768px -1024px
 For Desktop or large-size screen: 1024px -1200px
 For Extra-large size device: 1200px and more
 ***************************************/
@@ -563,14 +560,7 @@ transform: rotate(180deg);
     gap: 30px;
     transition: 1s ease;
     color: rgba(0, 0, 0, 0.336);
-    background: -webkit-linear-gradient(transparent 50%, var(--red) 50%);
-    background-size: 100px 600px;
- }
- 
- .grid:hover{
-   background-position: 0 -300px;
-   color: white;
-
+  
  }
 
 
@@ -606,11 +596,11 @@ transform: rotate(180deg);
 
  .flight_today_container{
     width: 34%;
-    height: 86vh;
+    height: max-content;
     color: var(--white);
    background-color: var(--red);
     text-align: center;
-
+overflow-y: hidden;
     visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
@@ -665,6 +655,7 @@ transform: rotate(180deg);
     align-items: center;
     justify-content: center;
     width: 100%;
+    overflow-y: hidden;
  }
 
  .flight_icon i{
@@ -701,7 +692,7 @@ transform: rotate(180deg);
     justify-content: space-between;
     padding-bottom: 2rem;
     flex-direction: column;
-    
+    overflow-y: hidden;
     visibility: hidden;
     opacity: 0;
     transform: translateY(100px);
@@ -845,7 +836,8 @@ font-size: 1.2rem;
 
 /*Our Airlines style*/
 .Our_Airlines{
-    height:70vh;
+    height: 70vh;
+    padding: 10px;
     max-width: 100vw;
     display:flex;
     flex-direction: column;
@@ -874,8 +866,8 @@ font-size: 1.2rem;
 }
 
 .Our_Airlines img{
-   width:15rem;
-   height:10rem; 
+   width:15em;
+   height:8em; 
 }
 #cote{
     height:35px;
@@ -884,6 +876,7 @@ font-size: 1.2rem;
 .Our_Airlines_logo_1, .Our_Airlines_logo_2{
     width:70%;
     display:flex;
+    gap: 5em;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -3855,7 +3848,7 @@ font-weight: 900;
     line-height: 1.5;
 }
 
-
+.radio_container{display: flex;}
 
 /*THE LATEST NEWS STYLE FOR TABLET*****************/
 
@@ -3881,6 +3874,7 @@ font-weight: 900;
     height: max-content;
     background-color: var(--red);
     color: var(--white);
+    
 }
 
 .latest_news_in_monrovia_container{
@@ -4750,99 +4744,22 @@ font-size: 1.1rem;
 }
 
 /*The advertising page styling ends here*/
-
-
-footer{
-
-    height: fit-content;
-    padding-top: 10px;
-    gap: 5px;
-    font-size: 0.4;
-    flex-wrap: wrap;
-    
+#ourAirLines{
+    width: 100%;
+    height: max-content;
 }
 
-#footer_logo_container a img{
-    height: 200px; 
-    width: 200px;
-}
-
-#footer_logo_container{
-    width: 10rem;
-    height: 8rem;
-    display: none;
-}
-.feature_destination_container{
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 10px;
-    padding: 10px;
-
-}
-
-.destinations_links_contianer{
-    line-height: 2;
-
-    text-align: left;
-    width: fit-content;
-}
-
-/*The footer airport container*/
-.the_airport_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  
-}
-.the_airport_link_container{
-    line-height: 1.9;
-    width: max-content;
-  
-}
-
-/*The footer quick link container*/
-.the_quick_link_container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: fit-content;
-
-
-}
-
-.small_logo{
-    display: flex;
-}
-
-
-/*The footer Connect with us section*/
-.connect_with_us_copyright_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: span 4;
-    border-top: 2px solid white;
-    margin-left: 1rem;
-    margin-right: 2.5rem;
-    padding: 0;
-}
 
 .Our_Airlines_logo_1, .Our_Airlines_logo_2{
-    width:70%;
+    width: 100%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
 }
  
-
+.Our_Airlines_logo_2{
+    flex-wrap: wrap;
+}
 /*The FAQ page styling starts here*/
 
 .FAQ__hero_article{
@@ -5148,10 +5065,85 @@ width: 50%;
 .card-img-top{
     height: 60%;
 }
-/* Destination Page Ends Here*/
 
+    
+/*Footer Section************************************************/
+#footer_logo_container{
+    width: 10rem;
+    height: 8rem;
+    display: none;
+}
+
+footer{
+height: fit-content;
+width: 100vw;
+  grid-template-columns: 1.3fr 1fr 1fr ;
+  grid-template-rows: auto 1fr;
+   justify-content: center;
+   overflow: hidden;
+   padding: 20px;
+   
+}
+
+
+.the_airport_container, .feature_destination_container, .the_quick_link_container{
+display: block; 
+line-height: 1.5;
+}
+
+.the_quick_link_container > .the_quick_link{
+line-height: 1.5;
+}
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+width: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+grid-column: span 4;
+border-top: 2px solid white;
+margin-left: 0;
+margin-right: 0;
 
 }
+.connect_withus_container{
+line-height: 2;
+font-size: 0.8rem;
+
+}
+
+
+.connect_icons{
+word-spacing: 10px;
+text-align: center;
+width: fit-content;
+
+}
+
+.small_logo img{
+width: 10rem;
+height: 10rem;
+position: absolute;
+right: 2.5em;
+}
+.footer_connect{
+font-size: 0.8rem;
+}
+
+
+.small_logo{
+display: flex;
+
+}
+
+/*Footer section Ends Here*********************************************/
+
+}
+
+
+
+
 
 
 /*BEGAINING of the terms_of_use page hero Section styling*/
@@ -5242,7 +5234,7 @@ width: 50%;
 
 
 /* Media Query for low resolution  Tablets, Ipads ************************************/
-@media (min-width: 481px) and (max-width: 579px) {
+@media (min-width: 481px) and (max-width: 580px) {
         :root{
             font-size: 13px;
         }
@@ -5297,6 +5289,7 @@ width: 50%;
         .flag_container{
             gap: 1.2rem;
             align-items: center;
+
         }
         .flag_container p{
             font-size: 1.4rem;
@@ -5348,7 +5341,7 @@ width: 50%;
 .flag_container{
     gap: 1.2rem;
     align-items: center;
-    display: none;
+    display: flex;
 }
 
 
@@ -5908,49 +5901,7 @@ flex-direction: column;
     width: 100%;
    
 }
-
         
-        /*The footer Connect with us section*/
-        .connect_with_us_copyright_container{
-        width: max-content;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            grid-column: span 4;
-            border-top: 2px solid white;
-            margin-left: 0;
-            margin-right: 0;
-        }
-        .connect_withus_container{
-          line-height: 2;
-          font-size: 1rem;
-          width: max-content;
-        
-        }
-        
-        
-        .connect_icons{
-            word-spacing: 10px;
-            text-align: center;
-            width: fit-content;
-            
-        }
-        
-        .small_logo img{
-            width: 10rem;
-            height: 10rem;
-            position: absolute;
-            right: 0.1em;
-        }
-        .footer_connect{
-        font-size: 0.8rem;
-        }
-
-        
-.small_logo{
-    display: flex;
-}
-           
 
 /*THE NEWS ROOM BY ALVIN STARTS HERE**********************************/
 .newsroom_master_container img{
@@ -6193,6 +6144,79 @@ width: 50%;
     height: 60%;
 }
 /* Destination Page Ends Here*/
+
+
+
+
+/*Footer Section*/
+#footer_logo_container{
+    width: 10rem;
+    height: 8rem;
+    display: none;
+}
+
+footer{
+height: fit-content;
+width: 100vw;
+  grid-template-columns: 1.3fr 1fr 1fr ;
+  grid-template-rows: auto 1fr;
+   justify-content: center;
+   overflow: hidden;
+   padding: 20px;
+   
+}
+
+
+.the_airport_container, .feature_destination_container, .the_quick_link_container{
+display: block; 
+line-height: 1.5;
+}
+
+.the_quick_link_container > .the_quick_link{
+line-height: 1.5;
+}
+
+/*The footer Connect with us section*/
+.connect_with_us_copyright_container{
+width: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+grid-column: span 4;
+border-top: 2px solid white;
+margin-left: 0;
+margin-right: 0;
+
+}
+.connect_withus_container{
+line-height: 2;
+font-size: 0.8rem;
+
+}
+
+
+.connect_icons{
+word-spacing: 10px;
+text-align: center;
+width: fit-content;
+
+}
+
+.small_logo img{
+width: 10rem;
+height: 10rem;
+position: absolute;
+right: 2.5em;
+}
+.footer_connect{
+font-size: 0.8rem;
+}
+
+
+.small_logo{
+display: flex;
+position: relative;
+}
 
      }
     
