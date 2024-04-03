@@ -11,6 +11,7 @@ a{
     font-size: 1rem;
 }
 :root {
+    --herobg: #0000008f;
     --red: #D21312;
     --blue: #070A52;
     --white: #ffffff;
@@ -26,7 +27,6 @@ html{
     font: 16px;
 overflow-x: hidden;
 }
-
 
 /**************************************
         Media Query START
@@ -84,7 +84,6 @@ header{
     height: 100%;
     width: 30%;
    background-color: var(--red);
-   clip-path: polygon(0 0, 100% 368, 100% 99);
    display: flex;
     justify-content: center;
     align-items: center;
@@ -297,7 +296,7 @@ justify-content: center;
 .dropdown{
     position: absolute;
     top: 3.1rem;
-    width: 12rem;
+    width: 11rem;
     height: 17vh;
     background: var(--blue) ;
     display: none;
@@ -306,9 +305,17 @@ justify-content: center;
     visibility: hidden;
     padding-left: 1rem;
     padding-top: 1rem;
+    border-bottom: none;
 }
 
+.subMenu01{
+    right: -3rem;
+}
 
+.subMenu02{
+    right: -1rem;
+    height: 20vh;
+}
 
 .dropdown:hover li {
     border-bottom: none;
@@ -444,22 +451,23 @@ width: 100%;
 
 
 /*This is the starting of the uparrow on the home section style*/
-.downarrow{
+.up-arrow{
     
     width: 55px;
     height: 55px;
     border-radius: 50%;
     background: var(--red);
-    z-index: 99;
-    position: absolute;
-    left: 80%;
+    z-index: 1;
+    position: fixed;
+    top: 600px; 
+    left: 700px; 
     border: 2px dotted #070A52;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.down-arrow-a{
+.up-arrow-a{
     font-size: 1.8rem;
     color: var(--white);
 }
@@ -948,7 +956,7 @@ outline: none;
 /*BEGAINING of the flight status page hero Section styling*/
 .flight_status_hero_section{
     width: 100vw;
-    height: 80vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -959,13 +967,12 @@ outline: none;
 }
 
 .flight_status_hero_div{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
-    background-color: rgba(0, 0, 0, 0.297);
+    background-color: var(--herobg);
 }
 
 #flight_status_hero_text{
@@ -975,12 +982,13 @@ outline: none;
     word-spacing: .3rem;
     font-family: var(--poppin);
     font-weight: 700;
+    margin-top: 10rem;
 }
 
 /*ENDING of the flight status page hero Section styling*/
 
 .home_flight_status{
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     background: var(--red);
 }
@@ -995,6 +1003,8 @@ outline: none;
 
 .home_flight_status_inner > h2 .home{
     color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .home_flight_status_inner > h2 .home:hover{
@@ -1010,6 +1020,7 @@ outline: none;
 
 .flight-status{
     color: var(--blue);
+    font-size: 1.2rem;
 }
 
 /*The portion of the search flight on the flight status page styling starts here*/
@@ -1205,10 +1216,10 @@ outline: none;
 /*BEGAINING of the Airline Information page hero Section styling*/
 .Airline_Information_hero_section{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
- 
+    align-items: center;
     background: url(./Images/brussels.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1216,13 +1227,12 @@ outline: none;
 }
 
 .Airline_Information_hero_div{
-    height: 86.2vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6.4rem;
-    background: #00000089;
+    background: var(--herobg);
 }
 
 #Airline_Information_hero_text{
@@ -1232,6 +1242,7 @@ outline: none;
     word-spacing: .3rem;
     font-family: var(--poppin);
     font-weight: 700;
+    margin-top: 10rem;
 }
 
 /*ENDING of the Airline_Information page hero Section styling*/
@@ -1252,20 +1263,24 @@ outline: none;
 
 .home_Airline_Information_inner > h2 a{
     color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .home_Airline_Information_span{
     color: var(--white);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
 .home_Airline_Information_inner > h2  a:hover{
     color: var(--blue);
+    transition: all 1s ease-in-out;
 }
 
 .home_Airline_Information_inner > h2 .Airline_Information{
     color: var(--blue);
+    font-size: 1.2rem;
 }
 
 
@@ -1474,7 +1489,7 @@ outline: none;
 
 .FAQ_hero_master_container{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1485,12 +1500,12 @@ outline: none;
 }
 
 .FAQ__hero_article{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 18vh;
+    background-color: var(--herobg);
 }
 
 .FAQ_text_container{
@@ -1500,6 +1515,7 @@ outline: none;
     word-spacing: .3rem;
     font-family: var(--poppin);
     font-weight: 700;
+    margin-top: 10rem;
 }
 
 
@@ -1997,25 +2013,23 @@ flex-direction: column;
 /*BEGAINING of the contact page hero Section styling*/
 .contact_hero_section{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center; 
     background-image: url(./Images/brussels.jpg);
-   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .contact_hero_div{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
-    background-color: rgba(0, 0, 0, 0.297);
+    background-color: var(--herobg);
 }
 
 #contact_hero_text{
@@ -2025,6 +2039,7 @@ flex-direction: column;
     word-spacing: .3rem;
     font-family: var(--poppin);
     font-weight: 700;
+    margin-top: 10rem;
 }
 
 /*ENDING of the Contact page hero Section styling*/
@@ -2045,6 +2060,8 @@ flex-direction: column;
 
 .home_contact_inner > h2 .home{
     color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .home_contact_inner > h2 .home:hover{
@@ -2060,6 +2077,7 @@ flex-direction: column;
 
 .contact{
     color: var(--blue);
+    font-size: 1.2rem;
 }
 
 
@@ -2530,12 +2548,11 @@ flex-direction: column;
 /*BEGAINING of the contact page hero Section styling*/
 .business_opportunity_hero_section{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center; 
     background-image: url(./Images/brussels.jpg);
-   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2547,8 +2564,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    background-color: rgba(0, 0, 0, 0.297);
+    background-color: var(--herobg);
 }
 
 #business_opportunity_hero_text{
@@ -2647,9 +2663,18 @@ flex-direction: column;
     margin-left: 8%;
 }
 
-.busOppor_cards_main_container:hover .busOppor_card_2nd_para{
-  border-bottom: 3px solid #D21312;  
-   transition: all .4s ease-in; 
+.busOppor_cards_main_container .busOppor_card_2nd_para::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    border-radius: 2rem;
+    background-color: var(--red);
+    transition: all .3s ease-in-out;
+}
+
+.busOppor_card_2nd_para:hover::after{
+    width: 100%; 
 }
  
 .busOppor_card_image{
@@ -2705,12 +2730,11 @@ flex-direction: column;
 /*BEGAINING of the terms_of_use page hero Section styling*/
 .terms_of_use_hero_section{
     width: 100vw;
-    height: 100vh;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center; 
     background-image: url(./Images/brussels.jpg);
-   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2722,8 +2746,7 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    background-color: rgba(0, 0, 0, 0.297);
+    background-color: var(--herobg);
 }
 
 #terms_of_use_hero_text{
@@ -3702,12 +3725,318 @@ font-weight: 900;
 }
 
 
-
-
 /*The advertising page styling ends here*/
 
 /* Media Query for Laptops and Desktops min-width: 1025px  max-width: 1280px)*******************************************************/
 @media (min-width: 1024px) and (max-width: 1280px){
+
+    a{ 
+        font-size: 1rem;
+    }
+    
+    html{
+        font: 15px;
+    }
+
+    /*The styling for the header starts here*/
+
+    header{
+        height: 24vh; 
+    }
+      
+    .header_1st_section{
+        height: 8rem;
+    }
+    /*displaying the logo div and the search bar div container*/
+    
+    /*styling the logo div and search_bar_div_container*/
+     
+    .logo_div img{
+        height: 8em;
+    }
+    /*styling the search_bar container*/
+    .white_header_container{
+        height: 100%;
+        width: 70%;
+     
+    }
+    
+    .white_div_containerA{
+        width: 86%;
+        height: 40%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        
+    }
+    
+    .white_div_container_a1{
+        display: flex;
+        height: 50%;
+        gap: 8rem;
+        width: fit-content;
+        padding-left: 30%;
+        align-items: center;
+       
+    }
+    
+    .flag_container{
+        display: flex;
+        gap: 1.2rem;
+    }
+    
+    .Liberia_flag_icon{
+        width: 3.125rem;
+        height: 1.875rem;
+    }
+    
+    .search_bar_form{
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    .search_bar_form input{
+        width: 12rem;
+        height: 2rem;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 1.25rem;
+        font-size: 1.25rem;
+    
+    }
+    .search_bar_form input:focus {
+        outline: none;
+        border-bottom: 1px solid rgba(163, 155, 155, 0.511);
+        border-radius: 10px;
+        padding-right: 3rem;
+    }
+    
+     .fa-magnifying-glass:hover{
+        color: var(--red);
+     }
+    
+    .fa-magnifying-glass{
+        position: relative;
+        right: 40px;
+        font-size: 1.2rem;
+        color: gray;
+        transition: 0.5s ease;
+    }
+    
+    
+    .white_div_containerB{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        height: fit-content;
+    }
+    
+    .call_icon_text_container{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        line-height: 1.2;
+    }
+    
+    .icon_div{
+        padding: 10px;
+        border: 2px dotted var(--red);
+        border-radius: 50%;
+        color: var(--red);
+    }
+    
+    
+    .email_icon_text{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .handBurger_menu_dropdown{
+        animation: slidUP_nav 1.5s ease;
+        display:none;
+     }
+    /*styling the blue nav-bar that has the left side been transparent*/
+    .navbar_container{
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        
+    }
+    /*HAND BURGER MENU ***************************************************/
+    .hand_burger_menu{
+        display: none;
+    }
+    
+    .handBurger_menu_dropdown{
+        animation: slidup_burger 1s ease;
+        
+    }
+    
+    
+    @keyframes slidUp_burger{
+        from {transform: translateY(200px)}
+        to{transform: translateY(0px);}
+    }
+    
+    
+    .transparent_div{
+        width: 20%;
+        background: transparent;
+    }
+    
+    /*Styling the blue navigation bar*/
+    .blue_navbar_container{
+        background: var(--blue);
+        width: 80%;
+        height: 13vh;
+        /*clip-path: polygon(3% 0, 100% 0, 100% 48%, 100% 100%, 0 100%);*/
+        position: relative;
+        bottom: 22px;
+    }
+    
+    .nav-bar {
+    width: 75%;
+    display: flex;
+    height: 13vh;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .nav-link{
+       display: flex;
+       width: 75%;
+       justify-content: space-between;
+    }
+    
+    
+    .nav-bar .nav-link li a{
+        color: var(--white);
+        cursor: pointer;
+    }
+    
+    
+    .line :hover{
+       border-bottom: 3px solid var(--white);
+        padding-bottom: 1.8rem;
+    }
+    
+    .nav-bar .nav-link .dropdown li :hover{
+        border-bottom: 0px solid var(--white);
+        padding-bottom: 0rem;
+    }
+    
+    .white_line_list{
+        background: var(--white);
+        width: .1rem;
+        height: 4vh;
+    }
+    
+    .main_link_label{
+     position: relative;
+    
+    }
+    
+    /*********************************************************/
+    /*KEYFRAMES ANIMATION*/
+    @keyframes slidUp_nav{
+        from {transform: translateY(20px)}
+        to{transform: translateY(0px);}
+    }
+    
+    @keyframes slidRight {
+        from{transform: translateX(-500px);}
+        to{transform: translateX(0px)}
+    }
+    
+    
+    /*KEYFRAMES ANIMATION ENDS*********************************************/
+    .dropdown{
+        position: absolute;
+        top: 3.1rem;
+        width: 11rem;
+        height: 17vh;
+        background: var(--blue) ;
+        display: none;
+        opacity: 0;
+        z-index: 1;
+        visibility: hidden;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        border-bottom: none;
+    }
+    
+    .subMenu01{
+        right: -3rem;
+    }
+    
+    .subMenu02{
+        right: -1rem;
+        height: 20vh;
+    }
+    
+    .dropdown:hover li {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    .main_link_label:hover .dropdown{
+      display: block;
+      opacity: 1;
+      animation: slidUp_nav .5s ease ;
+      visibility: visible;
+      
+    }
+    
+    .dropdown li {
+        width: 100%;
+        gap: 3rem;
+        line-height: 2.2rem;
+         opacity: .7;
+        }
+        .dropdown li:hover{
+             opacity: 1;
+        }
+         
+        .dropdown a{
+            color: var(--white);
+           font-family: var(--poppin);
+        }
+        
+/*The styling for the header ends here*/
+
+/*The styling for the call to action section starts here*/
+
+
+
+
+/*The styling for the call to action section ends here*/
+
+/*The styling for the new website section starts here*/
+
+
+
+
+/*The styling for the new website section ends here*/
+
+/*The styling for the latest news section starts here*/
+
+
+
+
+/*The styling for the latest news section ends here*/
+
+/*The styling for our airline section starts here*/
+
+
+
+
+/*The styling for our  airline section ends here*/
+
+/*The styling for the news letter section starts here*/
+
+/*The styling for the news letter section ends here*/
     /*The FAQ page styling starts here*/
     .FAQ_main_container{
         padding: 0px 30px;
@@ -3738,13 +4067,11 @@ font-weight: 900;
     font-size: 1.2em;
    
 }
+
 }
 
 
 /* End of the Destination Page*/
-
-
-
 
       
 /* Media Query for Tablets Ipads portrait mode *******************************************************************************************/
@@ -3828,8 +4155,6 @@ font-weight: 900;
     display: none;
 }
 
-
-
 .flight_drop_down1 , .terminal_drop_down1  {
  display: none;
 }
@@ -3868,7 +4193,6 @@ font-weight: 900;
     align-items: center;
 }
 
-
 .flight_today_container{
     width: 100%;
     height: max-content;
@@ -3902,7 +4226,6 @@ justify-content: space-evenly;
 padding-left: 2rem;
     
 }
-
 
 .news_slider{
 padding: 0.2rem;
@@ -3989,7 +4312,6 @@ padding: 0.2rem;
 .arrivals_and_departure{
     width: 94%;
 }
-
 
 /*The show casing table of the scrollable table styling starts here*/
 
@@ -4113,8 +4435,6 @@ padding: 0.2rem;
    width: 150px;
 }
 
-
-
 /*The static table on the Airline Information page styling ends here*/
 
 .destination_serve{
@@ -4166,10 +4486,6 @@ padding: 0.2rem;
     /*The Maps Styles endeding ************************************/
 
 
-
-
-
-
 /*The Visitmonronvia Responsiveness*************************/
 /*The visit Monrovia starts here*****************************/
 
@@ -4180,7 +4496,6 @@ padding: 0.2rem;
     font-size: 1.3em;
 }
 
-
 /*Call to action page*/
 
 .Call_to_action_section2{
@@ -4188,7 +4503,6 @@ padding: 0.2rem;
     width: 100vw;
     
 }
-
 
 .Call_to_action_text_container2{
 height: 100%;
@@ -4256,7 +4570,6 @@ color: #fff;
 }
 
 
-
 .faq_text_and_search_container{
     display: flex;
     justify-content: space-between;
@@ -4273,17 +4586,12 @@ font-size: 2.1rem;
 width: 95%;
 }
 
-
 .hotels_near_in_RIA > p{
     font-size: 1.6rem;
     width: 80%;
 }
 
 /*Box Section*************************************************************/
-
-
-
-
 
 /*cards SECTION************************************************************************/
 
@@ -4297,7 +4605,6 @@ width: 95%;
     width: 80%;
     
 }
-
 
 .all_box_image  > img{
     width: 300px;
@@ -4318,7 +4625,7 @@ width: 95%;
     font-size: 16px;
 }
 
-/*Cards section end ****************************************************************************/
+/*Cards section end ***********************************************/
 
 /*BUTTON*/
 
@@ -4341,17 +4648,14 @@ width: 95%;
     
 }
 
-
 .btm a{
     color: #fff;
 }
 
-/*The Visit Monronvia ends here*****************************************/
+/*The Visit Monronvia ends here**********************************/
 
 
-
-
-/*The about section***************************************************/
+/*The about section**********************************************/
 
 .our_history_1{
     width: 90%;
@@ -4377,8 +4681,6 @@ width: 95%;
     line-height: 1.3rem;
     word-spacing: .2rem;
 }
-
-
 
  .Our_history_image > img{
      width: 18rem;
@@ -4414,10 +4716,7 @@ width: 95%;
 
 /* The end of the About Us section**************************************/
 
-
 /* Show More Section ************************************************/
-
-
 
 .liberia_p_content{
 width: 80%;
@@ -4447,14 +4746,9 @@ font-size: 1.9rem;
     background: rgb(164, 163, 163);
 }
 
+/* Show More Section Ending ****************************************/
 
-/* Show More Section Ending *****************************************/
-
-
-
-
-
-/* OTHERS BEACHES NEAR RIA ****************************************88/
+/* OTHERS BEACHES NEAR RIA *************************************88/
 
 /*Box Section*/
 
@@ -5028,9 +5322,6 @@ width: 50%;
     
 }
 
-
-
-
 .image_container{
        margin-top: 0px;
 }
@@ -5041,12 +5332,7 @@ width: 50%;
    border-bottom-left-radius: 20px;
    position: relative;
    top: 50px;
-
-    
 }
-
-
-
 
 /*Section II*/
 #our_trending_destination_container{
@@ -5058,8 +5344,6 @@ width: 50%;
     grid-template-rows: 0.8fr 0.8fr;
     gap: 20px;
     padding: 24px;
-    
- 
 }
 
 .card-img-top{
