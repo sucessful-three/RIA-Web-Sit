@@ -3808,7 +3808,43 @@ font-weight: 900;
 /*The styling for the call to action section starts here*/
 
 
+.Call_to_action_section{
+    height: max-content;
+}
 
+.Call_to_action_text_container{
+    height: 100vh;
+    gap: 12rem;
+    padding-bottom: 2rem;
+    }
+
+    .landing_text{
+        top: 8em;
+        line-height: 1.4;
+    }
+
+    #hero_text{
+        font-size: 2.9rem;    
+}
+
+#second_hero_text{
+    font-size: 1.4rem;
+}
+
+.find_flight_raidio_container{
+    gap: 4rem;
+}
+
+.find_ur_flight_drop_down{
+  line-height: 1.2rem;
+  padding: 1rem;
+  width: 16rem;
+}
+
+.dot{
+    height: 12px;
+    width: 12px;
+ }
 
 /*The styling for the call to action section ends here*/
 
