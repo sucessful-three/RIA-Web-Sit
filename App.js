@@ -175,6 +175,7 @@ observer1.observe(indexSection3)
 observer1.observe(indexSection4)
 observer1.observe(indexSection5)
 observer1.observe(indexSection6)
+observer1.observe(indexSection7)
 //initializing a callbackFunction to be pass as an arguement also to the observer
 function newWebsite(entries){
 entries.forEach(entry => {
@@ -195,6 +196,10 @@ entries.forEach(entry => {
     //iAnimation the index section 4
     if(entry.target.id === 'ourAirLines'){
       entry.target.classList.add("our_airline_animation")
+    }
+
+    if(entry.target.id === 'subscribe_to_newsletter_container'){
+      entry.target.classList.add("animateSubscribe")
     }
      observer1.unobserve(entry.target)
   }
