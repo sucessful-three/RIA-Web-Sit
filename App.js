@@ -1,12 +1,33 @@
+//The script for the scroll up arrow
+
+
+var scrollUpArrow = document.getElementById("scroll_arrow");
+
+
+    $(scrollUpArrow).fadeOut()
 
 // trying Scroll behavior
 
 window.onscroll= function scrollFunction(){
+
+ 
+
   var myHeader=$("header");
     if (document.documentElement.scrollTop > 100 ){
       $(myHeader).slideUp(400);
+      
+
   }
   else{$(myHeader).slideDown(800);}
+
+  if (document.documentElement.scrollTop > 700 ) {
+    
+    $(scrollUpArrow).fadeIn(500)
+  
+  }
+  else{
+    $(scrollUpArrow).fadeOut(500)
+  }
 } // when a scroll gets detected on the window it should look for where the scrollFunction() was created and run it
 
 function flightDropDown(){  

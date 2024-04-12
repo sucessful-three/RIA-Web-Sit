@@ -451,6 +451,7 @@ width: 100%;
 
 
 /*This is the starting of the uparrow on the home section style*/
+
 .up-arrow{
     
     width: 55px;
@@ -459,17 +460,19 @@ width: 100%;
     background: var(--red);
     z-index: 1;
     position: fixed;
-    top: 600px; 
-    left: 700px; 
+    top: 550px; 
+    left: 1450px; 
     border: 2px dotted #070A52;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .up-arrow-a{
     font-size: 1.8rem;
     color: var(--white);
+    font-weight: 900;
 }
 /*This is the ending of the uparrow on the home section style*/
 
