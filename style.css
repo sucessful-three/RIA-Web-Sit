@@ -784,6 +784,15 @@ overflow-y: hidden;
     
 }
 
+.all_latest_news .latest_news_card{
+        transition: all 0.5s;
+        perspective: 600;
+}
+.all_latest_news .latest_news_card:hover{
+    transform: translateY(-10px);
+    
+}
+
 .news_slider{
     display: flex;
     justify-content: space-between;
@@ -868,6 +877,24 @@ font-size: 1.2rem;
     opacity: 1;
     transform: translateY(0px);
 }
+
+.Our_Airlines :is(img){
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 1s, opacity 1s;
+}
+.Our_Airlines.our_airline_animation :is(img){
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+.Our_Airlines img{
+
+    transition-delay: calc(var(--index) * 300ms);
+
+}
+
 .Our_Airlines > h3{
     font-size: 2.5rem;
     text-align: center;
@@ -3968,7 +3995,9 @@ font-weight: 900;
 }
 
 .read_more_stories{
-right: 21rem;
+    
+right: 15rem;
+
 }
 
   /*Latest News in Monorovia Section styling ends here*/
